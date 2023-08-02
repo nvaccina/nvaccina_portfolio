@@ -1,0 +1,85 @@
+//general
+.nv_container{
+  width: 75%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.nv_small_container{
+  max-width: 60%;
+  margin: 0 auto;
+}
+img{
+  width: 100%;
+}
+.show{
+  display: block;
+}
+//stili
+.fc_light_blu{
+  color: $font_color_ligth_blu;
+}
+.primary_c{
+  color: $primary_color !important;
+}
+.secondary_c{
+  color: $secondary-color;
+}
+.quater_c{
+  color: $quaternary-color;
+}
+.font_section_c{
+  color: $font-section;
+}
+.bg_second_col{
+  background-color: $secondary-color;
+}
+.active{
+  color: $primary_color !important;
+  border-bottom: 2px solid $primary_color !important;
+}
+//elementi
+.nv_button{
+  text-transform: uppercase;
+  padding: 12px 23px;
+  background-color: $primary-color;
+  border-radius: 25px;
+  color: $secondary-color;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  transition: all 0.4s;
+  &:hover{
+    text-decoration: none;
+    color: $secondary-color;
+    background-color: darken($color: $primary-color, $amount: 10%)
+  }
+}
+
+.nv_button_grey{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 13px;
+  color: $font-section;
+  border: 3px solid $font-section;
+  border-radius: 15px;
+  transition: all 0.4s;
+  &:hover{
+    color: $primary-color;
+    border: 3px solid $primary-color;
+  }
+}
+
+.card{
+  border-top: 6px solid $primary-color;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow:  5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nv_border_top{
+  border-top: 6px solid $font-section;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 15px;
+}

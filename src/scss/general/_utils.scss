@@ -1,0 +1,123 @@
+@use "./variables" as *;
+
+//FONT SIZE
+.fs{
+  &-8{
+    font-size: 8px;
+  }
+  &-10{
+    font-size: 10px;
+  }
+  &-11{
+    font-size: 11px;
+  }
+  &-12{
+    font-size: 12px;
+  }
+  &-13{
+    font-size: 13px;
+  }
+  &-14{
+    font-size: 14px;
+  }
+  &-15{
+    font-size: 15px;
+  }
+  &-16{
+    font-size: 16px;
+  }
+  &-17{
+    font-size: 17px;
+  }
+  &-18{
+    font-size: 18px;
+  }
+  &-20{
+    font-size: 20px;
+  }
+  &-22{
+    font-size: 22px;
+  }
+  &-23{
+    font-size: 23px;
+  }
+  &-25{
+    font-size: 25px;
+  }
+  &-30{
+    font-size: 30px;
+  }
+  &-35{
+    font-size: 35px;
+  }
+  &-40{
+    font-size: 40px;
+  }
+}
+//FONT WEIGHT
+.fw{
+  &-600{
+    font-weight: 600;
+  }
+  &-700{
+    font-weight: 700;
+  }
+}
+//LINE HEIGTH
+.ln_heigth{
+  &-150{
+    line-height: 150%;
+  }
+  &-200{
+    line-height: 200%;
+  }
+}
+//MARGIN
+.mb{
+  &-80{
+    margin-bottom: 80px;
+  }
+}
+
+
+//PADDING
+.pt{
+  &-10{
+    padding-top: 10px;
+  }
+  &-20{
+    padding-top: 20px;
+  }
+  &-30{
+    padding-top: 30px;
+  }
+  &-40{
+    padding-top: 40px;
+  }
+  &-50{
+    padding-top: 50px;
+  }
+  &-60{
+    padding-top: 60px;
+  }
+  &-80{
+    padding-top: 80px;
+  }
+}
+.pb{
+  &-10{
+    padding-bottom: 50px;
+  }
+  &-20{
+    padding-bottom: 50px;
+  }
+  &-30{
+    padding-bottom: 50px;
+  }
+  &-40{
+    padding-bottom: 50px;
+  }
+  &-50{
+    padding-bottom: 50px;
+  }
+}
