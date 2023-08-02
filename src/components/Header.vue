@@ -14,13 +14,19 @@ export default {
       <div class="header-menu">
         <ul class="nav nav-underline">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <router-link :to="{name:'home'}">home</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <router-link :to="{name:'about'}">about</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacts</a>
+            <router-link :to="{name:'skills'}">skills</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link :to="{name:'portfolio'}">portfolio</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link :to="{name:'contacts'}">contacts</router-link>
           </li>
         </ul>
       </div>
@@ -40,7 +46,6 @@ header{
   width: 100%;
   background-color: $tertiary-color;
   height: 80px;
-  width: 100vw;
   border-bottom: 4px solid $primary-color;
   .logo{
     position: absolute;
@@ -49,7 +54,7 @@ header{
     width: 110px;
   }
   .header-menu{
-    a{
+    li{
       color: $secondary_color;
       text-decoration: none;
       text-transform: capitalize;
