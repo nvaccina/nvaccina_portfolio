@@ -1,6 +1,8 @@
 @use "./variables" as *;
 
-
+body {
+  font-family: 'Oswald Variable', sans-serif;
+}
 li{
   list-style: none;
 }

@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: 'About',
+  name: 'Section_contacts',
 
 }
 </script>

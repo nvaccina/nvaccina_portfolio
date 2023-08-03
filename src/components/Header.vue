@@ -14,19 +14,19 @@ export default {
       <div class="header-menu">
         <ul class="nav nav-underline">
           <li class="nav-item">
-            <router-link :to="{name:'home'}">home</router-link>
+            <a class="nav-link active" href="#">home</a>
           </li>
           <li class="nav-item">
-            <router-link :to="{name:'about'}">about</router-link>
+            <a class="nav-link" href="#">about</a>
           </li>
           <li class="nav-item">
-            <router-link :to="{name:'skills'}">skills</router-link>
+            <a class="nav-link" href="#">skills</a>
           </li>
           <li class="nav-item">
-            <router-link :to="{name:'portfolio'}">portfolio</router-link>
+            <a class="nav-link" href="#">portfolio</a>
           </li>
           <li class="nav-item">
-            <router-link :to="{name:'contacts'}">contacts</router-link>
+            <a class="nav-link" href="#">contacts</a>
           </li>
         </ul>
       </div>
@@ -46,7 +46,7 @@ header{
   width: 100%;
   background-color: $tertiary-color;
   height: 80px;
-  border-bottom: 4px solid $primary-color;
+  border-bottom: 4px solid $quaternary-color;
   .logo{
     position: absolute;
     top: 0;
@@ -54,14 +54,16 @@ header{
     width: 110px;
   }
   .header-menu{
-    li{
+    a{
       color: $secondary_color;
       text-decoration: none;
       text-transform: capitalize;
       font-weight: bold;
       font-size: 18px;
-      &:active{
+      margin: 0 10px;
+      &:active, &:hover{
         color: $primary-color !important;
+        border-bottom: 2px solid $primary-color;
       }
     }
   }

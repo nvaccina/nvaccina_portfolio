@@ -1,21 +1,21 @@
 <script>
 import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
-import Home from './components/pages/Home.vue';
-import About from './components/pages/About.vue';
-import Contacts from './components/pages/Contacts.vue';
-import Skills from './components/pages/Skills.vue';
-import Portfolio from './components/pages/Portfolio.vue';
+import Section_home from './components/Section_home.vue';
+import Section_about from './components/Section_about.vue';
+import Section_skills from './components/Section_skills.vue';
+import Section_portfolio from './components/Section_portfolio.vue';
+import Section_contacts from './components/Section_contacts.vue';
 
 export default {
   components:{
     Header,
     Footer,
-    Home,
-    About,
-    Contacts,
-    Skills,
-    Portfolio
+    Section_home,
+    Section_about,
+    Section_skills,
+    Section_portfolio,
+    Section_contacts,
   }
 
 }
@@ -23,11 +23,17 @@ export default {
 
 <template>
   <Header/>
-  <main>
-    <router-view v-slot="{ Component }">
-      <component :is="Component" />
-    </router-view>
-  </main>
+
+  <Section_home/>
+
+  <Section_about/>
+
+  <Section_skills/>
+
+  <Section_portfolio/>
+
+  <Section_contacts/>
+
   <Footer/>
   
 </template>
