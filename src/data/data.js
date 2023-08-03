@@ -88,7 +88,7 @@ const portfolio = [
     image: "",
     link_website: "",
     link_github: "",
-    tecnologies_image:[
+    technologies_image:[
       "laravel.png",
       "vue.png",
     ]
@@ -98,7 +98,7 @@ const portfolio = [
     image: "boolfolio.png",
     link_website: "",
     link_github: "https://github.com/nvaccina/laravel-api",
-    tecnologies_image:[
+    technologies_image:[
       "laravel.png",
       "vue.png",
       "javascript.png",
@@ -111,9 +111,9 @@ const portfolio = [
   {
     title: "Driving School",
     image: "driving_school.png",
-    link_website: "",
+    link_website: "https://nvaccina-driving-school.netlify.app",
     link_github: "https://github.com/nvaccina/proj-html-vuejs ",
-    tecnologies_image:[
+    technologies_image:[
       "laravel.png",
       "vue.png",
       "javascript.png",
@@ -126,7 +126,7 @@ const portfolio = [
     image: "boolflix.png",
     link_website: "",
     link_github: "https://github.com/nvaccina/vite-boolflix",
-    tecnologies_image:[
+    technologies_image:[
       "vue.png",
       "javascript.png",
       "css.png",
@@ -135,10 +135,10 @@ const portfolio = [
   },
   {
     title: "Boolzaap",
-    image: "boolzapp.png",
+    image: "boolzaap.png",
     link_website: "https://nvaccina-boolzapp.netlify.app",
     link_github: "https://github.com/nvaccina/vue-boolzapp",
-    tecnologies_image:[
+    technologies_image:[
       "vue.png",
       "javascript.png",
       "css.png",
@@ -150,7 +150,7 @@ const portfolio = [
     image: "replies_spotify.png",
     link_website: "https://nvaccina-replies-spotifyweb.netlify.app",
     link_github: "https://github.com/nvaccina/html-css-spotifyweb",
-    tecnologies_image:[
+    technologies_image:[
       "html.png",
       "css.png",
     ]

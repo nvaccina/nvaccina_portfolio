@@ -3,12 +3,15 @@
 export default {
   name: 'Project_card',
   props:{
-    name: String,
-    image: String
+    title: String,
+    image: String,
+    link_website: String,
+    link_github: String,
+    technologies_image: Array
   },
   data() {
     return {
-      urlImage:`/img/skills/${this.image}`
+      urlimage:`/img/projects/${this.image}`
     };
   },
 
@@ -17,25 +20,30 @@ export default {
 
 <template>
   <div class="nv-card">
-    <img class="project-image" src="../../public/img/screen progetti/Dashboard Admin + Sito web Guest.png" alt="">
+    <img class="project-image" :src="urlimage" :alt="title">
     <div class="project-info">
-        <h3>Dashboard</h3>
+        <h3>{{title}}</h3>
         <div>
-          <p>Tecnologie</p>
-          <div class="d-flex">
+          <p>Tecnologies</p>
+          <div
+            class="d-flex"
+            v-for="(tecngology, index) in technologies_image" 
+            :key="index" 
+          >
             <div class="tecngology">
-              <img src="../../public/img/skills/laravel.png" alt="">
-            </div>
-            <div class="tecngology">
-              <img src="../../public/img/skills/vue.png" alt="">
+              <img src="" alt="">
             </div>
           </div>
         </div>
         <div class="sito d-flex align-items-center mb-2">
-            <a class="site-button me-2" href="">
+            <a 
+              class="site-button me-2 btn" 
+              :class="{'disabled' : link_website == ''}"
+              :href="link_website"
+              >
               Vai al sito
             </a>
-            <a class="git-button" href="#">
+            <a class="git-button" :href="link_github">
               <i class="fa-brands fa-github"></i>
             </a>
         </div>
@@ -44,6 +52,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@import '../../scss/general/variables';
 .nv-card{
   margin: 20px;
   width: calc(100% / 3 - 40px);

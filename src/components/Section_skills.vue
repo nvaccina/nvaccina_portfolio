@@ -15,11 +15,14 @@ export default {
   },
   setup() {
     return {
-      skills,
       modules: [Pagination, Mousewheel, Autoplay],
     };
   },
-
+  data(){
+    return{
+      skills,
+    }
+  }
 }
 </script>
 
