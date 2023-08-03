@@ -46,7 +46,6 @@ header{
   width: 100%;
   background-color: $tertiary-color;
   height: 80px;
-  border-bottom: 4px solid $quaternary-color;
   .logo{
     position: absolute;
     top: 0;
