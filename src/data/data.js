@@ -85,12 +85,17 @@ const skills = [
 const portfolio = [
   {
     title: "Deliveboo",
-    image: "",
-    link_website: "",
-    link_github: "",
-    technologies_image:[
-      "laravel.png",
-      "vue.png",
+    image: "deliveboo.png",
+    link_website: "https://github.com/pierdomenicoguarnieri/deliveboo-front-end",
+    link_github: "https://github.com/pierdomenicoguarnieri/deliveboo-back-end",
+    technologies:[
+      'laravel.png',
+      'vue.png',
+      'javascript.png',
+      'php.png',
+      'php_my_admin.png',
+      'mysql.svg',
+      'sass.png'
     ]
   },
   {
@@ -98,14 +103,14 @@ const portfolio = [
     image: "boolfolio.png",
     link_website: "",
     link_github: "https://github.com/nvaccina/laravel-api",
-    technologies_image:[
-      "laravel.png",
-      "vue.png",
-      "javascript.png",
-      "php.png",
-      "php_my_admin",
-      "mysql",
-      "sass"
+    technologies:[
+      'laravel.png',
+      'vue.png',
+      'javascript.png',
+      'php.png',
+      'php_my_admin.png',
+      'mysql.svg',
+      'sass.png'
     ]
   },
   {
@@ -113,12 +118,12 @@ const portfolio = [
     image: "driving_school.png",
     link_website: "https://nvaccina-driving-school.netlify.app",
     link_github: "https://github.com/nvaccina/proj-html-vuejs ",
-    technologies_image:[
-      "laravel.png",
-      "vue.png",
-      "javascript.png",
-      "css.png",
-      "html.png",
+    technologies:[
+      'laravel.png',
+      'vue.png',
+      'javascript.png',
+      'css.png',
+      'html.png'
     ]
   },
   {
@@ -126,11 +131,11 @@ const portfolio = [
     image: "boolflix.png",
     link_website: "",
     link_github: "https://github.com/nvaccina/vite-boolflix",
-    technologies_image:[
-      "vue.png",
-      "javascript.png",
-      "css.png",
-      "html.png",
+    technologies:[
+      'vue.png',
+      'javascript.png',
+      'css.png',
+      'html.png'
     ]
   },
   {
@@ -138,11 +143,11 @@ const portfolio = [
     image: "boolzaap.png",
     link_website: "https://nvaccina-boolzapp.netlify.app",
     link_github: "https://github.com/nvaccina/vue-boolzapp",
-    technologies_image:[
-      "vue.png",
-      "javascript.png",
-      "css.png",
-      "html.png",
+    technologies:[
+      'vue.png',
+      'javascript.png',
+      'css.png',
+      'html.png'
     ]
   },
   {
@@ -150,9 +155,9 @@ const portfolio = [
     image: "replies_spotify.png",
     link_website: "https://nvaccina-replies-spotifyweb.netlify.app",
     link_github: "https://github.com/nvaccina/html-css-spotifyweb",
-    technologies_image:[
-      "html.png",
-      "css.png",
+    technologies:[
+      'css.png',
+      'html.png'
     ]
   },
 ];

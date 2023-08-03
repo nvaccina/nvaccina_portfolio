@@ -23,11 +23,12 @@ export default {
       <Project_card
         v-for="(project, index) in portfolio"
         :key="index"
+        :project="project"
         :title="project.title"
         :image= "project.image"
         :link_website="project.link_website"
         :link_github="project.link_github"
-        :technologies_image="project.technologies_image"
+        :technologies="project.technologies"
       />
 
     </div>

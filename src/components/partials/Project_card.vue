@@ -7,7 +7,7 @@ export default {
     image: String,
     link_website: String,
     link_github: String,
-    technologies_image: Array
+    technologies: Array
   },
   data() {
     return {
@@ -20,18 +20,18 @@ export default {
 
 <template>
   <div class="nv-card">
-    <img class="project-image" :src="urlimage" :alt="title">
+    <img :src="urlimage" :alt="title">
     <div class="project-info">
         <h3>{{title}}</h3>
         <div>
           <p>Tecnologies</p>
-          <div
-            class="d-flex"
-            v-for="(tecngology, index) in technologies_image" 
-            :key="index" 
-          >
-            <div class="tecngology">
-              <img src="" alt="">
+          <div class="d-flex align-items-center technologies-container">
+            <div 
+              class="tecngology"
+              v-for="(element, index) in technologies" 
+              :key="index" 
+            >
+              <img :src="'/img/skills/' + element" alt="">
             </div>
           </div>
         </div>
@@ -54,16 +54,19 @@ export default {
 <style lang="scss" scoped>
 @import '../../scss/general/variables';
 .nv-card{
-  margin: 20px;
-  width: calc(100% / 3 - 40px);
+  margin: 20px 30px;
+  width: calc(100% / 2 - 60px);
   border: 1px solid black;
-  height: 250px;
+  min-height: 250px;
   position: relative;
   border-radius: 15px;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
   &:hover {
       box-shadow: 0 0 10px #CCC9A1;
+  }
+  img{
+    max-height: 100%;
   }
   .sito{
     position: absolute;
@@ -75,15 +78,6 @@ export default {
     i{
       font-size: 25px;
     }
-  }
-  .project-image {
-      width: 100%;
-      height: 100%;
-      img{
-        //object-fit: contain;
-        width: 100%;
-        height: 100%;
-      }
   }
   .project-info {
     position: absolute;
@@ -97,9 +91,16 @@ export default {
     transition: opacity 0.3s ease-in-out;
     padding: 1rem;
     font-size: 1rem;
+    .technologies-container{
+      flex-wrap: wrap;
+    }
     .tecngology{
-      width: 30px;
-      margin-right: 5px;
+      height: 30px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      img{
+        height: 100%;
+      }
     }
   }
   &:hover .project-info {
