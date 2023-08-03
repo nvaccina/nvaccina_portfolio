@@ -6,6 +6,9 @@ export default {
 </script>
 
 <template>
+  <section id="contacts">
+
+  </section>
   
 </template>
 

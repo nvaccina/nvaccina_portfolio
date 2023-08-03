@@ -1,6 +1,12 @@
 <script>
+import {mainMenu} from '../data/data.js';
 export default {
-  name: 'Header'
+  name: 'Header',
+  data(){
+    return{
+      mainMenu,
+    }
+  }
 
 }
 </script>
@@ -13,20 +19,8 @@ export default {
       </div>
       <div class="header-menu">
         <ul class="nav nav-underline">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">about</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">contacts</a>
+          <li v-for="(link, index) in mainMenu" :key="index" class="nav-item">
+            <a class="nav-link" :class="{active : link.isActive}" :href="link.href">{{link.text}}</a>
           </li>
         </ul>
       </div>

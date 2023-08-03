@@ -1,5 +1,6 @@
 <script>
-
+import {skills} from '../data/data.js';
+import Skill_card from './partials/Skill_card.vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -10,9 +11,11 @@ export default {
   components: {
     Swiper,
     SwiperSlide,
+    Skill_card
   },
   setup() {
     return {
+      skills,
       modules: [Pagination, Mousewheel, Autoplay],
     };
   },
@@ -21,13 +24,20 @@ export default {
 </script>
 
 <template>
-  <section class="my-5">
-    <div class="container text-center">
+  <section id="skills" class="my-5">
+    <div class="text-center">
       <h1 class="pb-5">Skills</h1>
       <swiper
           :slidesPerView="3"
           :spaceBetween="30"
           :mousewheel="true"
+          :speed="5000"
+          :loop="true"
+          :a11y="false"
+          :autoplay="{
+            delay: 0.1,
+            disableOnInteraction: false,
+          }"
           :pagination="{
             clickable: true,
           }"
@@ -55,47 +65,15 @@ export default {
             },
           }"
         >
-          <swiper-slide>
-            <div class="img_container">
-              <img src="../../public/img/skills/html.png" alt="">
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="img_container">
-              <img src="../../public/img/skills/css.png" alt="">
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="img_container">
-              <img src="../../public/img/skills/sass.png" alt="">
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="img_container">
-              <img src="../../public/img/skills/php.png" alt="">
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="img_container">
-              <img src="../../public/img/skills/vue.png" alt="">
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="img_container">
-              <img src="../../public/img/skills/laravel.png" alt="">
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <img src="../../public/img/skills/sass.png" alt="">
-          </swiper-slide>
-          <swiper-slide>
-            <img src="../../public/img/skills/sass.png" alt="">
-          </swiper-slide>
-          <swiper-slide>
-            <img src="../../public/img/skills/sass.png" alt="">
-          </swiper-slide>
-          <swiper-slide>
-            <img src="../../public/img/skills/sass.png" alt="">
+          <swiper-slide 
+            v-for="(skill, index) in skills" 
+            :key="index"
+            class="my-5 d-flex justify-content-center"
+          >
+            <Skill_card
+              :name="skill.name"
+              :image="skill.image_skill"
+            />
           </swiper-slide>
         </swiper>
     </div>

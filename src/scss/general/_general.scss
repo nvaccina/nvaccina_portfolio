@@ -42,18 +42,14 @@ img{
   }
 }
 .git-button{
-  padding: 5px 12px;
-  background-color: $tertiary-color;
-  border-radius: 5px;
   transition: all 0.4s;
   i{
-    font-size: 25px !important;
-    color: $secondary-color!important;
+    font-size: 30px !important;
+    color: $tertiary-color !important;
   }
   &:hover{
-    background-color: $secondary-color;
     i{
-      color: $tertiary-color !important;
+      color: $secondary-color!important;
     }
   }
 }
