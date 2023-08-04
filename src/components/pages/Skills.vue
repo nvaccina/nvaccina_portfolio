@@ -35,11 +35,13 @@ export default {
         :slidesPerView="6"
         :spaceBetween="0"
         :mousewheel="true"
-        :speed="5000"
+        :grabCursor="true" 
+        :mousewheelControl="true"
+        :speed="3000"
         :loop="true"
         :a11y="false"
         :autoplay="{
-          delay: 0.1,
+          delay: 1,
           disableOnInteraction: false,
         }"
         :pagination="{
@@ -94,6 +96,9 @@ export default {
     width: 150px;
     height: 100%;
   }
+}
+.swiper-wrapper {
+  transition-timing-function: linear;
 }
 
 </style>

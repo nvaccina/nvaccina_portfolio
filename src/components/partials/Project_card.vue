@@ -60,15 +60,15 @@ export default {
   min-height: 240px;
   position: relative;
   border-radius: 15px;
+  border: 0;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
-  box-shadow:  5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow:  5px 5px 5px 5px rgba(0, 0, 0, 0.3);
   background-color: #282828;
+  transition: all 0.3s;
   &:hover {
     box-shadow: 0 0 10px #CCC9A1;
-    img{
-      transform: scale(1.05);
-    }
+    transform: scale(1.05);
   }
   img{
     transition: all 0.3s;

@@ -9,10 +9,10 @@ export default {
   <section id="contacts">
     <div class="container d-flex align-items-center flex-column">
       <h1 class="pb-5">Contacts</h1>
-      <div class="d-flex align-items-center flex-column pb-3">
+      <div class="d-flex align-items-center flex-column">
         <h2>Niccolò Vaccina</h2>
         <h5>Jr. Full Stack Web Developer</h5>
-        <div class="linea"></div>
+        <div class="linea my-3"></div>
       </div>
       <div class="d-flex align-items-center justify-content-center pb-5">
         <div class="pe-5">

@@ -15,7 +15,7 @@ export default {
   <header>
     <div class="container h-100 d-flex align-items-center justify-content-center">
       <div class="logo">
-        <img src="../../public/img/logo/nv3.png" alt="logo">
+        <router-link :to="{ name:'home' }"><img src="../../public/img/logo/nv3.png" alt="logo"></router-link>
       </div>
       <div class="header-menu">
         <ul class="nav nav-underline">
@@ -40,13 +40,20 @@ header{
   width: 100%;
   background-color: $tertiary-color;
   height: 80px;
+  box-shadow:  5px 5px 5px 5px rgba(0, 0, 0, 0.1);
   .logo{
     position: absolute;
     top: 10px;
     left: 200px;
     height: 60px;
-    img{
-      height: 100%;
+    a{
+      border: 0 !important;
+      img{
+        height: 100%;
+        &:hover{
+          filter: brightness(10%) invert(150%);
+        }
+    }
     }
   }
   .header-menu{
