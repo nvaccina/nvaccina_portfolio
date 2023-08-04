@@ -15,7 +15,7 @@ export default {
   <header>
     <div class="container h-100 d-flex align-items-center justify-content-center">
       <div class="logo">
-        <img src="../../public/img/logo/nv2.png" alt="">
+        <img src="../../public/img/logo/nv3.png" alt="">
       </div>
       <div class="header-menu">
         <ul class="nav nav-underline">
@@ -42,9 +42,12 @@ header{
   height: 80px;
   .logo{
     position: absolute;
-    top: 0;
+    top: 5px;
     left: 200px;
-    width: 110px;
+    height: 70px;
+    img{
+      height: 100%;
+    }
   }
   .header-menu{
     a{

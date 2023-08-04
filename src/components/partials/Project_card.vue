@@ -68,17 +68,6 @@ export default {
   img{
     max-height: 100%;
   }
-  .sito{
-    position: absolute;
-    bottom: 10px;
-    left: 20px;
-    a{
-        color: $secondary-color;
-    }
-    i{
-      font-size: 25px;
-    }
-  }
   .project-info {
     position: absolute;
     top: 0;
@@ -102,12 +91,14 @@ export default {
         height: 100%;
       }
     }
+    .sito{
+      position: absolute;
+      bottom: 10px;
+      left: 20px;      
+    }
   }
   &:hover .project-info {
     opacity: 1;
-    i{
-        color: $tertiary_color;
-    }
   }
 }
 </style>
