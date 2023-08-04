@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template>
-  <section class="section-Section_home">
+  <section class="section-home">
     <div class="container">
       <div class="row">
         <div class="col-6 px-5">
@@ -18,7 +18,7 @@ export default {
         </div>
         <div class="col-6 d-flex justify-content-center">
           <div class="my-img">
-            <img src="../../../public/img/fotoprofilo.jpg" alt="Immagine di profilo">
+            <img src="../../../public/img/foto_busto.jpg" alt="Immagine di profilo">
           </div>
         </div>
       </div>
@@ -30,16 +30,15 @@ export default {
 
 <style lang="scss" scoped>
 
-.section-Section_home{
+.section-home{
   margin-top: 120px;
-  padding: 50px 0;
   .my-img{
-    height: 300px;
-    width: 300px;
-    border: 2px solid black;
+    height: 250px;
+    width: 250px;
+    //border: 2px solid black;
     overflow: hidden;
     img{
-      width: 200px;
+      width: 100%;
     }
   }
 }

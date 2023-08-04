@@ -27,58 +27,59 @@ export default {
 </script>
 
 <template>
-  <section id="skills" class="my-5">
+  <section id="skills">
     <div class="text-center">
       <h1 class="pb-5">Skills</h1>
       <swiper
-          :slidesPerView="3"
-          :spaceBetween="30"
-          :mousewheel="true"
-          :speed="5000"
-          :loop="true"
-          :a11y="false"
-          :autoplay="{
-            delay: 0.1,
-            disableOnInteraction: false,
-          }"
-          :pagination="{
-            clickable: true,
-          }"
-          :modules="modules"
-          :breakpoints="{
-            '0': {
-                slidesPerView: 1,
-                spaceBetween: 0,
-            },
-            '768': {
-                slidesPerView: 1,
-                spaceBetween: 0,
-            },
-            '991': {
-                slidesPerView: 2,
-                spaceBetween: 0,
-            },
-            '1200': {
-                slidesPerView: 4,
-                spaceBetween: 0,
-            },
-            '1400': {
-                slidesPerView: 6,
-                spaceBetween: 0,
-            },
-          }"
+        class="py-5"
+        :slidesPerView="6"
+        :spaceBetween="0"
+        :mousewheel="true"
+        :speed="5000"
+        :loop="true"
+        :a11y="false"
+        :autoplay="{
+          delay: 0.1,
+          disableOnInteraction: false,
+        }"
+        :pagination="{
+          clickable: true,
+        }"
+        :modules="modules"
+        :breakpoints="{
+          '0': {
+              slidesPerView: 1,
+              spaceBetween: 0,
+          },
+          '768': {
+              slidesPerView: 2,
+              spaceBetween: 0,
+          },
+          '991': {
+              slidesPerView: 4,
+              spaceBetween: 0,
+          },
+          '1200': {
+              slidesPerView: 5,
+              spaceBetween: 0,
+          },
+          '1400': {
+              slidesPerView: 6,
+              spaceBetween: 0,
+          },
+        }"
+      >
+        <swiper-slide 
+          v-for="(skill, index) in skills" 
+          :key="index"
+          class="my-5 d-flex justify-content-center"
         >
-          <swiper-slide 
-            v-for="(skill, index) in skills" 
-            :key="index"
-            class="my-5 d-flex justify-content-center"
-          >
-            <Skill_card
-              :name="skill.name"
-              :image="skill.image_skill"
-            />
-          </swiper-slide>
-        </swiper>
+          <Skill_card
+            :name="skill.name"
+            :image="skill.image_skill"
+          />
+        </swiper-slide>
+      </swiper>
     </div>
   </section>
   

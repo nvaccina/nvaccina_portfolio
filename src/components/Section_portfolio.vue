@@ -16,8 +16,9 @@ export default {
 </script>
 
 <template>
-  <section id="portfolio" class="my-5">
+  <section id="portfolio">
     <h1 class="pb-5 text-center">Portfolio</h1>
+    
     <div class="container d-flex flex-wrap">
 
       <Project_card
@@ -39,5 +40,7 @@ export default {
 <style lang="scss" scoped>
 @import '../scss/general/variables';
 
-
+#portfolio{
+  background-color: lightgray;
+}
 </style>

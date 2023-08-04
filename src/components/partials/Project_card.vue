@@ -57,16 +57,18 @@ export default {
   margin: 20px 30px;
   width: calc(100% / 2 - 60px);
   border: 1px solid black;
-  min-height: 250px;
+  min-height: 240px;
   position: relative;
   border-radius: 15px;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
+  box-shadow:  5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: #282828;
   &:hover {
       box-shadow: 0 0 10px #CCC9A1;
   }
   img{
-    max-height: 100%;
+    width: 100%;
   }
   .project-info {
     position: absolute;

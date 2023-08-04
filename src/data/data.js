@@ -99,7 +99,7 @@ const portfolio = [
     ]
   },
   {
-    title: "Dashboard",
+    title: "Boolfolio",
     image: "boolfolio.png",
     link_website: "",
     link_github: "https://github.com/nvaccina/laravel-api",
