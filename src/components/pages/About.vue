@@ -30,8 +30,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-#about{
-  background-color: lightgray;
+
   .my-img{
     height: 250px;
     width: 250px;
@@ -41,6 +40,6 @@ export default {
       width: 100%;
     }
   }
-}
+
 
 </style>

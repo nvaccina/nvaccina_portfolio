@@ -128,6 +128,7 @@ const portfolio = [
     link_github: "https://github.com/nvaccina/vite-boolflix",
     technologies:[
       'vue.png',
+      'vite.svg',
       'javascript.png',
       'css.png',
       'html.png'
@@ -155,6 +156,40 @@ const portfolio = [
       'html.png'
     ]
   },
+  {
+    title: "Replies Dc Comics",
+    image: "dc_comics.png",
+    link_website: "",
+    link_github: "https://github.com/nvaccina/laravel-dc-comics",
+    technologies:[
+      'laravel.png',
+      'php.png',
+      'javascript.png',
+      'sass.png',
+      'html.png'
+    ]
+  },
+  {
+    title: "Replies Discord",
+    image: "discord.png",
+    link_website: "https://nvaccina-discord.netlify.app",
+    link_github: "https://github.com/nvaccina/htmlcss-discord",
+    technologies:[
+      'css.png',
+      'html.png'
+    ]
+  },
+  {
+    title: "Campominato",
+    image: "campominato.png",
+    link_website: "https://nvaccina-campominato.netlify.app",
+    link_github: "https://github.com/nvaccina/js-campominato-dom",
+    technologies:[
+      'javascript.png',
+      'css.png',
+      'html.png'
+    ]
+  },
 ];
 
 const social = [
@@ -176,7 +211,7 @@ const social = [
   {
     name: 'Instagram',
     icon: "fa-brands fa-instagram",
-    href: "#"
+    href: "https://www.instagram.com/nico_vaccio/?hl=it"
   }
 ];
 

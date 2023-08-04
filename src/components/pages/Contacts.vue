@@ -8,21 +8,27 @@ export default {
 <template>
   <section id="contacts">
     <div class="container d-flex align-items-center flex-column">
-      <h1>Contacts</h1>
-      <h5 class="mt-5">Chiamami al <a href="tel:00390123456789">+39 3891168261</a></h5>
-      <div class="row pt-2">
-        <div class="col-6">
-          <a href="mailto:niccolovac@gmail.com">
-            <i class="fa-solid fa-envelope"></i> niccolovac@gmail.com
-          </a>
+      <h1 class="pb-5">Contacts</h1>
+      <div class="d-flex align-items-center flex-column pb-3">
+        <h2>Niccolò Vaccina</h2>
+        <h5>Jr. Full Stack Web Developer</h5>
+        <div class="linea"></div>
+      </div>
+      <div class="d-flex align-items-center justify-content-center pb-5">
+        <div class="pe-5">
+          <i class="fa-solid fa-envelope pe-2"></i>
+          <a href="mailto:niccolovac@gmail.com">niccolovac@gmail.com</a>
         </div>
-        <div class="col-6">
-          <li>
-            
-          </li>
+        <div>
+          <i class="fa-solid fa-phone pe-2"></i>
+          <a href="tel:00390123456789">+39 3891168261</a>
         </div>
       </div>
-
+      <div>
+          <a class="btn-mail" href="mailto:niccolovac@gmail.com">
+            INVIA UNA MAIL
+          </a>
+      </div>
     </div>
 
   </section>
@@ -33,8 +39,16 @@ export default {
 @import '../../scss/general/variables';
 #contacts{
   color: black;
+  .linea{
+    height: 2px;
+    width: 400px;
+    background-color: $tertiary-color;
+  }
   a{
     color: black;
+    &:hover{
+      color: $primary-color;
+    }
   }
 }
 

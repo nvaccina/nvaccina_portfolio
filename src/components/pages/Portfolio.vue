@@ -40,7 +40,4 @@ export default {
 <style lang="scss" scoped>
 @import '../../scss/general/variables';
 
-#portfolio{
-  background-color: lightgray;
-}
 </style>

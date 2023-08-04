@@ -15,15 +15,12 @@ export default {
   <header>
     <div class="container h-100 d-flex align-items-center justify-content-center">
       <div class="logo">
-        <img src="../../public/img/logo/nv3.png" alt="">
+        <img src="../../public/img/logo/nv3.png" alt="logo">
       </div>
       <div class="header-menu">
         <ul class="nav nav-underline">
           <li v-for="(link, index) in mainMenu" :key="index" class="nav-item">
             <router-link :to="{ name:link.text }">{{link.text}}</router-link>
-          </li>
-          <li>
-            
           </li>
         </ul>
       </div>
@@ -45,9 +42,9 @@ header{
   height: 80px;
   .logo{
     position: absolute;
-    top: 5px;
+    top: 10px;
     left: 200px;
-    height: 70px;
+    height: 60px;
     img{
       height: 100%;
     }

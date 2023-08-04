@@ -11,7 +11,7 @@ img{
   border-bottom: 2px solid $primary_color !important;
 }
 //elementi
-.cv-button{
+.cv-button, .btn-mail{
   text-transform: capitalize;
   padding: 10px 23px;
   background-color: $primary-color;
@@ -28,7 +28,6 @@ img{
     border: 2px solid $primary-color;
   }
 }
-
 .site-button{
   text-transform: uppercase;
   font-size: 12px;

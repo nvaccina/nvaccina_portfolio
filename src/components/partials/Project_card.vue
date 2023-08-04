@@ -65,9 +65,13 @@ export default {
   box-shadow:  5px 5px 5px 5px rgba(0, 0, 0, 0.1);
   background-color: #282828;
   &:hover {
-      box-shadow: 0 0 10px #CCC9A1;
+    box-shadow: 0 0 10px #CCC9A1;
+    img{
+      transform: scale(1.05);
+    }
   }
   img{
+    transition: all 0.3s;
     width: 100%;
   }
   .project-info {

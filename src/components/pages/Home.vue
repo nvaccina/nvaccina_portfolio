@@ -29,7 +29,6 @@ export default {
 <style lang="scss" scoped>
 
 .section-home{
-  margin-top: 120px;
   p{
     font-size: 18px;
     font-weight: 300;
