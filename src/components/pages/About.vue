@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: 'Section_about',
+  name: 'About',
 
 }
 </script>
@@ -11,7 +11,7 @@ export default {
       <div class="row">
         <div class="col-6 d-flex justify-content-center">
           <div class="my-img">
-            
+            <img src="" alt="">
           </div>
         </div>
         <div class="col-6 px-5">
@@ -32,6 +32,15 @@ export default {
 <style lang="scss" scoped>
 #about{
   background-color: lightgray;
+  .my-img{
+    height: 250px;
+    width: 250px;
+    border: 2px solid black;
+    overflow: hidden;
+    img{
+      width: 100%;
+    }
+  }
 }
 
 </style>

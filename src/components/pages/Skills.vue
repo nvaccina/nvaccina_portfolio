@@ -1,13 +1,13 @@
 <script>
-import {skills} from '../data/data.js';
-import Skill_card from './partials/Skill_card.vue';
+import {skills} from '../../data/data.js';
+import Skill_card from '../partials/Skill_card.vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Mousewheel, Pagination, Autoplay } from 'swiper/modules';
 
 export default {
-  name: 'Section_skills',
+  name: 'Skills',
   components: {
     Swiper,
     SwiperSlide,

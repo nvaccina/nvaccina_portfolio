@@ -20,7 +20,10 @@ export default {
       <div class="header-menu">
         <ul class="nav nav-underline">
           <li v-for="(link, index) in mainMenu" :key="index" class="nav-item">
-            <a class="nav-link" :class="{active : link.isActive}" :href="link.href">{{link.text}}</a>
+            <router-link :to="{ name:link.text }">{{link.text}}</router-link>
+          </li>
+          <li>
+            
           </li>
         </ul>
       </div>

@@ -2,27 +2,22 @@ const mainMenu = [
   {
     href: "#",
     text: "home",
-    isActive: true,
   },
   {
     href: "#about",
     text: "about",
-    isActive: false,
   },
   {
     href: "#skills",
     text: "skills",
-    isActive: false,
   },
   {
     href: "#portfolio",
     text: "portfolio",
-    isActive: false,
   },
   {
     href: "#contacts",
     text: "contacts",
-    isActive: false,
   },
 ];
 

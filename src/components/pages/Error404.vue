@@ -9,7 +9,7 @@ export default {
   <div >
     <h1>Error 404</h1>
     <div>
-      <router-link class="btn btn-primary" :to="{name:'Section_home'}">Torna alla Section_home</router-link>
+      <router-link class="btn btn-primary" :to="{name:'Home'}">Torna alla Home</router-link>
     </div>
   </div>
 </template>

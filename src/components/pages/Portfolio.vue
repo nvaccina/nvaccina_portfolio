@@ -1,8 +1,8 @@
 <script>
-import Project_card from './partials/Project_card.vue';
-import { portfolio } from '../data/data';
+import Project_card from '../partials/Project_card.vue';
+import { portfolio } from '../../data/data';
 export default {
-  name: 'Section_portfolio',
+  name: 'Portfolio',
   components:{
     Project_card
   },
@@ -38,7 +38,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@import '../scss/general/variables';
+@import '../../scss/general/variables';
 
 #portfolio{
   background-color: lightgray;

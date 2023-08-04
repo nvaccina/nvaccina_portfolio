@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: 'Section_contacts',
+  name: 'Contacts',
 
 }
 </script>
@@ -30,7 +30,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@import '../scss/general/variables';
+@import '../../scss/general/variables';
 #contacts{
   color: black;
   a{
