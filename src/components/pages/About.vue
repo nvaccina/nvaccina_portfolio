@@ -28,7 +28,7 @@ export default {
         </div>
       </div>
       <div class="cv d-flex justify-content-center mt-3">
-        <span class="cv-button">scarica CV</span>
+        <a href="/niccolò-vaccina-cv.pdf" download="niccolò-vaccina-cv" class="cv-button">scarica CV</a>
       </div>
     </div>
   </section>
