@@ -29,9 +29,9 @@ export default {
 <template>
   <section id="skills">
     <div class="text-center">
-      <h1 class="pb-5">Skills</h1>
+      <h1 class="pb-5 title">Skills</h1>
       <swiper
-        class="py-5"
+        class="py-5 skill-swiper"
         :slidesPerView="6"
         :spaceBetween="0"
         :mousewheel="true"
@@ -88,17 +88,27 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.img_container{
-  width: 150px;
-  height: 150px;
-  img{
-    object-fit: contain;
-    width: 150px;
-    height: 100%;
-  }
+.title, .skill-swiper{
+  position: relative;
+  animation-duration: 2s;
+}
+.title{
+  animation-name: title;
+}
+.skill-swiper{
+  animation-name: skills;
 }
 .swiper-wrapper {
   transition-timing-function: linear;
+}
+
+@keyframes title {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes skills {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 </style>

@@ -7,7 +7,7 @@ export default {
 
 <template>
   <section id="contacts">
-    <div class="container d-flex align-items-center flex-column">
+    <div class="container d-flex align-items-center flex-column title">
       <h1 class="pb-5">Contacts</h1>
       <div class="d-flex align-items-center flex-column">
         <h2>Niccolò Vaccina</h2>

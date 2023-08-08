@@ -17,9 +17,9 @@ export default {
 
 <template>
   <section id="portfolio">
-    <h1 class="pb-5 text-center">Portfolio</h1>
+    <h1 class="pb-5 text-center title">Portfolio</h1>
     
-    <div class="container d-flex flex-wrap">
+    <div class="container d-flex flex-wrap portfolio">
 
       <Project_card
         v-for="(project, index) in portfolio"
@@ -39,5 +39,17 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../scss/general/variables';
+
+.portfolio{
+  position: relative;
+  animation-duration: 2s;
+  animation-name: portfolio;
+}
+
+@keyframes portfolio {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+
 
 </style>

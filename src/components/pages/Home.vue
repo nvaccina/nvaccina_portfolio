@@ -9,7 +9,7 @@ export default {
   <section class="section-home">
     <div class="container">
       <div class="row">
-        <div class="col-6 px-5">
+        <div class="col-6 px-5 testo-home">
           <h1>Ciao, sono Niccolò</h1>
           <h4>Jr. Full Stack Web Developer</h4>
           <p>
@@ -29,19 +29,35 @@ export default {
 <style lang="scss" scoped>
 
 .section-home{
-  p{
-    font-size: 18px;
-    font-weight: 300;
+  .testo-home{
+    position: relative;
+    animation-name: testohome;
+    animation-duration: 2s;
+    p{
+      font-size: 18px;
+      font-weight: 300;
+    }
   }
   .my-img{
     height: 250px;
     width: 250px;
     border: 2px solid black;
     overflow: hidden;
+    position: relative;
+    animation-name: myimg;
+    animation-duration: 2s;
     img{
       width: 100%;
     }
   }
 }
 
+@keyframes testohome {
+  0%   {left:-500px; top:0px;}
+  100% {left:0px; top:0px;}
+}
+@keyframes myimg {
+  0%   {left:500px; top:0px;}
+  100% {left:0px; top:0px;}
+}
 </style>

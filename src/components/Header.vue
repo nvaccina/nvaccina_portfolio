@@ -60,7 +60,7 @@ header{
     a{
       color: $secondary_color;
       text-decoration: none;
-      text-transform: capitalize;
+      text-transform: uppercase;
       font-weight: bold;
       font-size: 18px;
       margin: 0 10px;
