@@ -10,12 +10,12 @@ export default {
     <div class="container">
       <h1 class="text-center pb-5 title">About me</h1>
       <div class="row">
-        <div class="col-6 d-flex justify-content-center">
+        <div class="col-5 d-flex justify-content-center">
           <div class="my-img">
             <img src="" alt="">
           </div>
         </div>
-        <div class="col-6 px-5">
+        <div class="col-7 px-5">
           <p class="pb-3">
             Dopo avere trascorso più di quattro anni svolgendo il lavoro di consulente immobiliare, duranti i quali ho imparato ad avere un'ottima capacità relazionale con i clienti, ho deciso di mollare la monotonia e la stabilità economica per seguire la mia passione per la programmazione e per il codice.
           </p>
@@ -27,7 +27,10 @@ export default {
           </p>
         </div>
       </div>
-      <div class="cv d-flex justify-content-center mt-3">
+      <h5 class="text-center title my-5">
+        Sono alla ricerca di un'azienda che mi offra delle opportunità di crescita e la possibilità di ampliare le mie conoscenze e di dimostrare le mie capacità.
+      </h5>
+      <div class="cv d-flex justify-content-center">
         <a href="/niccolò-vaccina-cv.pdf" download="niccolò-vaccina-cv" class="cv-button">scarica CV</a>
       </div>
     </div>

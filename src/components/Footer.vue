@@ -14,7 +14,7 @@ export default {
   <footer>
     <div class="container h-100 text-start">
       <div class="row h-100">
-        <div class="col-4">
+        <div class="col-12 col-md-4 nv-col">
           <div class="info">
             <h4>Niccolò Vaccina</h4>
             <ul class="px-0 mb-0">
@@ -34,14 +34,14 @@ export default {
             </ul>  
           </div>  
         </div>
-        <div class="col-4 d-flex align-items-center justify-content-center">
+        <div class="col-12 col-md-4 nv-col">
           <div class="logo-footer">
             <a href="#">
               <img src="/img/logo/nv3.png" alt="">
             </a>
           </div>    
         </div>
-        <div class="col-4">
+        <div class="col-12 col-md-4 nv-col">
           <div class="social">
             <nav class="h-100 w-100">
               <ul class="d-flex align-items-center justify-content-end w-100 h-100 mb-0">
@@ -67,10 +67,10 @@ export default {
 
 footer{
   width: 100%;
-  height: 150px;
+  padding: 10px 0;
   background-color: $tertiary-color;
   color: $secondary-color;
-  .col-4{
+  .nv-col{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,6 +103,19 @@ footer{
         }
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .nv-col:nth-child(2){
+    margin: 20px 0;
+    padding: 20px 0 !important;
+    border-top: 1px solid $secondary-color;
+    border-bottom: 1px solid $secondary-color;
+  }
+  .nv-col{
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

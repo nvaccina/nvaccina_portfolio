@@ -24,6 +24,23 @@ export default {
           </li>
         </ul>
       </div>
+
+      <button class="btn d-none btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i></button>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul>
+            <li v-for="(link, index) in mainMenu" :key="index" class="nav-item py-2">
+              <router-link class="link-responsive" :to="{ name:link.text }">{{link.text}}</router-link>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
     </div>
   </header>
   
@@ -70,6 +87,44 @@ header{
       }
     }
   }
+  .link-responsive{
+    color: black;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1200px) {
+    header {
+      height: 60px;
+      .logo {
+        top: 0px;
+        left: 20px;
+      }
+    }
+}
+
+@media (max-width: 900px) {
+  section{
+    width: 100%;
+  }
+    header {
+      height: 60px;
+      .container{
+        justify-content: space-between  !important;
+        .logo {
+          position: relative;
+        }
+        .header-menu{
+          display: none;
+        }
+        .btn-menu{
+          display: block !important;
+          color: $secondary-color;
+          font-size: 24px;
+        }
+      }
+    }
 }
 
 </style>

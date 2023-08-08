@@ -14,12 +14,12 @@ export default {
         <h5>Jr. Full Stack Web Developer</h5>
         <div class="linea my-3"></div>
       </div>
-      <div class="d-flex align-items-center justify-content-center pb-5">
-        <div class="pe-5">
+      <div class="contatti d-flex align-items-center justify-content-center pb-5">
+        <div class="pe-5 mail">
           <i class="fa-solid fa-envelope pe-2"></i>
           <a href="mailto:niccolovac@gmail.com">niccolovac@gmail.com</a>
         </div>
-        <div>
+        <div class="cell">
           <i class="fa-solid fa-phone pe-2"></i>
           <a href="tel:00390123456789">+39 3891168261</a>
         </div>
@@ -52,6 +52,21 @@ export default {
   }
 }
 
+@media (max-width: 414px) {
+  h1{
+    font-size: 40px;
+  }
+  .linea{
+    width: 100% !important;
+  }
+  .contatti{
+    flex-direction: column;
+    .mail, .cell{
+      text-align: center;
+      padding: 10px 0 !important;
+    }
+  }
+}
 
 
 </style>
