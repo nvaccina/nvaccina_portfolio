@@ -92,6 +92,9 @@ header{
     text-transform: uppercase;
     font-size: 18px;
   }
+  // .offcanvas, .offcanvas-backdrop{
+  //   z-index: 888 !important;
+  // }
 }
 
 @media (max-width: 1200px) {

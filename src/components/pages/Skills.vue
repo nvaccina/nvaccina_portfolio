@@ -88,6 +88,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+
 .title, .skill-swiper{
   position: relative;
   animation-duration: 2s;
