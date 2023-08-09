@@ -24,10 +24,10 @@ export default {
     <div class="project-info">
         <h3>{{title}}</h3>
         <div>
-          <p>Tecnologies</p>
+          <p class="tecngologies-title">Tecnologies</p>
           <div class="d-flex align-items-center technologies-container">
             <div 
-              class="tecngology"
+              class="technology"
               v-for="(element, index) in technologies" 
               :key="index" 
             >
@@ -43,7 +43,7 @@ export default {
               >
               Vai al sito
             </a>
-            <a class="git-button" :href="link_github">
+            <a class="git-button h-100" :href="link_github">
               <i class="fa-brands fa-github"></i>
             </a>
         </div>
@@ -89,12 +89,13 @@ export default {
     .technologies-container{
       flex-wrap: wrap;
     }
-    .tecngology{
+    .technology{
       height: 30px;
       margin-right: 10px;
       margin-bottom: 10px;
       img{
-        height: 100%;
+        max-height: 100%;
+        max-width: 100%;
       }
     }
     .sito{
@@ -107,4 +108,50 @@ export default {
     opacity: 1;
   }
 }
+@media (max-width: 1400px) {
+  .nv-card{
+    margin: 20px 15px;
+    width: calc(100% / 2 - 30px);
+    min-height: auto;
+  }
+}
+@media (max-width: 930px) {
+  .nv-card{
+    margin: 20px 50px;
+    width: calc(100% - 100px);
+  }
+}
+
+@media (max-width: 600px) {
+  .nv-card{
+    margin: 20px 15px;
+    width: calc(100% - 30px);
+  }
+}
+@media (max-width: 445px) {
+  .nv-card{
+    margin: 20px 5px;
+    width: calc(100% - 10px);
+    .tecngologies-title{
+      margin-bottom: 3px;
+    }
+    .technology{
+      height: 25px !important;
+    }
+  }
+}
+@media (max-width: 392px) {
+  .technology{
+    height: 20px !important;
+    margin-bottom: 5px !important;
+  }
+  .sito{
+    top: 10px !important;
+    right: 5px !important;
+    bottom: auto !important;
+    left: auto !important;
+    flex-wrap: wrap !important;
+  }
+}
+
 </style>

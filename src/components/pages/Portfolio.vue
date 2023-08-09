@@ -19,7 +19,7 @@ export default {
   <section id="portfolio">
     <h1 class="pb-5 text-center title">Portfolio</h1>
     
-    <div class="container d-flex flex-wrap portfolio">
+    <div class="container-fluid container-lg d-flex flex-wrap portfolio">
 
       <Project_card
         v-for="(project, index) in portfolio"
