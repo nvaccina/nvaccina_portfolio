@@ -18,7 +18,7 @@ export default {
         </div>
         <div class="col-12 col-lg-6 mt-5 mt-lg-0 d-flex justify-content-center">
           <div class="my-img">
-            <img src="../../../public/img/foto_busto.jpg" alt="Immagine di profilo">
+            <img src="/img/foto_busto.png" alt="Immagine di profilo">
           </div>
         </div>
       </div>
@@ -41,7 +41,8 @@ export default {
   .my-img{
     height: 250px;
     width: 250px;
-    border: 2px solid black;
+    //border: 2px solid black;
+    border-radius: 50%;
     overflow: hidden;
     position: relative;
     animation-name: myimg;
