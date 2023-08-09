@@ -12,7 +12,7 @@ export default {
       <div class="row">
         <div class="col-12 col-md-5 d-flex justify-content-center">
           <div class="my-img">
-            <img src="" alt="">
+            <img src="/img/foto2busto.png" alt="foto busto">
           </div>
         </div>
         <div class="col-12 col-md-7 px-5">
@@ -65,6 +65,9 @@ export default {
     }
     img{
       width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
     }
   }
   p{

@@ -44,11 +44,11 @@ export default {
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-    animation-name: myimg;
-    animation-duration: 2s;
     background-color: $primary-color;
     box-shadow:  5px 5px 5px 5px rgba(0, 0, 0, 0.3);
     transition: all 0.3s;
+    animation-name: myimg;
+    animation-duration: 2s;
     &:hover{
       transform: scale(1.1);
     }
