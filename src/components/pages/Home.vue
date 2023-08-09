@@ -41,7 +41,6 @@ export default {
   .my-img{
     height: 250px;
     width: 250px;
-    //border: 2px solid black;
     border-radius: 50%;
     overflow: hidden;
     position: relative;

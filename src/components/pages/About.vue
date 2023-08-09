@@ -27,9 +27,13 @@ export default {
           </p>
         </div>
       </div>
-      <h5 class="text-center title my-5">
-        Sono alla ricerca di un'azienda che mi offra delle opportunità di crescita e la possibilità di ampliare le mie conoscenze e di dimostrare le mie capacità.
-      </h5>
+      <div class="d-flex align-items-center flex-column">
+        <div class="col-12 col-md-6">
+          <h5 class="text-center title my-5">
+            Sono alla ricerca di un'azienda che mi offra delle opportunità di crescita e la possibilità di ampliare le mie conoscenze, ma anche di dimostrare le mie capacità.
+          </h5>
+        </div>
+      </div>
       <div class="cv d-flex justify-content-center">
         <a href="/niccolò-vaccina-cv.pdf" download="niccolò-vaccina-cv" class="cv-button">scarica CV</a>
       </div>
@@ -51,7 +55,7 @@ export default {
   .my-img{
     height: 250px;
     width: 250px;
-    border: 2px solid black;
+    border: 2px solid $quaternary-color;
     overflow: hidden;
     animation-name: myimg;
     img{

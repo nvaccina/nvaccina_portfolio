@@ -96,7 +96,7 @@ header{
     }
   }
   .link-responsive{
-    color: black;
+    color: $quaternary-color;
     text-transform: uppercase;
     font-size: 18px;
   }

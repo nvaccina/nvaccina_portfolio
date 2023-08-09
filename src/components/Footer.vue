@@ -67,7 +67,7 @@ export default {
 
 footer{
   width: 100%;
-  padding: 10px 0;
+  padding: 20px 0;
   background-color: $tertiary-color;
   color: $secondary-color;
   .nv-col{
