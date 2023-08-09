@@ -56,6 +56,7 @@ export default {
     height: 250px;
     width: 250px;
     border: 2px solid $quaternary-color;
+    background-color: $tertiary-color;
     overflow: hidden;
     animation-name: myimg;
     img{

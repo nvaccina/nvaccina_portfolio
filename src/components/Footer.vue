@@ -76,13 +76,17 @@ footer{
     justify-content: center;
     height: 100%;
     .info{
-      a{
-        font-weight: 200;
-        &:hover{
-          color: $primary-color;
-        }
-        i{
-          margin-right: 5px;
+      li{
+        margin-bottom: 5px;
+        a{
+          font-weight: 200;
+          transition: all 0.3s;
+          &:hover{
+            color: $primary-color;
+          }
+          i{
+            margin-right: 5px;
+          }
         }
       }
     }
@@ -98,6 +102,7 @@ footer{
       a{
         font-size: 30px;
         margin: 0 10px;
+        transition: all 0.3s;
         &:hover{
           color: $primary-color;
         }

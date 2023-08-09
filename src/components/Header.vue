@@ -13,7 +13,7 @@ export default {
 
 <template>
   <div class="tools pt-1">
-    <i class="fa-solid fa-screwdriver-wrench pe-2"></i> SITO IN FASE DI COSTRUZIONE <i class="fa-solid fa-screwdriver-wrench ps-2"></i>
+    <i class="fa-solid fa-screwdriver-wrench pe-2"></i> SITO IN COSTRUZIONE <i class="fa-solid fa-screwdriver-wrench ps-2"></i>
   </div>
   <header>
     <div class="container h-100 d-flex align-items-center justify-content-center">
