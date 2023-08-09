@@ -9,14 +9,14 @@ export default {
   <section class="section-home">
     <div class="container">
       <div class="row">
-        <div class="col-6 px-5 testo-home">
+        <div class="col-12 col-lg-6 px-5 testo-home">
           <h1>Ciao, sono Niccolò</h1>
           <h4>Jr. Full Stack Web Developer</h4>
           <p>
             Mi sono sempre definito una persona creativa con una costante voglia di imparare e crescere, dopo aver svolto per anni un lavoro che non ho mai sentito 'mio', ho deciso di darmi una possibilità e di seguire la mia passione per la programmazione. A Febbraio 2023 mi sono iscritto al corso full-time di Boolean Careers per diventare Full Stack Web Developer.
           </p>
         </div>
-        <div class="col-6 d-flex justify-content-center">
+        <div class="col-12 col-lg-6 mt-5 mt-lg-0 d-flex justify-content-center">
           <div class="my-img">
             <img src="../../../public/img/foto_busto.jpg" alt="Immagine di profilo">
           </div>
@@ -27,7 +27,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
+@import '../../scss/general/variables';
 .section-home{
   .testo-home{
     position: relative;
@@ -46,6 +46,7 @@ export default {
     position: relative;
     animation-name: myimg;
     animation-duration: 2s;
+    background-color: $primary-color;
     img{
       width: 100%;
     }

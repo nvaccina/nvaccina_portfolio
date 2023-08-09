@@ -12,6 +12,9 @@ export default {
 </script>
 
 <template>
+  <div class="tools pt-1">
+    <i class="fa-solid fa-screwdriver-wrench pe-2"></i> SITO IN FASE DI COSTRUZIONE <i class="fa-solid fa-screwdriver-wrench ps-2"></i>
+  </div>
   <header>
     <div class="container h-100 d-flex align-items-center justify-content-center">
       <div class="logo">
@@ -48,10 +51,15 @@ export default {
 
 <style lang="scss" scoped>
 @use '../scss/general/variables' as *;
-
+.tools{
+  height: 30px;
+  color: $secondary-color;
+  background-color: $primary-color;
+  text-align: center;
+}
 header{
   position: absolute;
-  top: 0;
+  top: 30px;
   left: 0;
   z-index: 1;
   width: 100%;

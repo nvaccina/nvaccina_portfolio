@@ -13,7 +13,7 @@ export default {
 <template>
   <footer>
     <div class="container h-100 text-start">
-      <div class="row h-100">
+      <div class="row d-flex align-items-center h-100">
         <div class="col-12 col-md-4 nv-col">
           <div class="info">
             <h4>Niccolò Vaccina</h4>
