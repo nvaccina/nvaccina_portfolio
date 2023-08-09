@@ -23,7 +23,7 @@ export default {
             Questo desiderio mi ha portato a frequentare un corso di programmazione immersivo sia lato Front-End che lato Back-End, della durata di 6 mesi, organizzato da <a class="link" href="https://boolean.careers/">Boolen SRL</a>. Il loro obbiettivo è quello di formare Full Stack Web Developers attraverso lezioni teoriche ed esercitazioni pratiche giornaliere, durante le quali, grazie alle nuove tecnologie e framework conosciuti, ho replicato diversi siti e layout web noti tra i quali Netflix, WhatsApp e Spotify.
           </p>
           <p>
-            Come ultimo progetto abbiamo realizzato una web app "DeliveBoo" che permette di ordinare cibo a domicilio, utilizzando i framework Vue.js e Laravel. Creazione dashboard per gli utenti registrati (ristoranti), con diverse funzionalità di gestione del proprio profilo e visualizzazione delle statistiche sugli ordini ricevuti. Creazione della pagina pubblica che permette ai visitatori di controllare il proprioc arrello ed eseguire dei veri ordini tramite form di checkout con controllo del processo di pagamento tramite <a class="link" href="https://www.braintreepayments.com/it?referrer=https%3A%2F%2Fwww.google.com%2F">Braintree</a>.
+            Come ultimo progetto abbiamo realizzato una web app "DeliveBoo" che permette di ordinare cibo a domicilio, utilizzando i framework Vue.js e Laravel. Creazione dashboard per gli utenti registrati (ristoranti), con diverse funzionalità di gestione del proprio profilo e visualizzazione delle statistiche sugli ordini ricevuti. Creazione della pagina pubblica che consente ai visitatori di filtrare i ristoranti inbase alla tipologia, di controllare il proprio carrello ed eseguire dei veri ordini tramite form di checkoutcon controllo del processo di pagamento grazie a <a class="link" href="https://www.braintreepayments.com/it?referrer=https%3A%2F%2Fwww.google.com%2F">Braintree</a>.
           </p>
         </div>
       </div>
@@ -55,17 +55,22 @@ export default {
   .my-img{
     height: 250px;
     width: 250px;
-    border: 2px solid $quaternary-color;
     background-color: $tertiary-color;
+    box-shadow:  5px 5px 5px 5px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     animation-name: myimg;
+    transition: all 0.3s;
+    &:hover{
+      transform: scale(1.1);
+    }
     img{
       width: 100%;
     }
   }
   p{
-    font-size: 18px;
+    font-size: 20px;
     animation-name: testoabout;
+    font-weight: 300;
     .link{
       color: $tertiary-color;
       font-weight: bold;

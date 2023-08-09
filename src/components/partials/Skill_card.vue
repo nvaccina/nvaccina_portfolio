@@ -31,6 +31,10 @@ export default {
     object-fit: contain;
     width: 150px;
     height: 100%;
+    transition: all 0.3s;
+    &:hover{
+      transform: scale(1.1);
+    }
   }
 }
 
