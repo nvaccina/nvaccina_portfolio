@@ -28,21 +28,14 @@ export default {
         </ul>
       </div>
 
-      <button class="btn d-none btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i></button>
-
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasRightLabel">Menu</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul>
-            <li v-for="(link, index) in mainMenu" :key="index" class="nav-item py-2">
-              <router-link class="link-responsive" :to="{ name:link.text }">{{link.text}}</router-link>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown d-none btn-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-bars"></i></a>
+        <ul class="dropdown-menu px-3">
+          <li v-for="(link, index) in mainMenu" :key="index" class="nav-item pb-2">
+            <router-link class="link-responsive" :to="{ name:link.text }">{{link.text}}</router-link>
+          </li>
+        </ul>
+      </li>
       
     </div>
   </header>
@@ -95,14 +88,15 @@ header{
       }
     }
   }
-  .link-responsive{
-    color: $quaternary-color;
-    text-transform: uppercase;
-    font-size: 18px;
+  .dropdown-menu{
+    box-shadow:  5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgb(253, 248, 248);
+    .link-responsive{
+      color: $quaternary-color;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
   }
-  // .offcanvas, .offcanvas-backdrop{
-  //   z-index: 888 !important;
-  // }
 }
 
 @media (max-width: 1200px) {
