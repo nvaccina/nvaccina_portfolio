@@ -36,9 +36,7 @@ export default {
         </div>
         <div class="col-12 col-md-4 nv-col">
           <div class="logo-footer">
-            <a href="#">
-              <img src="/img/logo/nv3.png" alt="">
-            </a>
+            <router-link :to="{ name:'home' }"><img src="/img/logo/nv.png" alt="logo"></router-link>
           </div>    
         </div>
         <div class="col-12 col-md-4 nv-col">
@@ -92,6 +90,9 @@ footer{
     }
     .logo-footer{
       width: 200px;
+      a{
+        border: 0 !important;
+      }
       &:hover{
         img{
           filter: brightness(10%) invert(150%);

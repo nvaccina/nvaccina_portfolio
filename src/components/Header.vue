@@ -18,7 +18,7 @@ export default {
   <header>
     <div class="container h-100 d-flex align-items-center justify-content-center">
       <div class="logo">
-        <router-link :to="{ name:'home' }"><img src="../../public/img/logo/nv3.png" alt="logo"></router-link>
+        <router-link :to="{ name:'home' }"><img src="/img/logo/nv.png" alt="logo"></router-link>
       </div>
       <div class="header-menu">
         <ul class="nav nav-underline">

@@ -10,12 +10,12 @@ export default {
     <div class="container">
       <h1 class="text-center pb-5 title">About me</h1>
       <div class="row">
-        <div class="col-12 col-md-5 d-flex justify-content-center">
+        <div class="col-12 mb-5 mb-md-0 col-md-5 d-flex justify-content-center">
           <div class="my-img">
-            <img src="/img/foto2busto.png" alt="foto busto">
+            <img src="/img/profilo/foto_about.png" alt="foto busto">
           </div>
         </div>
-        <div class="col-12 col-md-7 px-5">
+        <div class="col-12 col-md-7 px-3 px-md-5">
           <p class="pb-3">
             Dopo avere trascorso più di quattro anni svolgendo il lavoro di consulente immobiliare, duranti i quali ho imparato ad avere un'ottima capacità relazionale con i clienti, ho deciso di mollare la monotonia e la stabilità economica per seguire la mia passione per la programmazione e per il codice.
           </p>
