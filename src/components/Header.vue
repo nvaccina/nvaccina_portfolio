@@ -6,6 +6,25 @@ export default {
     return{
       mainMenu,
     }
+  },
+  methods:{
+    toggleMenu(){
+      const menuinner = document.getElementById('menu-inner');
+      const bar1 = document.getElementById('bar1');
+      const bar2 = document.getElementById('bar2');
+      const bar3 = document.getElementById('bar3');
+      if(menuinner.classList.contains('menuinner-clicked')){
+        menuinner.classList.remove('menuinner-clicked');
+      bar1.classList.remove('bar1-clicked');
+      bar2.classList.remove('bar2-clicked');
+      bar3.classList.remove('bar3-clicked');
+      }else{
+        menuinner.classList.add('menuinner-clicked');
+        bar1.classList.add('bar1-clicked');
+        bar2.classList.add('bar2-clicked');
+        bar3.classList.add('bar3-clicked');
+      }
+    }
   }
 
 }
@@ -20,6 +39,7 @@ export default {
       <div class="logo">
         <router-link :to="{ name:'home' }"><img src="/img/logo/nv.png" alt="logo"></router-link>
       </div>
+
       <div class="header-menu">
         <ul class="nav nav-underline">
           <li v-for="(link, index) in mainMenu" :key="index" class="nav-item">
@@ -28,11 +48,15 @@ export default {
         </ul>
       </div>
 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown d-none btn-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-bars"></i></a>
+      <li class="nav-item dropdown menu d-none">
+          <a id="menu-inner" class="nav-link dropdown menu-inner" @click="toggleMenu()" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="bar bar-1" id="bar1"></span>
+            <span class="bar bar-2" id="bar2"></span>
+            <span class="bar bar-3" id="bar3"></span>
+          </a>
         <ul class="dropdown-menu px-3">
           <li v-for="(link, index) in mainMenu" :key="index" class="nav-item pb-2">
-            <router-link class="link-responsive" :to="{ name:link.text }">{{link.text}}</router-link>
+            <router-link class="link-responsive" @click="toggleMenu()" :to="{ name:link.text }">{{link.text}}</router-link>
           </li>
         </ul>
       </li>
@@ -88,7 +112,59 @@ header{
       }
     }
   }
+
+  .menu {
+    background: #fbf6f6;
+    width: 50px;
+    height: 36px;
+    border-radius: 5px;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-inner .bar {
+    width: 30px;
+    background: black;
+    height: 2px;
+    display: inline-block;
+    border-radius: 50px;
+    transition: all 0.4s;
+    transform-origin: right;
+  }
+  .menu-inner .bar-2 {
+    margin: 7px 0px;
+  }
+  .menuinner-clicked {
+    cursor: pointer;
+    position: relative;
+  }
+  //barre
+  .bar2-clicked {
+    width: 0px !important;
+  }
+  .bar1-clicked {
+    position: absolute;
+    top:  -2px;
+    left:  -3px;
+    width: 33px !important;
+    transform: rotate(-45deg);
+  }
+  .bar3-clicked {
+    position: absolute;
+    left: -3px;
+    bottom: -7px;
+    width: 33px !important;
+    transform: rotate(45deg);
+  }
+
   .dropdown-menu{
+    margin-top: 5px !important;
     box-shadow:  5px 5px 5px 5px rgba(0, 0, 0, 0.1);
     background-color: rgb(253, 248, 248);
     .link-responsive{
@@ -117,16 +193,18 @@ header{
       height: 60px;
       .container{
         justify-content: space-between  !important;
+        padding: 0;
+        margin: 0;
+        width: 100vw;
         .logo {
           position: relative;
         }
         .header-menu{
           display: none;
         }
-        .btn-menu{
+        .menu{
           display: block !important;
-          color: $secondary-color;
-          font-size: 24px;
+          margin-right: 20px;
         }
       }
     }
