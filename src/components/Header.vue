@@ -39,7 +39,7 @@ export default {
       <div class="logo">
         <router-link :to="{ name:'home' }"><img src="/img/logo/nv.png" alt="logo"></router-link>
       </div>
-
+      
       <div class="header-menu">
         <ul class="nav nav-underline">
           <li v-for="(link, index) in mainMenu" :key="index" class="nav-item">
@@ -186,28 +186,28 @@ header{
 }
 
 @media (max-width: 900px) {
-  section{
-    width: 100%;
-  }
-    header {
-      height: 60px;
-      .container{
-        justify-content: space-between  !important;
-        padding: 0;
-        margin: 0;
-        width: 100vw;
-        .logo {
-          position: relative;
-        }
-        .header-menu{
-          display: none;
-        }
-        .menu{
-          display: block !important;
-          margin-right: 20px;
-        }
+  header {
+    height: 60px;
+    .container{
+      justify-content: space-between  !important;
+      padding: 0;
+      width: 100%;
+      margin: 0 !important;
+      .logo {
+        position: relative;
+        left: 0;
+        margin-left: 30px;
+      }
+      .header-menu{
+        display: none;
+      }
+      .menu{
+        display: block !important;
+        margin-right: 30px;
       }
     }
+  }
+  
 }
 
 </style>
