@@ -50,24 +50,28 @@ export default {
         :modules="modules"
         :breakpoints="{
           '0': {
-              slidesPerView: 1,
-              spaceBetween: 0,
+            slidesPerView: 1,
+            spaceBetween: 0,
           },
-          '768': {
-              slidesPerView: 2,
-              spaceBetween: 0,
+          '408': {
+            slidesPerView: 2,
+            spaceBetween: 0,
+          },
+          '520': {
+            slidesPerView: 3,
+            spaceBetween: 0,
           },
           '991': {
-              slidesPerView: 4,
-              spaceBetween: 0,
+            slidesPerView: 4,
+            spaceBetween: 0,
           },
           '1200': {
-              slidesPerView: 5,
-              spaceBetween: 0,
+            slidesPerView: 5,
+            spaceBetween: 0,
           },
           '1400': {
-              slidesPerView: 6,
-              spaceBetween: 0,
+            slidesPerView: 6,
+            spaceBetween: 0,
           },
         }"
       >

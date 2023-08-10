@@ -38,4 +38,14 @@ export default {
   }
 }
 
+@media (max-width: 768px) {
+  .img_container{
+    width: 100px;
+    height: 100px;
+    img{
+      width: 100px;
+    }
+  }
+}
+
 </style>
