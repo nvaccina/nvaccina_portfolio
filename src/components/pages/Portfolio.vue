@@ -1,10 +1,12 @@
 <script>
 import Project_card from '../partials/Project_card.vue';
+import Wabutton from '../partials/Wabutton.vue';
 import { portfolio } from '../../data/data';
 export default {
   name: 'Portfolio',
   components:{
-    Project_card
+    Project_card,
+    Wabutton
   },
   data(){
     return{
@@ -34,6 +36,7 @@ export default {
 
     </div>
   </section>
+  <Wabutton/>
   
 </template>
 

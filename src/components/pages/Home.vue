@@ -1,7 +1,10 @@
 <script>
+import Wabutton from '../partials/Wabutton.vue';
 export default {
   name: 'Home',
-
+  components:{
+    Wabutton
+  }
 }
 </script>
 
@@ -13,7 +16,7 @@ export default {
           <h1>Ciao, sono Niccolò</h1>
           <h4>Jr. Full Stack Web Developer</h4>
           <p>
-            Mi sono sempre definito una persona creativa con una costante voglia di imparare e crescere, dopo aver svolto per anni un lavoro che non ho mai sentito 'mio', ho deciso di darmi una possibilità e di seguire la mia passione per la programmazione. A Febbraio 2023 mi sono iscritto al corso full-time di Boolean Careers per diventare Full Stack Web Developer.
+            Mi sono sempre definito una persona creativa con una costante voglia di imparare e crescere, dopo aver svolto per anni un lavoro che non ho mai sentito 'mio', ho deciso di darmi una possibilità e di seguire la mia passione per la programmazione. A Febbraio 2023 mi sono iscritto al corso full-time di Boolean Careers per diventare Full Stack Web Developer e ora sono determinato a farne la mia professione.
           </p>
         </div>
         <div class="col-12 col-lg-5 mt-5 mt-lg-0 d-flex ps-4 justify-content-center justify-content-lg-start">
@@ -24,6 +27,7 @@ export default {
       </div>
     </div>
   </section>
+  <Wabutton/>
 </template>
 
 <style lang="scss" scoped>

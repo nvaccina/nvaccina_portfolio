@@ -19,10 +19,10 @@ export default {
 
 .wa{
   position: fixed;
-  bottom: 100px;
+  bottom: 150px;
   right: 5px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   overflow: hidden;
   transition: all 0.2s;
   -webkit-animation: 3s ease 0s normal forwards 1 whatsapp;

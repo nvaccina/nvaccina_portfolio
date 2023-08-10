@@ -1,6 +1,7 @@
 <script>
 import {skills} from '../../data/data.js';
 import Skill_card from '../partials/Skill_card.vue';
+import Wabutton from '../partials/Wabutton.vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -11,7 +12,8 @@ export default {
   components: {
     Swiper,
     SwiperSlide,
-    Skill_card
+    Skill_card,
+    Wabutton
   },
   setup() {
     return {
@@ -88,7 +90,7 @@ export default {
       </swiper>
     </div>
   </section>
-  
+  <Wabutton/> 
 </template>
 
 <style lang="scss" scoped>

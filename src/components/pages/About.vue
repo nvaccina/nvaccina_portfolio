@@ -1,7 +1,10 @@
 <script>
+import Wabutton from '../partials/Wabutton.vue';
 export default {
   name: 'About',
-
+  components:{
+    Wabutton
+  }
 }
 </script>
 
@@ -39,7 +42,7 @@ export default {
       </div>
     </div>
   </section>
-  
+  <Wabutton/>
 </template>
 
 <style lang="scss" scoped>

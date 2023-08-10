@@ -106,6 +106,7 @@ header{
       font-weight: bold;
       font-size: 18px;
       margin: 0 10px;
+      transition: all 0.2s;
       &:active, &:hover{
         color: $primary-color !important;
         border-bottom: 2px solid $primary-color;
@@ -162,7 +163,6 @@ header{
     width: 33px !important;
     transform: rotate(45deg);
   }
-
   .dropdown-menu{
     margin-top: 5px !important;
     box-shadow:  5px 5px 5px 5px rgba(0, 0, 0, 0.1);

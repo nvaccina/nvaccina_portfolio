@@ -1,7 +1,10 @@
 <script>
+import Wabutton from '../partials/Wabutton.vue';
 export default {
   name: 'Contacts',
-
+  components:{
+    Wabutton
+  }
 }
 </script>
 
@@ -32,7 +35,7 @@ export default {
     </div>
 
   </section>
-  
+  <Wabutton/>
 </template>
 
 <style lang="scss" scoped>
@@ -43,6 +46,7 @@ export default {
     height: 2px;
     width: 400px;
     background-color: $tertiary-color;
+    box-shadow:  2px 2px 2px 2px rgba(0, 0, 0, 0.1);
   }
   a{
     color: black;
