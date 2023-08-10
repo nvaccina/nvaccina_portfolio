@@ -35,7 +35,7 @@ export default {
             </div>
           </div>
         </div>
-        <div class="sito d-flex align-items-center mb-2">
+        <div class="sito d-flex align-items-center">
             <a 
               class="site-button me-2 btn" 
               :class="{'disabled' : link_website == ''}"
@@ -100,8 +100,8 @@ export default {
     }
     .sito{
       position: absolute;
-      bottom: 10px;
-      left: 20px;      
+      bottom: 1rem;
+      left: 1rem;      
     }
   }
   &:hover .project-info {
@@ -146,10 +146,11 @@ export default {
     margin-bottom: 5px !important;
   }
   .sito{
-    top: 10px !important;
-    right: 5px !important;
+    top: 0px !important;
+    right: 0px !important;
     bottom: auto !important;
     left: auto !important;
+    padding: 1rem !important;
     flex-wrap: wrap !important;
   }
 }

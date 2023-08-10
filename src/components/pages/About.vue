@@ -60,14 +60,14 @@ export default {
     overflow: hidden;
     animation-name: myimg;
     transition: all 0.3s;
-    &:hover{
-      transform: scale(1.1);
-    }
     img{
       width: 100%;
       position: absolute;
       bottom: 0;
       left: 0;
+    }
+    &:hover{
+      transform: scale(1.1);
     }
   }
   p{
