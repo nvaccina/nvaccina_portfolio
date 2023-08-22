@@ -27,8 +27,8 @@ export default {
                 <a href="tel:00390123456789"><i class="fa-solid fa-phone"></i> +39 3891168261</a>
               </li>
               <li>
-                <a href="https://goo.gl/maps/8m9BPuCahL37v1QL9" target="_blank" rel="noopener">
-                  <i class="fa-solid fa-location-dot"></i> Via delle Margherite n.68, 47522 - Cesena (FC)
+                <a href="https://goo.gl/maps/hWkhqvqYgG1v8eL9A" target="_blank" rel="noopener">
+                  <i class="fa-solid fa-location-dot pe-1"></i> Cesena (FC)
                 </a>
               </li>
             </ul>  
