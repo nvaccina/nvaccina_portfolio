@@ -35,6 +35,10 @@ const skills = [
     image_skill: "sass.png",
   },
   {
+    name: "Bootstrap",
+    image_skill: "bootstrap.svg",
+  },
+  {
     name: "JavaScript",
     image_skill: "javascript.png",
   },
@@ -89,6 +93,14 @@ const skills = [
   {
     name: "PM2",
     image_skill: "pm2.png",
+  },
+  {
+    name: "Windows",
+    image_skill: "windows.png",
+  },
+  {
+    name: "Linux",
+    image_skill: "linux.png",
   },
   // {
   //   name: "Apache",

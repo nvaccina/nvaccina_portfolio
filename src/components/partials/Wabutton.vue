@@ -19,7 +19,7 @@ export default {
 
 .wa{
   position: fixed;
-  bottom: 200px;
+  top: 200px;
   right: 5px;
   width: 40px;
   height: 40px;
