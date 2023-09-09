@@ -18,15 +18,32 @@ export default {
 <template>
 
   <div class="img_container">
-      <img :src="urlImage" :alt="name">
+    <div class="name_image d-flex align-items-center justify-content-center">
+      <h5 class="mb-0">{{ name }}</h5>
     </div>
+    <img :src="urlImage" :alt="name">
+  </div>
   
 </template>
 
 <style lang="scss" scoped>
+@import '../../scss/general/variables';
 .img_container{
   width: 150px;
   height: 150px;
+  position: relative;
+  .name_image{
+    position: absolute;
+    z-index: 5;
+    min-width: 150px;
+    top: -50px;
+    padding: 5px 5px;
+    border-radius: 10px;
+    border: 2px solid $primary-color;    
+    color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
   img{
     object-fit: contain;
     width: 150px;
@@ -35,6 +52,11 @@ export default {
     &:hover{
       transform: scale(1.1);
     }
+  }
+  &:hover{
+    .name_image{
+        opacity: 1;
+      }
   }
 }
 

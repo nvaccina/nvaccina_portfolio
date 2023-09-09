@@ -21,7 +21,9 @@ export default {
         </div>
         <div class="col-12 col-lg-5 mt-5 mt-lg-0 d-flex ps-4 justify-content-center justify-content-lg-start">
           <div class="my-img">
-            <img src="/img/profilo/foto_busto.png" alt="Immagine di profilo">
+            <a href="https://www.linkedin.com/in/niccol%C3%B2-vaccina-566351198/">
+              <img src="/img/profilo/foto_busto.png" alt="Niccolò Vaccina">
+            </a>
           </div>
         </div>
       </div>

@@ -15,7 +15,9 @@ export default {
       <div class="row">
         <div class="col-12 mb-5 mb-md-0 col-md-5 d-flex justify-content-center">
           <div class="my-img">
-            <img src="/img/profilo/foto_about.png" alt="foto busto">
+            <a href="https://www.linkedin.com/in/niccol%C3%B2-vaccina-566351198/">
+              <img src="/img/profilo/foto_about.png" alt="Niccolò Vaccina">
+            </a>
           </div>
         </div>
         <div class="col-12 col-md-7 px-3 px-md-5">

@@ -42,10 +42,6 @@ export default {
         :speed="3000"
         :loop="true"
         :a11y="false"
-        :autoplay="{
-          delay: 1,
-          disableOnInteraction: false,
-        }"
         :pagination="{
           clickable: true,
         }"

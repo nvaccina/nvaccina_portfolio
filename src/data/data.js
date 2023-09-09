@@ -51,16 +51,28 @@ const skills = [
     image_skill: "node.png",
   },
   {
+    name: "Vite.js",
+    image_skill: "vite.svg",
+  },
+  {
+    name: "React",
+    image_skill: "react.png",
+  },
+  {
     name: "Laravel",
     image_skill: "laravel.png",
   },
   {
-    name: "Vite",
-    image_skill: "vite.svg",
+    name: "MySQL",
+    image_skill: "mysql.svg",
   },
   {
-    name: "MySql",
-    image_skill: "mysql.svg",
+    name: "Maria DB",
+    image_skill: "mariadb.png",
+  },
+  {
+    name: "DBeaver",
+    image_skill: "dbeaver.png",
   },
   {
     name: "PhpMyAdmin",
@@ -74,6 +86,14 @@ const skills = [
     name: "Visual Studio Code",
     image_skill: "vscode.jpg",
   },
+  {
+    name: "PM2",
+    image_skill: "pm2.png",
+  },
+  // {
+  //   name: "Apache",
+  //   image_skill: "apache.png",
+  // },
 
 ];
 
