@@ -35,6 +35,7 @@ export default {
 <style lang="scss" scoped>
 @import '../../scss/general/variables';
 .section-home{
+  min-height: calc(100vh - 294px);
   .testo-home{
     position: relative;
     animation-name: testohome;

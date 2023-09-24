@@ -71,10 +71,6 @@ const skills = [
     image_skill: "mysql.svg",
   },
   {
-    name: "Maria DB",
-    image_skill: "mariadb.png",
-  },
-  {
     name: "DBeaver",
     image_skill: "dbeaver.png",
   },
