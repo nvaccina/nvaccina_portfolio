@@ -42,6 +42,7 @@ export default {
 @import '../../scss/general/variables';
 #contacts{
   color: black;
+  min-height: calc(100vh - 294px);
   .linea{
     height: 2px;
     width: 400px;
