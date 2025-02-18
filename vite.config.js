@@ -7,6 +7,7 @@ export default defineConfig({
   plugins: [
     vue(),
     sitemapPlugin({
+      generateRobotsTxt: true,
       hostname: 'https://niccolo-vaccina.netlify.app',
       urls: [
         { url: '/', changefreq: 'daily', priority: 1.0 },
