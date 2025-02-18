@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://niccolo-vaccina.netlify.app/sitemap.xml
