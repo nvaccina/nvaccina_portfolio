@@ -24,6 +24,7 @@ export default {
   width: 40px;
   height: 40px;
   overflow: hidden;
+  z-index: 1000;
   transition: all 0.2s;
   -webkit-animation: 3s ease 0s normal forwards 1 whatsapp;
   animation: 3s ease 0s normal forwards 1 whatsapp;

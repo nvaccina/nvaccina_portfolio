@@ -1,9 +1,45 @@
 <script>
 import Wabutton from '../partials/Wabutton.vue';
+import Orizontalline from '../partials/Orizontalline.vue';
+import { timelines } from '../../data/data.js';
+import { useHead } from '@vueuse/head';
+
 export default {
   name: 'About',
   components:{
-    Wabutton
+    Wabutton,
+    Orizontalline
+  },
+  data(){
+    return{
+      timelines
+    }
+  },
+  setup(){
+    useHead({
+      title:'About - Niccolò Vaccina',
+      meta: [
+        { name:'title', content:'About - Niccolò Vaccina' },
+        { name:'description', content:'Scopri il mio percorso di studi e professionale come sviluppatore full stack.' },
+        { rel:'canonical', content:'https://nvaccina-portfolio.netlify.app/about' },
+        { name:'author', content:'Niccolò Vaccina' },
+        { name:'keywords', content:'Niccolò Vaccina, esperienza, studi, carriera, sviluppatore full stack' },
+        { property:'article:author', content:'Niccolò Vaccina' },
+        { property:'article:tag', content:'Esperienza, Carriera, Formazione, Sviluppatore Web' },
+        { property:'og:type', content:'article' },
+        { property:'og:site_name', content:'Niccolò Vaccina Portfolio' },
+        { property:'og:url', content:'https://nvaccina-portfolio.netlify.app/about' },
+        { property:'og:title', content:'About - Niccolò Vaccina' },
+        { property:'og:description', content:'Leggi il mio percorso professionale e accademico nel mondo dello sviluppo web.' },
+        { property:'og:image', content:'https://nvaccina-portfolio.netlify.app/assets/about-preview.jpg' },
+        { property:'twitter:card', content:'summary_large_image' },
+        { property:'twitter:url', content:'https://nvaccina-portfolio.netlify.app/about' },
+        { property:'twitter:title', content:'About - Niccolò Vaccina' },
+        { property:'twitter:description', content:'Scopri il mio percorso di studi e professionale.' },
+        { property:'twitter:image', content:'https://nvaccina-portfolio.netlify.app/assets/about-preview.jpg' }
+      ]
+    });
+    return{};
   }
 }
 </script>

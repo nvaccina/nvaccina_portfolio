@@ -8,16 +8,16 @@ const mainMenu = [
     text: "about",
   },
   {
-    href: "#skills",
-    text: "skills",
+    href: "#competenze",
+    text: "competenze",
   },
   {
     href: "#portfolio",
     text: "portfolio",
   },
   {
-    href: "#contacts",
-    text: "contacts",
+    href: "#contatti",
+    text: "contatti",
   },
 ];
 
@@ -47,6 +47,14 @@ const skills = [
     image_skill: "php.png",
   },
   {
+    name: "C#",
+    image_skill: "csharp.png",
+  },
+  {
+    name: ".Net",
+    image_skill: ".NET.png",
+  },
+  {
     name: "Vue.js",
     image_skill: "vue.png",
   },
@@ -67,6 +75,17 @@ const skills = [
     image_skill: "laravel.png",
   },
   {
+    name: "Wordpress",
+    image_skill: "wordpress.png",
+  }
+];
+
+const skills2 = [
+  {
+    name: "Sql Server",
+    image_skill: "Sqlserver.png",
+  },
+  {
     name: "MySQL",
     image_skill: "mysql.svg",
   },
@@ -79,6 +98,14 @@ const skills = [
     image_skill: "php_my_admin.png",
   },
   {
+    name: "PM2",
+    image_skill: "pm2.png",
+  },
+  {
+    name: "GitLab",
+    image_skill: "gitlab.png",
+  },
+  {
     name: "Git Hub",
     image_skill: "github.png",
   },
@@ -87,8 +114,8 @@ const skills = [
     image_skill: "vscode.jpg",
   },
   {
-    name: "PM2",
-    image_skill: "pm2.png",
+    name: "Visual Studio",
+    image_skill: "visualstudio.png",
   },
   {
     name: "Windows",
@@ -97,15 +124,183 @@ const skills = [
   {
     name: "Linux",
     image_skill: "linux.png",
-  },
-  // {
-  //   name: "Apache",
-  //   image_skill: "apache.png",
-  // },
+  }
+];
 
+const allskills = [
+  {
+    name: "HTML",
+    image_skill: "html.png",
+  },
+  {
+    name: "CSS",
+    image_skill: "css.png",
+  },
+  {
+    name: "SASS",
+    image_skill: "sass.png",
+  },
+  {
+    name: "Bootstrap",
+    image_skill: "bootstrap.svg",
+  },
+  {
+    name: "JavaScript",
+    image_skill: "javascript.png",
+  },
+  {
+    name: "PHP",
+    image_skill: "php.png",
+  },
+  {
+    name: "C#",
+    image_skill: "csharp.png",
+  },
+  {
+    name: ".Net",
+    image_skill: ".NET.png",
+  },
+  {
+    name: "Vue.js",
+    image_skill: "vue.png",
+  },
+  {
+    name: "Node.js",
+    image_skill: "node.png",
+  },
+  {
+    name: "Vite.js",
+    image_skill: "vite.svg",
+  },
+  {
+    name: "React",
+    image_skill: "react.png",
+  },
+  {
+    name: "Laravel",
+    image_skill: "laravel.png",
+  },
+  {
+    name: "Wordpress",
+    image_skill: "wordpress.png",
+  },
+  {
+    name: "Sql Server",
+    image_skill: "Sqlserver.png",
+  },
+  {
+    name: "MySQL",
+    image_skill: "mysql.svg",
+  },
+  {
+    name: "DBeaver",
+    image_skill: "dbeaver.png",
+  },
+  {
+    name: "PhpMyAdmin",
+    image_skill: "php_my_admin.png",
+  },
+  {
+    name: "PM2",
+    image_skill: "pm2.png",
+  },
+  {
+    name: "GitLab",
+    image_skill: "gitlab.png",
+  },
+  {
+    name: "Git Hub",
+    image_skill: "github.png",
+  },
+  {
+    name: "Visual Studio Code",
+    image_skill: "vscode.jpg",
+  },
+  {
+    name: "Visual Studio",
+    image_skill: "visualstudio.png",
+  },
+  {
+    name: "Windows",
+    image_skill: "windows.png",
+  },
+  {
+    name: "Linux",
+    image_skill: "linux.png",
+  }
 ];
 
 const portfolio = [
+  {
+    title: "IsyTravel",
+    image: "isytravel.png",
+    link_website: "https://www.isytravel.com/",
+    link_github: "",
+    technologies:[
+      '.NET.png',
+      'csharp.png',
+      'javascript.png',
+      'Sqlserver.png',      
+    ]
+  },
+  {
+    title: "BiancoNero Beach",
+    image: "bianconero.png",
+    link_website: "https://www.bianconerobeach.it/",
+    link_github: "",
+    technologies:[
+      '.NET.png',
+      'csharp.png',
+      'javascript.png',
+      'Sqlserver.png',      
+    ]
+  },
+  {
+    title: "AvantCRAFT",
+    image: "avantcraft.png",
+    link_website: "https://avantcraft.cnaemiliaromagna.it/",
+    link_github: "",
+    technologies:[
+      '.NET.png',
+      'csharp.png',
+      'javascript.png',
+      'Sqlserver.png',
+    ]
+  },
+  {
+    title: "TexActive",
+    image: "texactive.png",
+    link_website: "https://www.texactive.eu/",
+    link_github: "",
+    technologies:[
+      '.NET.png',
+      'csharp.png',
+      'javascript.png',
+      'Sqlserver.png',
+    ]
+  },
+  {
+    title: "InSosta Comune di Pistoia",
+    image: "insosta.png",
+    link_website: "https://pistoia.insosta.it/splash",
+    link_github: "",
+    technologies:[
+      'node.png',
+      'react.png',
+      'javascript.png',
+      'pm2.png',
+      'dbeaver.png'
+    ]
+  },
+  {
+    title: "I Razzi Store - Bologna",
+    image: "irazzistore.png",
+    link_website: "https://www.razzistore-bologna.it/",
+    link_github: "",
+    technologies:[
+      'wordpress.png'
+    ]
+  },
   {
     title: "Deliveboo",
     image: "deliveboo.png",
@@ -243,5 +438,49 @@ const social = [
   }
 ];
 
+const timelines = [
+  {
+    title: "Nato a Forlì (FC)",
+    body: "",
+    image: "",
+    date: "09/06/1999"
+  },
+  {
+    title: "Diploma di Geometra",
+    azienda: "Istituto Tecnico Geometri “Garibaldi/Da Vinci”",
+    body: "Diplomato in Costruzioni Ambiente e Territorio Tecnologie del Legno nelle Costruzioni",
+    image: "",
+    date: "Set. 2013 - Giu. 2018"
+  },
+  {
+    title: "Consulente Immobiliare e Procacciatore d’Affari",
+    azienda: "Casa Facile Agenzia Immobiliare",
+    body: "Relazioni con il pubblico e amministrazione. Gestione incarichi di vendita e affitto in autonomia.",
+    image: "",
+    date: "Ott. 2018 - Feb. 2023"
+  },
+  {
+    title: "Corso di formazione per Jr. Full Stack Web Developer",
+    azienda: "Boolean Careers",
+    body: "Corso di programmazione immersivo della durata di 6 mesi (oltre 700 ore complessive), il cui obbiettivo è quello di formare Full Stack Web Developers attraverso lezioni teoriche ed esercitazioni pratiche giornaliere, sia individuali che in team.",
+    image: "",
+    date: "Feb. 2023 - Ago. 2023"
+  },
+  {
+    title: "Full Stack Web Developer",
+    azienda: "Input S.r.l.",
+    body: "Sviluppo software per il controllo e il rilevamento della sosta nei parcheggi pubblici e privati con integrazione della piattaforma di pagamento XPay di Nexi. Gestione database tramite DBeaver e collegamenti al server OVHcloud.",
+    image: "",
+    date: "Ago. 2023 - Ott. 2023"
+  },
+  {
+    title: "Full Stack Web Developer",
+    azienda: "BSD Software Srl",
+    body: "Sviluppo di applicazioni web basate su .NET Framework e MVC con l'ausilio di SQL Server e Microsoft Azure.",
+    image: "",
+    date: "Da Ott. 2023"
+  },
+]
 
-export {mainMenu, skills, portfolio, social};
+
+export {mainMenu, skills, skills2, allskills, portfolio, social, timelines};

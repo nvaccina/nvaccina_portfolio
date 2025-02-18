@@ -3,7 +3,7 @@ import Home from './components/pages/Home.vue';
 import About from './components/pages/About.vue';
 import Skills from './components/pages/Skills.vue';
 import Portfolio from './components/pages/Portfolio.vue';
-import Contacts from './components/pages/Contacts.vue';
+import Contatti from './components/pages/Contatti.vue';
 import Error404 from './components/pages/Error404.vue';
 
 const router = createRouter({
@@ -13,7 +13,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: Home,      
     },
     {
       path: '/about',
@@ -21,8 +21,8 @@ const router = createRouter({
       component: About
     },
     {
-      path: '/skills',
-      name: 'skills',
+      path: '/competenze',
+      name: 'competenze',
       component: Skills
     },
     {
@@ -31,9 +31,9 @@ const router = createRouter({
       component: Portfolio
     },
     {
-      path: '/contacts',
-      name: 'contacts',
-      component: Contacts
+      path: '/contatti',
+      name: 'contatti',
+      component: Contatti
     },
     { 
       path: '/:pathMatch(.*)*',

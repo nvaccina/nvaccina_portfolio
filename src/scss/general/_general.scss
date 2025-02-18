@@ -7,12 +7,12 @@ img{
 //stili
 
 .active{
-  color: $primary_color !important;
-  border-bottom: 2px solid $primary_color !important;
+  color: white;
+  border-bottom: 3px solid $primary-color;
 }
 //elementi
 .cv-button, .btn-mail{
-  text-transform: capitalize;
+  // text-transform: capitalize;
   padding: 10px 23px;
   background-color: $primary-color;
   color: $secondary-color;

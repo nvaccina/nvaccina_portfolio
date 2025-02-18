@@ -2,6 +2,8 @@
 import Project_card from '../partials/Project_card.vue';
 import Wabutton from '../partials/Wabutton.vue';
 import { portfolio } from '../../data/data';
+import { useHead } from '@vueuse/head';
+
 export default {
   name: 'Portfolio',
   components:{
@@ -12,6 +14,32 @@ export default {
     return{
       portfolio
     }
+  },
+  setup(){
+    useHead({
+      title:'Portfolio - Niccolò Vaccina',
+      meta: [
+        { name:'title', content:'Portfolio - Progetti di Niccolò Vaccina' },
+        { name:'description', content:'Scopri i progetti a cui ho lavorato come sviluppatore full stack.' },
+        { rel:'canonical', content:'https://nvaccina-portfolio.netlify.app/portfolio' },
+        { name:'author', content:'Niccolò Vaccina' },
+        { name:'keywords', content:'Portfolio, progetti, sviluppo web, .NET, C#, SQL Server' },
+        { property:'article:author', content:'Niccolò Vaccina' },
+        { property:'article:tag', content:'Progetti, Portfolio, Sviluppo Web, Full Stack' },
+        { property:'og:type', content:'website' },
+        { property:'og:site_name', content:'Niccolò Vaccina Portfolio' },
+        { property:'og:url', content:'https://nvaccina-portfolio.netlify.app/portfolio' },
+        { property:'og:title', content:'Portfolio - Progetti di Niccolò Vaccina' },
+        { property:'og:description', content:'Visualizza i miei lavori come sviluppatore full stack.' },
+        { property:'og:image', content:'https://nvaccina-portfolio.netlify.app/assets/portfolio-preview.jpg' },
+        { property:'twitter:card', content:'summary_large_image' },
+        { property:'twitter:url', content:'https://nvaccina-portfolio.netlify.app/portfolio' },
+        { property:'twitter:title', content:'Portfolio - Progetti di Niccolò Vaccina' },
+        { property:'twitter:description', content:'Dai un’occhiata ai miei progetti e collaborazioni.' },
+        { property:'twitter:image', content:'https://nvaccina-portfolio.netlify.app/assets/portfolio-preview.jpg' }
+      ]
+    });
+    return{};
   }
 
 }

@@ -31,13 +31,13 @@ export default {
 </script>
 
 <template>
-  <div class="tools pt-1">
+  <!-- <div class="tools pt-1">
     <i class="fa-solid fa-screwdriver-wrench pe-2"></i> SITO IN COSTRUZIONE <i class="fa-solid fa-screwdriver-wrench ps-2"></i>
-  </div>
+  </div> -->
   <header>
     <div class="container h-100 d-flex align-items-center justify-content-center">
       <div class="logo">
-        <router-link :to="{ name:'home' }"><img src="/img/logo/nv.png" alt="logo"></router-link>
+        <router-link :to="{ name:'home' }"><img src="/img/logo/nv-l.png" alt="logo"></router-link>
       </div>
       
       <div class="header-menu">
@@ -75,10 +75,10 @@ export default {
   text-align: center;
 }
 header{
-  position: absolute;
-  top: 30px;
+  position: fixed;
+  top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 100;
   width: 100%;
   background-color: $tertiary-color;
   height: 80px;
@@ -90,32 +90,34 @@ header{
     height: 60px;
     a{
       border: 0 !important;
+      background-color: transparent !important;
       img{
         height: 100%;
-        &:hover{
-          filter: brightness(10%) invert(150%);
-        }
+        // &:hover{
+        //   filter: brightness(10%) invert(150%);
+        // }
     }
     }
   }
   .header-menu{
     a{
-      color: $secondary_color;
+      color: white !important;
       text-decoration: none;
       text-transform: uppercase;
       font-weight: bold;
-      font-size: 18px;
+      font-size: 20px;
       margin: 0 10px;
       transition: all 0.2s;
+      padding: 5px 10px;
+      transition: linear all 0.2s;
       &:active, &:hover{
-        color: $primary-color !important;
-        border-bottom: 2px solid $primary-color;
+        color: black;
+        border-bottom: 3px $primary-color !important;
       }
     }
   }
 
-  .menu {
-    background: #fbf6f6;
+  .menu {    
     width: 50px;
     height: 36px;
     border-radius: 5px;
@@ -131,7 +133,7 @@ header{
   }
   .menu-inner .bar {
     width: 30px;
-    background: black;
+    background: $secondary-color;
     height: 2px;
     display: inline-block;
     border-radius: 50px;
@@ -171,6 +173,7 @@ header{
       color: $quaternary-color;
       text-transform: uppercase;
       font-size: 18px;
+      padding: 2px 5px;
     }
   }
 }

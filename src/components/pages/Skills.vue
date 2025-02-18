@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Mousewheel, Pagination, Autoplay } from 'swiper/modules';
+import { useHead } from '@vueuse/head';
 
 export default {
   name: 'Skills',
@@ -16,6 +17,29 @@ export default {
     Wabutton
   },
   setup() {
+    useHead({
+      title:'Competenze - Niccolò Vaccina',
+      meta: [
+        { name:'title', content:'Competenze - Niccolò Vaccina' },
+        { name:'description', content:'Esplora le mie competenze tecniche: .NET, C#, SQL Server, MVC, JavaScript, HTML, CSS e altro.' },
+        { rel:'canonical', content:'https://nvaccina-portfolio.netlify.app/competenze' },
+        { name:'author', content:'Niccolò Vaccina' },
+        { name:'keywords', content:'Competenze, .NET, C#, SQL Server, JavaScript, HTML, CSS, Web Development' },
+        { property:'article:author', content:'Niccolò Vaccina' },
+        { property:'article:tag', content:'Competenze, Tecnologie, Full Stack, Programmazione' },
+        { property:'og:type', content:'article' },
+        { property:'og:site_name', content:'Niccolò Vaccina Portfolio' },
+        { property:'og:url', content:'https://nvaccina-portfolio.netlify.app/competenze' },
+        { property:'og:title', content:'Competenze Tecniche - Niccolò Vaccina' },
+        { property:'og:description', content:'Tutte le tecnologie che conosco e utilizzo nello sviluppo web.' },
+        { property:'og:image', content:'https://nvaccina-portfolio.netlify.app/assets/competenze-preview.jpg' },
+        { property:'twitter:card', content:'summary_large_image' },
+        { property:'twitter:url', content:'https://nvaccina-portfolio.netlify.app/competenze' },
+        { property:'twitter:title', content:'Competenze Tecniche - Niccolò Vaccina' },
+        { property:'twitter:description', content:'Le tecnologie che utilizzo per lo sviluppo full stack.' },
+        { property:'twitter:image', content:'https://nvaccina-portfolio.netlify.app/assets/competenze-preview.jpg' }
+      ]
+    });
     return {
       modules: [Pagination, Mousewheel, Autoplay],
     };

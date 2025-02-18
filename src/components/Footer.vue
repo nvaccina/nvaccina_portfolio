@@ -28,7 +28,7 @@ export default {
               </li>
               <li>
                 <a href="https://goo.gl/maps/hWkhqvqYgG1v8eL9A" target="_blank" rel="noopener">
-                  <i class="fa-solid fa-location-dot pe-1"></i> Cesena (FC)
+                  <i class="fa-solid fa-location-dot pe-1"></i> Cesena (FC) - Italia
                 </a>
               </li>
             </ul>  
@@ -36,13 +36,13 @@ export default {
         </div>
         <div class="col-12 col-md-4 nv-col">
           <div class="logo-footer">
-            <router-link :to="{ name:'home' }"><img src="/img/logo/nv.png" alt="logo"></router-link>
+            <router-link :to="{ name:'home' }"><img src="/img/logo/nv-l.png" alt="logo"></router-link>
           </div>    
         </div>
         <div class="col-12 col-md-4 nv-col">
           <div class="social">
             <nav class="h-100 w-100">
-              <ul class="d-flex align-items-center justify-content-end w-100 h-100 mb-0">
+              <ul class="d-flex align-items-center justify-content-end w-100 h-100 mb-0 ps-0">
                 <li v-for="(icon, index) in social" :key="index">
                   <a :href="icon.href">
                     <i :class="icon.icon"></i>
@@ -68,6 +68,7 @@ footer{
   padding: 20px 0;
   background-color: $tertiary-color;
   color: $secondary-color;
+  margin-top: 150px;
   .nv-col{
     display: flex;
     align-items: center;
@@ -92,6 +93,7 @@ footer{
       width: 200px;
       a{
         border: 0 !important;
+        background-color: transparent !important;
       }
       &:hover{
         img{
@@ -120,8 +122,8 @@ footer{
     border-bottom: 1px solid $secondary-color;
   }
   .nv-col{
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }
 
