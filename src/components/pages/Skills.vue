@@ -1,5 +1,5 @@
 <script>
-import {skills} from '../../data/data.js';
+import {skills, skills2, allskills} from '../../data/data.js';
 import Skill_card from '../partials/Skill_card.vue';
 import Wabutton from '../partials/Wabutton.vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
@@ -47,6 +47,8 @@ export default {
   data(){
     return{
       skills,
+      skills2,
+      allskills
     }
   }
 }
@@ -54,8 +56,22 @@ export default {
 
 <template>
   <section id="skills">
-    <div class="text-center">
-      <h1 class="pb-5 title">Skills</h1>
+    <div>
+      <div class="container">
+        <h1 class="pb-5 title">Competenze</h1>
+      </div>
+      <!-- <div class="new-card-container container d-flex flex-wrap justify-content-center">
+        <div 
+          v-for="(skill, index) in allskills" 
+          :key="index"
+          class="my-5 d-flex justify-content-center"
+        >  
+        <Skill_card
+            :name="skill.name"
+            :image="skill.image_skill"
+          />
+        </div>
+      </div> -->
       <swiper
         class="py-5 skill-swiper"
         :slidesPerView="6"
@@ -65,6 +81,9 @@ export default {
         :mousewheelControl="true"
         :speed="3000"
         :loop="true"
+        :autoplay="{
+          delay: 2000
+        }"
         :a11y="false"
         :pagination="{
           clickable: true,
@@ -108,6 +127,63 @@ export default {
           />
         </swiper-slide>
       </swiper>
+
+      <swiper
+        class="py-5 skill-swiper"
+        :slidesPerView="6"
+        :spaceBetween="0"
+        :mousewheel="true"
+        :grabCursor="true" 
+        :mousewheelControl="true"
+        :speed="3000"
+        :loop="true"
+        :autoplay="{
+          delay: 2000,
+          reverseDirection: true,
+        }"
+        
+        :pagination="{
+          clickable: true,
+        }"
+        :modules="modules"
+        :breakpoints="{
+          '0': {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          '408': {
+            slidesPerView: 2,
+            spaceBetween: 0,
+          },
+          '520': {
+            slidesPerView: 3,
+            spaceBetween: 0,
+          },
+          '991': {
+            slidesPerView: 4,
+            spaceBetween: 0,
+          },
+          '1200': {
+            slidesPerView: 5,
+            spaceBetween: 0,
+          },
+          '1400': {
+            slidesPerView: 6,
+            spaceBetween: 0,
+          },
+        }"
+      >
+        <swiper-slide 
+          v-for="(skill, index) in skills2" 
+          :key="index"
+          class="my-5 d-flex justify-content-center"
+        >
+          <Skill_card
+            :name="skill.name"
+            :image="skill.image_skill"
+          />
+        </swiper-slide>
+      </swiper>
     </div>
   </section>
   <Wabutton/> 
@@ -117,7 +193,8 @@ export default {
 
 .title, .skill-swiper{
   position: relative;
-  animation-duration: 2s;
+  animation-direction: reverse;
+  transition-timing-function: linear !important;
 }
 .title{
   animation-name: title;
@@ -127,6 +204,11 @@ export default {
 }
 .swiper-wrapper {
   transition-timing-function: linear;
+}
+
+.new-card-container{
+  border: 1px solid black;
+  min-height: 150px;
 }
 
 @keyframes title {

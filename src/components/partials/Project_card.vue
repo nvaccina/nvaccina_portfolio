@@ -43,7 +43,12 @@ export default {
               >
               Vai al sito
             </a>
-            <a class="git-button h-100" :href="link_github">
+            <a 
+              class="git-button h-100" 
+              :href="link_github"
+              :class="{'disabled btn' : link_github == ''}"
+              :style="{border:'none'}"
+            >
               <i class="fa-brands fa-github"></i>
             </a>
         </div>
