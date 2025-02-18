@@ -43,9 +43,12 @@ export default {
       <div class="row">
         <div class="col-12 col-lg-7 testo-home px-lg-5">
           <h1>Ciao, sono Niccolò</h1>
-          <h4>Jr. Full Stack Web Developer</h4>
+          <h3>Full Stack Web Developer</h3>
           <p>
-            Mi sono sempre definito una persona creativa con una costante voglia di imparare e crescere, dopo aver svolto per anni un lavoro che non ho mai sentito 'mio', ho deciso di darmi una possibilità e di seguire la mia passione per la programmazione. A Febbraio 2023 mi sono iscritto al corso full-time di Boolean Careers per diventare Full Stack Web Developer e ora sono determinato a farne la mia professione.
+            Mi sono sempre definito una persona creativa con una costante voglia di imparare e crescere, dopo aver svolto per anni un lavoro che non ho mai sentito "mio", ho deciso di darmi una possibilità e di seguire la mia passione per la programmazione.             
+          </p>
+          <p>
+            Amo mettermi in gioco, approfondire nuovi argomenti e aggiornarmi costantemente sulle novità legate alle mie passioni, perché credo che l'apprendimento continuo sia la chiave per migliorarsi ogni giorno.
           </p>
         </div>
         <div class="col-12 col-lg-5 mt-5 mt-lg-0 d-flex ps-4 justify-content-center justify-content-lg-start">
