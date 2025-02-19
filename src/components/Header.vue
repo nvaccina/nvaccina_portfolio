@@ -37,7 +37,7 @@ export default {
   <header>
     <div class="container h-100 d-flex align-items-center justify-content-center">
       <div class="logo">
-        <router-link :to="{ name:'home' }"><img src="/img/logo/nv-l.png" alt="logo"></router-link>
+        <router-link :to="{ name:'home' }"><img src="/img/logo/logo.png" alt="logo"></router-link>
       </div>
       
       <div class="header-menu">
@@ -110,9 +110,8 @@ header{
       transition: all 0.2s;
       padding: 5px 10px;
       transition: linear all 0.2s;
-      &:active, &:hover{
-        color: black;
-        border-bottom: 3px $primary-color !important;
+      &.active, &:hover{        
+        border-bottom: 3px solid $primary-color !important;
       }
     }
   }

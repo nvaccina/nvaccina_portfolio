@@ -304,7 +304,7 @@ const portfolio = [
   {
     title: "Deliveboo",
     image: "deliveboo.png",
-    link_website: "https://github.com/pierdomenicoguarnieri/deliveboo-front-end",
+    link_website: "",
     link_github: "https://github.com/pierdomenicoguarnieri/deliveboo-back-end",
     technologies:[
       'laravel.png',
@@ -443,7 +443,7 @@ const timelines = [
     title: "Nato a Forlì (FC)",
     body: "",
     image: "",
-    date: "09/06/1999"
+    date: "1999"
   },
   {
     title: "Diploma di Geometra",

@@ -43,7 +43,10 @@ export default {
        <h1 class="new-title">Contatti</h1>
      </div>
   </div> -->
-  <section id="contacts">
+  <section id="contacts" class="mt-100">
+    <div class="container">
+        <h1 class="pb-5 title">Contatti</h1>
+    </div>
     <div class="container d-flex align-items-center flex-column title">
       <div class="d-flex align-items-center flex-column">
         <h2>Niccolò Vaccina</h2>
@@ -64,6 +67,11 @@ export default {
           <a class="btn-mail" href="mailto:niccolovac@gmail.com">
             INVIA UNA MAIL
           </a>
+      </div>
+    </div>
+    <div class="map-container">
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21376.486686414853!2d12.23362394867277!3d44.13992303310359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit!4v1739990647495!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
 
@@ -106,6 +114,21 @@ export default {
     color: black;
     &:hover{
       color: $primary-color;
+    }
+  }
+  .map-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    .map{
+      width: 80%;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow:  5px 5px 5px 5px rgba(0.1, 0.1, 0.1, 0.1);
+      & iframe{
+        width: 100%;
+      }
     }
   }
 }

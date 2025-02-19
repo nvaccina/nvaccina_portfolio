@@ -55,7 +55,7 @@ export default {
 </script>
 
 <template>
-  <section id="skills">
+  <section id="skills" class="mt-100">
     <div>
       <div class="container">
         <h1 class="pb-5 title">Competenze</h1>

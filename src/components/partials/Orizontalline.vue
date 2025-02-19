@@ -71,13 +71,28 @@ a {
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .timeline {
+  // white-space: nowrap;
+  // overflow-x: hidden;
   white-space: nowrap;
-  overflow-x: hidden;
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 700px;
+  &::-webkit-scrollbar{
+    display: none;
+  }
 }
 
 .timeline ol {
+  // font-size: 0;
+  // width: 100vw;
+  // padding: 250px 0;
+  // transition: all 1s;
   font-size: 0;
-  width: 100vw;
+  display: flex;
+  justify-content: center;
+  width: max-content;
   padding: 250px 0;
   transition: all 1s;
 }
@@ -104,7 +119,7 @@ a {
   position: absolute;
   top: 50%;
   left: calc(100% + 1px);
-  bottom: 0;
+  // bottom: 0;
   width: 12px;
   height: 12px;
   transform: translateY(-50%);

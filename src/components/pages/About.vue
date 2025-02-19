@@ -45,7 +45,7 @@ export default {
 </script>
 
 <template>
-  <section id="about">
+  <section id="about" class="mt-100">
     <div class="container">
       <h1 class="pb-5 title">About me</h1>
       <div class="row">
@@ -78,7 +78,7 @@ export default {
       <Orizontalline/>
 
       <div class="cv d-flex justify-content-center">
-        <a href="/niccolò-vaccina-cv.pdf" download="niccolò-vaccina-cv" class="cv-button">scarica CV</a>
+        <a href="/niccolò-vaccina-cv-it.pdf" download="niccolò-vaccina-cv" class="cv-button">scarica CV</a>
       </div>
     </div>
   </section>

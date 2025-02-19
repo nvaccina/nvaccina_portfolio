@@ -46,9 +46,10 @@ export default {
 </script>
 
 <template>
-  <section id="portfolio">
-    <h1 class="pb-5 text-center title">Portfolio</h1>
-    
+  <section id="portfolio" class="mt-100">
+    <div class="container">
+      <h1 class="pb-5 title">Portfolio</h1>
+    </div>
     <div class="container-fluid container-lg d-flex flex-wrap portfolio">
 
       <Project_card
