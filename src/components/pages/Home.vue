@@ -74,7 +74,7 @@ export default {
           <p><strong>Chi sono?</strong><br> Sono una persona creativa, curiosa e intraprendente, con una grande passione per la programmazione. Dopo anni in un lavoro che non mi rappresentava, ho scelto di seguire ciò che mi entusiasma davvero: creare, imparare e risolvere problemi attraverso il codice. Ogni giorno è un'opportunità per crescere e migliorare, ed è questo che mi motiva a proseguire.<br>
           <strong>Vuoi saperne di più sul mio percorso?</strong></p>
           <div class="cv d-flex justify-content-center mt-4">
-            <a href="/about" class="cv-button">Scopri di più</a>
+            <span class="cv-button"><router-link :to="{ name:'about' }">Scopri di più</router-link></span>
           </div>
         </div>
       </div>
@@ -89,7 +89,7 @@ export default {
           <h2>Portfolio</h2>
           <p>Adoro trasformare idee in realtà attraverso il codice. Nel mio portfolio troverai progetti che mostrano la mia creatività, il mio impegno e la mia voglia di sperimentare. Dallo sviluppo web alle applicazioni interattive, ogni progetto è il frutto della mia continua ricerca di nuove sfide e soluzioni innovative. Se desideri vedere cosa ho realizzato e scoprire come affronto ogni sfida, dai un’occhiata ai miei lavori!</p>
           <div class="cv d-flex justify-content-center mt-4">
-            <a href="/portfolio" class="cv-button">Scopri di più</a>
+            <span class="cv-button"><router-link :to="{ name:'portfolio' }">Scopri di più</router-link></span>
           </div>
         </div>
         <div class="col-12 col-lg-5 mt-5 mt-lg-0 d-flex ps-4 justify-content-center justify-content-lg-start">
@@ -112,8 +112,8 @@ export default {
           <h2>Competenze</h2>
           <p>Durante il mio percorso professionale, ho avuto l'opportunità di approfondire diverse tecnologie e strumenti che mi consentono di realizzare progetti web moderni, performanti e scalabili. Dallo sviluppo front-end interattivo con framework come Angular, Vue.js e React, fino al back-end con .Net, Node.js e Laravel. Inoltre spazio su differenti sistemi di gestione database tra cui Sql Server, MySQL e PostreSQL.
           Scopri tutte le tecnologie che utilizzo e come possono dare valore ai tuoi progetti!</p>
-          <div class="cv d-flex justify-content-center mt-4">
-            <a href="/competenze" class="cv-button">Scopri di più</a>
+          <div class="cv d-flex justify-content-center mt-4">            
+            <span class="cv-button"><router-link :to="{ name:'competenze' }">Scopri di più</router-link></span>
           </div>
         </div>
       </div>
@@ -126,7 +126,7 @@ export default {
           <h2>Contatti</h2>
           <p>Sei alla ricerca di un collaboratore appassionato e intraprendente? Oppure hai un'idea che desideri sviluppare e hai bisogno di supporto? Sono sempre aperto a nuove opportunità e mi piace confrontarmi con persone che condividono la mia stessa voglia di innovare e creare. Non esitare a contattarmi per qualsiasi domanda o proposta!</p>
           <div class="cv d-flex justify-content-center mt-4">
-            <a href="/contatti" class="cv-button">Scopri di più</a>
+            <span class="cv-button"><router-link :to="{ name:'contatti' }">Scopri di più</router-link></span>
           </div>
         </div>
         <div class="col-12 col-lg-5 mt-5 mt-lg-0 d-flex ps-4 justify-content-center justify-content-lg-center">   
