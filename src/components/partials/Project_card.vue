@@ -24,7 +24,7 @@ export default {
     <div class="project-info">
         <h3>{{title}}</h3>
         <div>
-          <p class="tecngologies-title">Tecnologies</p>
+          <p class="tecngologies-title">Tecnologie</p>
           <div class="d-flex align-items-center technologies-container">
             <div 
               class="technology"
@@ -38,7 +38,7 @@ export default {
         <div class="sito d-flex align-items-center">
             <a 
               class="site-button me-2 btn" 
-              :class="{'disabled' : link_website == ''}"
+              :class="{'d-none' : link_website == ''}"
               :href="link_website"
               >
               Vai al sito
@@ -46,7 +46,7 @@ export default {
             <a 
               class="git-button h-100" 
               :href="link_github"
-              :class="{'disabled btn' : link_github == ''}"
+              :class="{'d-none btn' : link_github == ''}"
               :style="{border:'none'}"
             >
               <i class="fa-brands fa-github"></i>

@@ -61,24 +61,26 @@ export default {
             Dopo aver trascorso più di quattro anni svolgendo il lavoro di consulente immobiliare, duranti i quali ho imparato ad avere un'ottima capacità relazionale con i clienti, ho deciso di mollare la monotonia e la stabilità economica per seguire la mia passione per la programmazione e per il codice.
           </p>
           <p>
-            Questo desiderio mi ha portato a frequentare un corso di programmazione immersivo sia lato Front-End che lato Back-End, della durata di 6 mesi, organizzato da <a class="link" href="https://boolean.careers/">Boolen SRL</a>. Il loro obbiettivo è quello di formare Full Stack Web Developers attraverso lezioni teoriche ed esercitazioni pratiche giornaliere, durante le quali, grazie alle nuove tecnologie e framework conosciuti sono riuscito insieme al mio team a realizzare una web app "DeliveBoo" che permette di ordinare cibo a domicilio, utilizzando i framework Vue.js e Laravel. 
-          </p>
-          <p>
-            Creazione dashboard per gli utenti registrati (ristoranti), con diverse funzionalità di gestione del proprio profilo e visualizzazione delle statistiche sugli ordini ricevuti. Creazione della pagina pubblica che consente ai visitatori di filtrare i ristoranti inbase alla tipologia, di controllare il proprio carrello ed eseguire dei veri ordini tramite form di checkoutcon controllo del processo di pagamento grazie a <a class="link" href="https://www.braintreepayments.com/it?referrer=https%3A%2F%2Fwww.google.com%2F">Braintree</a>.
+            Questo desiderio mi ha portato a frequentare un corso di programmazione immersivo sia lato Front-End che lato Back-End, della durata di 6 mesi, organizzato da <a class="link" href="https://boolean.careers/">Boolen SRL</a>. Il loro obbiettivo è quello di formare Full Stack Web Developers attraverso lezioni teoriche ed esercitazioni pratiche giornaliere, durante le quali, grazie alle nuove tecnologie e framework conosciuti sono riuscito insieme al mio team a realizzare una web app che permette di ordinare cibo a domicilio, utilizzando tecnologie come Vue.js, Laravel e MySQL e integrata con il sistema di pagamento Braintree.
           </p>
         </div>
         <p>
-          Subito dopo aver terminato il corso, ho iniziato la mia prima esperienza come Web Developer presso Input S.r.l., dove mi sono ritrovato, come unico sviluppatore, ad occuparmi dell'implementazione di tre software per il controllo e il rilevamento della sosta nei parcheggi pubblici e privati, nei quali ho anche apportato l'integrazione della piattaforma di pagamento XPay di Nexi. Gestione database tramite DBeaver e collegamenti al server OVHcloud.            
+          Dopo aver completato il corso di formazione, ho iniziato la mia prima esperienza lavorativa come Web Developer presso <a class="link" href="https://inputitalia.com/">Input S.r.l.</a> In questa realtà, ho ricoperto il ruolo di unico sviluppatore, occupandomi interamente dello sviluppo di tre software dedicati al controllo e al monitoraggio della sosta in parcheggi pubblici e privati. Tra le principali attività, ho curato l'integrazione della piattaforma di pagamento XPay di Nexi, la gestione dei database tramite DBeaver e la configurazione dei collegamenti al server OVHcloud.
         </p>
         <p>
-          Dopo qualche mese però ho avuto l'opportunità di entrare in un progetto più grande e            
+          Dopo qualche mese, ho avuto l'opportunità di entrare in una realtà più strutturata: <a class="link" href="https://www.bsdsoftware.it/">BSD Software Srl.</a> che fa parte del <a class="link" href="https://www.maggioli.com/it-it">Gruppo Maggioli</a>.<br>
+          Qui mi occupo dello sviluppo di applicazioni web responsive, lavorando sia sul Front-End che sul Back-End, con tecnologie come .NET Framework, ASP.NET Core MVC e Angular.
+          
+          Mi occupo della progettazione, dello sviluppo e della manutenzione di siti web, piattaforme e-commerce e software gestionali, realizzati su misura in base alle esigenze dei clienti, sia in ambito B2B che B2C. Inoltre, gestisco database su SQL Server, Oracle, PostgreSQL e Microsoft Azure, integrando anche, soluzioni esterne come Iubenda (privacy e consent management), Brevo (email marketing e live chat), servizi Google e sistemi di pagamento come PayPal.
         </p>
       </div>
-      
-      <Orizontalline/>
+    </div>
 
+    <Orizontalline/>
+
+    <div class="container mt-5">    
       <div class="cv d-flex justify-content-center">
-        <a href="/niccolò-vaccina-cv-it.pdf" download="niccolò-vaccina-cv" class="cv-button">scarica CV</a>
+        <a href="/niccolò-vaccina-cv-it.pdf" download="niccolò-vaccina-cv" class="cv-button">Scarica CV</a>
       </div>
     </div>
   </section>
