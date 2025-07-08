@@ -18,25 +18,23 @@ export default {
   setup(){
     useHead({
       title:'Portfolio - Niccolò Vaccina',
+      link:[{ rel:'canonical', href:'https://nvaccina-portfolio.netlify.app/portfolio' }],
       meta: [
-        { name:'title', content:'Portfolio - Progetti di Niccolò Vaccina' },
-        { name:'description', content:'Scopri i progetti a cui ho lavorato come sviluppatore full stack.' },
-        { rel:'canonical', content:'https://nvaccina-portfolio.netlify.app/portfolio' },
-        { name:'author', content:'Niccolò Vaccina' },
-        { name:'keywords', content:'Portfolio, progetti, sviluppo web, .NET, C#, SQL Server' },
-        { property:'article:author', content:'Niccolò Vaccina' },
-        { property:'article:tag', content:'Progetti, Portfolio, Sviluppo Web, Full Stack' },
+        { name: 'title', content: 'Portfolio - Niccolò Vaccina | Full Stack Developer' },
+        { name: 'description', content: 'Esplora i progetti a cui ho lavorato come sviluppatore full stack specializzato in .NET, C#, SQL Server, MVC e Angular.' },
+        { name: 'author', content: 'Niccolò Vaccina' },
+        { name: 'keywords', content: 'niccolò vaccina, portfolio, progetti, web app, applicazioni, sviluppo software, .net, mvc, c#, sql server, angular, sviluppatore full stack, cesena, forlì' },
         { property:'og:type', content:'website' },
         { property:'og:site_name', content:'Niccolò Vaccina Portfolio' },
         { property:'og:url', content:'https://nvaccina-portfolio.netlify.app/portfolio' },
-        { property:'og:title', content:'Portfolio - Progetti di Niccolò Vaccina' },
-        { property:'og:description', content:'Visualizza i miei lavori come sviluppatore full stack.' },
+        { property: 'og:title', content: 'Portfolio - Niccolò Vaccina | Progetti Full Stack' },
+        { property: 'og:description', content: 'Dai un’occhiata ai siti web e software che ho realizzato come sviluppatore full stack.' },
         { property:'og:image', content:'https://nvaccina-portfolio.netlify.app/assets/portfolio-preview.jpg' },
-        { property:'twitter:card', content:'summary_large_image' },
-        { property:'twitter:url', content:'https://nvaccina-portfolio.netlify.app/portfolio' },
-        { property:'twitter:title', content:'Portfolio - Progetti di Niccolò Vaccina' },
-        { property:'twitter:description', content:'Dai un’occhiata ai miei progetti e collaborazioni.' },
-        { property:'twitter:image', content:'https://nvaccina-portfolio.netlify.app/assets/portfolio-preview.jpg' }
+        { name:'twitter:card', content:'summary_large_image' },
+        { name:'twitter:url', content:'https://nvaccina-portfolio.netlify.app/portfolio' },
+        { name: 'twitter:title', content: 'Portfolio - Niccolò Vaccina | Progetti Full Stack' },
+        { name: 'twitter:description', content: 'Dai un’occhiata ai siti web e software che ho realizzato come sviluppatore full stack.' },
+        { name:'twitter:image', content:'https://nvaccina-portfolio.netlify.app/assets/portfolio-preview.jpg' }
       ]
     });
     return{};

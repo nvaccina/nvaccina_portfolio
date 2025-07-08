@@ -10,10 +10,12 @@
     "postbuild": "cp public/robots.txt dist/robots.txt"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@fontsource-variable/oswald": "^5.0.6",
     "@vueuse/head": "^2.0.0",
     "jquery-touchswipe": "^1.6.19",
     "sass": "^1.64.2",
+    "sweetalert2": "^11.22.2",
     "swiper": "^10.1.0",
     "vue": "^3.3.4",
     "vue-router": "^4.2.4"

@@ -17,26 +17,24 @@ export default {
   },
   setup(){
     useHead({
-      title:'About - Niccolò Vaccina',
+      title: 'Chi sono - Niccolò Vaccina | Full Stack Developer',
+      link:[{ rel:'canonical', href:'https://nvaccina-portfolio.netlify.app/about' }],
       meta: [
-        { name:'title', content:'About - Niccolò Vaccina' },
-        { name:'description', content:'Scopri il mio percorso di studi e professionale come sviluppatore full stack.' },
-        { rel:'canonical', content:'https://nvaccina-portfolio.netlify.app/about' },
-        { name:'author', content:'Niccolò Vaccina' },
-        { name:'keywords', content:'Niccolò Vaccina, esperienza, studi, carriera, sviluppatore full stack' },
-        { property:'article:author', content:'Niccolò Vaccina' },
-        { property:'article:tag', content:'Esperienza, Carriera, Formazione, Sviluppatore Web' },
+        { name: 'title', content: 'Chi sono - Niccolò Vaccina | Full Stack Developer' },
+        { name: 'description', content: 'Scopri il mio percorso formativo e professionale come sviluppatore full stack specializzato in .NET, C# e Angular.' },
+        { name: 'author', content: 'Niccolò Vaccina' },
+        { name:'keywords', content:'niccolò vaccina, vaccina, esperienza, studi, carriera, sviluppatore web, full stack developer, sviluppatore, sviluppatore .net, c#, angular, sql server, mvc, cesena, forlì, portfolio sviluppatore, web developer italy' },        
         { property:'og:type', content:'article' },
         { property:'og:site_name', content:'Niccolò Vaccina Portfolio' },
         { property:'og:url', content:'https://nvaccina-portfolio.netlify.app/about' },
         { property:'og:title', content:'About - Niccolò Vaccina' },
-        { property:'og:description', content:'Leggi il mio percorso professionale e accademico nel mondo dello sviluppo web.' },
+        { property:'og:description', content: 'Approfondisci il mio background formativo e professionale nel mondo dello sviluppo software e web.' },
         { property:'og:image', content:'https://nvaccina-portfolio.netlify.app/assets/about-preview.jpg' },
-        { property:'twitter:card', content:'summary_large_image' },
-        { property:'twitter:url', content:'https://nvaccina-portfolio.netlify.app/about' },
-        { property:'twitter:title', content:'About - Niccolò Vaccina' },
-        { property:'twitter:description', content:'Scopri il mio percorso di studi e professionale.' },
-        { property:'twitter:image', content:'https://nvaccina-portfolio.netlify.app/assets/about-preview.jpg' }
+        { name:'twitter:card', content:'summary_large_image' },
+        { name:'twitter:url', content:'https://nvaccina-portfolio.netlify.app/about' },
+        { name:'twitter:title', content:'About - Niccolò Vaccina' },
+        { name:'twitter:description', content: 'Scopri il mio percorso nel mondo dello sviluppo: formazione, esperienze e competenze tecniche.' },
+        { name:'twitter:image', content:'https://nvaccina-portfolio.netlify.app/assets/about-preview.jpg' }
       ]
     });
     return{};

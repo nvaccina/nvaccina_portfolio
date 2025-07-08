@@ -1,6 +1,10 @@
 <script>
 import Wabutton from '../partials/Wabutton.vue';
 import { useHead } from '@vueuse/head';
+import { ref } from 'vue';
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
+import { onMounted } from 'vue';
 
 export default {
   name: 'Contatti',
@@ -9,29 +13,127 @@ export default {
   },
   setup(){
     useHead({
-      title:'Contatta - Niccolò Vaccina',
+      title: 'Contattami - Niccolò Vaccina | Full Stack Developer',
+      link:[{ rel:'canonical', href:'https://nvaccina-portfolio.netlify.app/contatti' }],
       meta: [
-        { name:'title', content:'Contatta - Niccolò Vaccina' },
-        { name:'description', content:'Vuoi collaborare con me? Contattami per informazioni o proposte di lavoro.' },
-        { rel:'canonical', content:'https://nvaccina-portfolio.netlify.app/contatti' },
-        { name:'author', content:'Niccolò Vaccina' },
-        { name:'keywords', content:'Contatti, email, collaborazione, sviluppatore web' },
-        { property:'article:author', content:'Niccolò Vaccina' },
-        { property:'article:tag', content:'Contatti, Collaborazione, Sviluppo Web' },
+        { name: 'title', content: 'Contattami - Niccolò Vaccina | Full Stack Developer' },
+        { name: 'description', content: 'Hai un progetto o una proposta di collaborazione? Contattami per lavorare insieme sul tuo prossimo software o sito web.' },
+        { name: 'author', content: 'Niccolò Vaccina' },
+        { name: 'keywords', content: 'niccolò vaccina, contatti, email, collaborazione, progetto, sviluppatore web, full stack developer, sviluppatore .net, mvc, sql server, c#, angular, cesena, forlì' },
         { property:'og:type', content:'website' },
         { property:'og:site_name', content:'Niccolò Vaccina Portfolio' },
         { property:'og:url', content:'https://nvaccina-portfolio.netlify.app/contatti' },
-        { property:'og:title', content:'Contattami - Niccolò Vaccina' },
-        { property:'og:description', content:'Scrivimi per collaborazioni o informazioni.' },
+        { property:'og:title', content: 'Contattami - Niccolò Vaccina | Full Stack Developer' },
+        { property:'og:description', content: 'Contattami per collaborazioni, consulenze o sviluppo di applicazioni web e software.' },
         { property:'og:image', content:'https://nvaccina-portfolio.netlify.app/assets/contact-preview.jpg' },
-        { property:'twitter:card', content:'summary_large_image' },
-        { property:'twitter:url', content:'https://nvaccina-portfolio.netlify.app/contatti' },
-        { property:'twitter:title', content:'Contattami - Niccolò Vaccina' },
-        { property:'twitter:description', content:'Contattami per progetti e collaborazioni.' },
-        { property:'twitter:image', content:'https://nvaccina-portfolio.netlify.app/assets/contact-preview.jpg' }
+        { name:'twitter:card', content:'summary_large_image' },
+        { name:'twitter:url', content:'https://nvaccina-portfolio.netlify.app/contatti' },
+        { name:'twitter:title', content:'Contattami - Niccolò Vaccina' },
+        { name:'twitter:description', content: 'Vuoi lavorare con me? Scrivimi per proposte, richieste o informazioni su nuovi progetti.' },
+        { name:'twitter:image', content:'https://nvaccina-portfolio.netlify.app/assets/contact-preview.jpg' }
       ]
     });
-    return{};
+
+    const contactForm = ref(null);
+
+    onMounted(() => {
+      if (!document.querySelector('#recaptcha-script')) {
+        const script = document.createElement('script');
+        script.id = 'recaptcha-script';
+        script.src = 'https://www.google.com/recaptcha/api.js?render=6LcTXXwrAAAAAHsmCaKoFsfFK4j41C-ia6Oyvo3K';
+        script.async = true;
+        script.defer = true;
+        document.body.appendChild(script);
+      }
+    });
+
+    const sendEmail = () => {
+      const form = contactForm.value;
+      const name = form.name.value.trim();
+      const email = form.email.value.trim();
+      const message = form.message.value.trim();
+      const privacyChecked = form.querySelector('#privacy').checked;
+
+      if (!name || !email || !message) {
+        Swal.fire({
+          icon: 'warning',
+          title: 'Campi obbligatori mancanti',
+          text: 'Per favore, compila tutti i campi obbligatori prima di inviare il messaggio.',
+          confirmButtonColor: '#f27474'
+        });
+        return;
+      }
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Email non valida',
+          text: 'Inserisci un indirizzo email valido.',
+          confirmButtonColor: '#f27474'
+        });
+        return;
+      }
+
+      if (!privacyChecked) {
+        Swal.fire({
+          icon: 'warning',
+          title: 'Consenso richiesto',
+          text: 'Devi accettare le condizioni della Privacy Policy prima di inviare il messaggio.',
+          confirmButtonColor: '#f27474'
+        });
+        return;
+      }
+
+      window.grecaptcha.ready(() => {
+        window.grecaptcha.execute('6LcTXXwrAAAAAHsmCaKoFsfFK4j41C-ia6Oyvo3K', { action: 'submit' }).then((token) => {
+          
+          let input = form.querySelector('input[name="g-recaptcha-response"]');
+          if (!input) {
+            input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = 'g-recaptcha-response';
+            form.appendChild(input);
+          }
+          input.value = token;
+
+          Swal.fire({
+            title: 'Invio in corso...',
+            allowOutsideClick: false,
+            didOpen: () => Swal.showLoading()
+          });
+
+          emailjs.sendForm(
+            'service_or524sm',
+            'template_89mswyw',
+            contactForm.value,
+            'Ex3cF8uaRrMLvv26n'
+          )
+          .then(() => {
+            Swal.fire({
+              icon: 'success',
+              title: 'Messaggio inviato!',
+              text: 'Ti contatterò il prima possibile.',
+              confirmButtonColor: '#3085d6'
+            });
+            contactForm.value.reset();            
+          })
+          .catch((error) => {
+              Swal.fire({
+                icon: 'error',
+                title: 'Errore',
+                text: 'Qualcosa è andato storto durante l\'invio. Riprova più tardi.',
+                confirmButtonColor: '#d33'
+              });
+              console.error('EmailJS Error:', error);
+            });
+        });
+      });
+    };
+    return {
+      contactForm,
+      sendEmail
+    };
   }
 }
 </script>
@@ -42,6 +144,33 @@ export default {
         <h1 class="pb-5 title">Contatti</h1>
     </div>
     <div class="container">
+      <h2>Hai un progetto in mente? Scrivimi per collaborare o per qualsiasi domanda</h2>
+      <form @submit.prevent="sendEmail" ref="contactForm" class="contact-form">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nome (*)</label>
+          <input type="text" class="form-control" id="name" name="name" />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email (*)</label>
+          <input type="email" class="form-control" id="email" name="email" />
+        </div>
+        <div class="mb-3">
+          <label for="cellulare" class="form-label">Cellulare</label>
+          <input type="text" class="form-control" id="cellulare" name="cellulare" />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Messaggio (*)</label>
+          <textarea class="form-control" id="message" rows="4" name="message"></textarea>
+        </div>   
+        <div class="mb-3">
+          <input class="form-check-input" type="checkbox" value="" id="privacy">
+          <span class="form-check-label" for="privacy">
+            Si, accetto le condizioni della <strong><a href="https://www.iubenda.com/privacy-policy/70797940" class="iubenda-noiframe" title="Privacy Policy ">Privacy Policy</a></strong>.
+          </span>
+        </div>    
+        <button type="submit" class="cv-button">Invia</button>
+      </form>
+
       <div class="row">
         <div class="col-12 col-md-8 pe-md-5 order-2 order-md-1">
           <div class="map-container">
@@ -110,6 +239,21 @@ export default {
       }
     }
   }
+  .contact-form {
+    max-width: 100%;
+    margin: 30px 0 60px 0;
+    .form-control {
+      border-radius: 10px;
+    }
+    .btn {
+      background-color: $primary-color;
+      border: none;
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+
 }
 
 @media (max-width: 768px) {

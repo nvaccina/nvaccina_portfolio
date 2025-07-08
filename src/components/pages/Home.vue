@@ -9,26 +9,24 @@ export default {
   },
   setup(){
     useHead({
-      title:'Home - Niccolò Vaccina',
+      title: 'Niccolò Vaccina | Full Stack Developer specializzato in .NET e C#',
+      link:[{ rel:'canonical', href:'https://nvaccina-portfolio.netlify.app/' }],
       meta: [
         { name:'title', content:'Niccolò Vaccina - Full Stack Web Developer' },
         { name:'description', content:'Sono Niccolò Vaccina, uno sviluppatore full stack specializzato in .NET, C#, MVC e SQL Server. Scopri il mio portfolio e le mie competenze.' },
-        { rel:'canonical', content:'https://nvaccina-portfolio.netlify.app/' },
         { name:'author', content:'Niccolò Vaccina' },
-        { name:'keywords', content:'Niccolò Vaccina, full stack developer, .NET, C#, SQL Server, sviluppo web' },
-        { property:'article:author', content:'Niccolò Vaccina' },
-        { property:'article:tag', content:'Full Stack Developer, .NET, C#, SQL Server, Web Development' },
+        { name:'keywords', content:'niccolò vaccina, vaccina, sviluppatore web, full stack developer, sviluppatore, sviluppatore .net, c#, sql server, mvc, cesena, forlì, portfolio sviluppatore, web developer italy' },
         { property:'og:type', content:'website' },
         { property:'og:site_name', content:'Niccolò Vaccina Portfolio' },
         { property:'og:url', content:'https://nvaccina-portfolio.netlify.app/' },
         { property:'og:title', content:'Niccolò Vaccina - Full Stack Web Developer' },
         { property:'og:description', content:'Scopri il mio portfolio e le mie competenze come sviluppatore full stack.' },
         { property:'og:image', content:'https://nvaccina-portfolio.netlify.app/assets/home-preview.jpg' },
-        { property:'twitter:card', content:'summary_large_image' },
-        { property:'twitter:url', content:'https://nvaccina-portfolio.netlify.app/' },
-        { property:'twitter:title', content:'Niccolò Vaccina - Full Stack Web Developer' },
-        { property:'twitter:description', content:'Sviluppatore full stack specializzato in .NET, C#, MVC e SQL Server.' },
-        { property:'twitter:image', content:'https://nvaccina-portfolio.netlify.app/assets/home-preview.jpg' }
+        { name:'twitter:card', content:'summary_large_image' },
+        { name:'twitter:url', content:'https://nvaccina-portfolio.netlify.app/' },
+        { name:'twitter:title', content:'Niccolò Vaccina - Full Stack Web Developer' },
+        { name:'twitter:description', content:'Sviluppatore full stack specializzato in .NET, C#, MVC e SQL Server.' },
+        { name:'twitter:image', content:'https://nvaccina-portfolio.netlify.app/assets/home-preview.jpg' }
       ]
     });
     return{};

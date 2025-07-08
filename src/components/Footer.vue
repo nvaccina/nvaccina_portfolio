@@ -30,7 +30,7 @@ export default {
                 <a href="https://goo.gl/maps/hWkhqvqYgG1v8eL9A" target="_blank" rel="noopener">
                   <i class="fa-solid fa-location-dot pe-1"></i> Cesena (FC) - Italia
                 </a>
-              </li>
+              </li>            
             </ul>  
           </div>  
         </div>
@@ -39,10 +39,10 @@ export default {
             <router-link :to="{ name:'home' }"><img src="/img/logo/logo.png" alt="logo"></router-link>
           </div>    
         </div>
-        <div class="col-12 col-md-4 nv-col">
-          <div class="social">
+        <div class="col-12 col-md-4 col-social">
+          <div class="social w-100 h-100">
             <nav class="h-100 w-100">
-              <ul class="d-flex align-items-center justify-content-end w-100 h-100 mb-0 ps-0">
+              <ul class="d-flex align-items-center justify-content-center w-100 h-100 mb-0 ps-0">
                 <li v-for="(icon, index) in social" :key="index">
                   <a :href="icon.href">
                     <i :class="icon.icon"></i>
@@ -50,9 +50,11 @@ export default {
                 </li>
               </ul>
             </nav>
-    
           </div>
-
+          <div class="privacy mt-3">
+            <a href="https://www.iubenda.com/privacy-policy/70797940" class="iubenda-noiframe me-3" title="Privacy Policy ">Privacy Policy</a>
+            <a href="https://www.iubenda.com/privacy-policy/70797940/cookie-policy" class="iubenda-noiframe" title="Cookie Policy ">Cookie Policy</a>              
+          </div>
         </div>
       </div>
     </div>
@@ -100,12 +102,30 @@ footer{
           filter: brightness(10%) invert(150%);
         }
       }
-    }
+    }   
+  }
+  .col-social{
     .social{
+      display: flex;      
+      align-items: center;
+      justify-content: center;
+      height: 100%;
       a{
         font-size: 30px;
         margin: 0 10px;
         transition: all 0.3s;
+        &:hover{
+          color: $primary-color;
+        }
+      }
+    }
+    .privacy{
+        display: flex;
+        align-items: center;
+        justify-content: center;      
+      a{
+        transition: all 0.3s;
+        font-weight: 200;
         &:hover{
           color: $primary-color;
         }
