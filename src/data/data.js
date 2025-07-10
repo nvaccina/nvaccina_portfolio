@@ -132,7 +132,7 @@ const skills2 = [
 ];
 
 const allskills = [
-  {
+   {
     name: "HTML",
     image_skill: "html.png",
   },
@@ -163,6 +163,10 @@ const allskills = [
   {
     name: ".Net",
     image_skill: ".NET.png",
+  },
+  {
+    name: "Angular",
+    image_skill: "angular.png",
   },
   {
     name: "Vue.js",
