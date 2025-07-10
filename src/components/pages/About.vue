@@ -43,13 +43,13 @@ export default {
 </script>
 
 <template>
-  <section id="about" class="mt-100">
+  <section id="about" class="mt-50">
     <div class="container">
       <h1 class="pb-5 title">About me</h1>
       <div class="row">
         <div class="col-12 mb-5 mt-md-5 mt-md-0 col-md-5 d-flex justify-content-center">
           <div class="my-img">
-            <a href="https://www.linkedin.com/in/niccol%C3%B2-vaccina-566351198/">
+            <a href="https://www.linkedin.com/in/niccol%C3%B2-vaccina-566351198/" target="_blank">
               <img src="/img/profilo/foto_about.png" alt="Niccolò Vaccina">
             </a>
           </div>
@@ -66,7 +66,7 @@ export default {
           Dopo aver completato il corso di formazione, ho iniziato la mia prima esperienza lavorativa come Web Developer presso <a class="link" href="https://inputitalia.com/">Input S.r.l.</a> In questa realtà, ho ricoperto il ruolo di unico sviluppatore, occupandomi interamente dello sviluppo di tre software dedicati al controllo e al monitoraggio della sosta in parcheggi pubblici e privati. Tra le principali attività, ho curato l'integrazione della piattaforma di pagamento XPay di Nexi, la gestione dei database tramite DBeaver e la configurazione dei collegamenti al server OVHcloud.
         </p>
         <p>
-          Dopo qualche mese, ho avuto l'opportunità di entrare in una realtà più strutturata: <a class="link" href="https://www.bsdsoftware.it/">BSD Software Srl.</a> che fa parte del <a class="link" href="https://www.maggioli.com/it-it">Gruppo Maggioli</a>.<br>
+          Dopo qualche mese, ho avuto l'opportunità di entrare in una realtà più strutturata: <a class="link" href="https://www.bsdsoftware.it/" target="_blank">BSD Software Srl.</a> che fa parte del <a class="link" href="https://www.maggioli.com/it-it" target="_blank">Gruppo Maggioli</a>.<br>
           Qui mi occupo dello sviluppo di applicazioni web responsive, lavorando sia sul Front-End che sul Back-End, con tecnologie come .NET Framework, ASP.NET Core MVC e Angular.
           
           Mi occupo della progettazione, dello sviluppo e della manutenzione di siti web, piattaforme e-commerce e software gestionali, realizzati su misura in base alle esigenze dei clienti, sia in ambito B2B che B2C. Inoltre, gestisco database su SQL Server, Oracle, PostgreSQL e Microsoft Azure, integrando anche, soluzioni esterne come Iubenda (privacy e consent management), Brevo (email marketing e live chat), servizi Google e sistemi di pagamento come PayPal.

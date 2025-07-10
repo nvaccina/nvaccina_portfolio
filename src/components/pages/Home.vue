@@ -36,7 +36,7 @@ export default {
 </script>
 
 <template>
-  <section class="section-home">
+  <section class="section-home mt-50">
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-7 testo-home px-lg-5">
@@ -142,8 +142,6 @@ export default {
 <style lang="scss" scoped>
 @import '../../scss/general/variables';
 .section-home{
-  // min-height: calc(100vh - 294px);
-  margin-top: 100px;
   .testo-home{
     // position: relative;
     animation-name: testohome;

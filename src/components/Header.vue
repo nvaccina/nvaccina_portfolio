@@ -8,31 +8,35 @@ export default {
     }
   },
   methods:{
-    toggleMenu(){
+    toggleMenu() {
       const menuinner = document.getElementById('menu-inner');
       const bar1 = document.getElementById('bar1');
       const bar2 = document.getElementById('bar2');
       const bar3 = document.getElementById('bar3');
       const offcanvas = document.getElementById('mobileMenu');
-
       const isOpen = offcanvas.classList.contains('show');
 
       if (isOpen) {
-        offcanvas.classList.remove('show');
-        offcanvas.style.visibility = 'hidden';
         offcanvas.style.transform = 'translateX(100%)';
+        document.body.style.overflow = '';
+
         const backdrop = document.querySelector('.custom-backdrop');
         if (backdrop) {
           backdrop.remove();
         }
-
-        document.body.style.overflow = '';
 
         menuinner.classList.remove('menuinner-clicked');
         bar1.classList.remove('bar1-clicked');
         bar2.classList.remove('bar2-clicked');
         bar3.classList.remove('bar3-clicked');
 
+        const handleTransitionEnd = () => {
+          offcanvas.classList.remove('show');
+          offcanvas.style.visibility = 'hidden';
+          offcanvas.removeEventListener('transitionend', handleTransitionEnd);
+        };
+
+        offcanvas.addEventListener('transitionend', handleTransitionEnd);
       } else {
         menuinner.classList.add('menuinner-clicked');
         bar1.classList.add('bar1-clicked');
@@ -43,7 +47,7 @@ export default {
         backdrop.classList.add('custom-backdrop');
         backdrop.style.cssText = `
           position: fixed;
-          top: 60px;
+          top: 80px;
           left: 0;
           width: 100%;
           height: 100vh;
@@ -51,13 +55,17 @@ export default {
           z-index: 1040;
           cursor: pointer;
         `;
-        
-        backdrop.addEventListener('click', this.toggleMenu);
 
+        backdrop.addEventListener('click', this.toggleMenu);
         document.body.appendChild(backdrop);
+
         offcanvas.classList.add('show');
         offcanvas.style.visibility = 'visible';
-        offcanvas.style.transform = 'translateX(0)';
+
+        requestAnimationFrame(() => {
+          offcanvas.style.transform = 'translateX(0)';
+        });
+
         document.body.style.overflow = 'hidden';
       }
     }
@@ -94,7 +102,7 @@ export default {
       </li> -->
       
       <!-- Pulsante hamburger per offcanvas -->
-      <div class="menu d-block d-xl-none">
+      <div class="menu d-none">
         <button class="btn p-0 border-0" type="button" @click="toggleMenu()">
           <div class="menu-inner" id="menu-inner">
             <span class="bar bar-1" id="bar1"></span>
@@ -109,12 +117,18 @@ export default {
   <!-- Offcanvas menu -->
   <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+      <h4 class="offcanvas-title" id="mobileMenuLabel">Menu</h4>
     </div>
     <div class="offcanvas-body">
       <ul class="nav flex-column">
         <li v-for="(link, index) in mainMenu" :key="index" class="nav-item mb-2">
           <router-link class="nav-link text-uppercase fw-bold" :to="{ name:link.text }" @click="toggleMenu()">{{ link.text }}</router-link>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="https://www.iubenda.com/privacy-policy/70797940" class=" nav-link text-uppercase fw-bold iubenda-noiframe me-3" title="Privacy Policy" target="_blank">Privacy Policy</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="https://www.iubenda.com/privacy-policy/70797940/cookie-policy" class="nav-link text-uppercase fw-bold iubenda-noiframe" title="Cookie Policy" target="_blank">Cookie Policy</a>
         </li>
       </ul>
     </div>
@@ -234,8 +248,8 @@ header{
 
 }
 .offcanvas-end {
-  top: 60px;
-  height: calc(100% - 60px);
+  top: 80px;
+  height: calc(100% - 80px);
   transition: transform 0.3s ease-in-out; /* Transizione smooth */
   transform: translateX(100%);
   transition: transform 0.3s ease;
@@ -264,9 +278,8 @@ header{
 
 @media (max-width: 1200px) {
     header {
-      height: 60px;
+      
       .logo {
-        top: 0px;
         left: 20px;
       }
     }
@@ -274,7 +287,9 @@ header{
 
 @media (max-width: 900px) {
   header {
-    height: 60px;
+    .logo{
+      top: 0px;
+    }
     .container{
       justify-content: space-between  !important;
       padding: 0;
@@ -302,10 +317,10 @@ header{
 <style lang="scss" scoped>
 .custom-backdrop {
   position: fixed !important;
-  top: 60px !important;
+  top: 80px !important;
   left: 0 !important;
   width: 100% !important;
-  height: calc(100vh - 60px) !important;
+  height: calc(100vh - 80px) !important;
   background-color: rgba(0, 0, 0, 0.5) !important;
   z-index: 1040 !important;
   cursor: pointer !important;

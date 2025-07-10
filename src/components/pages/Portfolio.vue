@@ -44,7 +44,7 @@ export default {
 </script>
 
 <template>
-  <section id="portfolio" class="mt-100">
+  <section id="portfolio" class="mt-50">
     <div class="container">
       <h1 class="pb-5 title">Portfolio</h1>
     </div>

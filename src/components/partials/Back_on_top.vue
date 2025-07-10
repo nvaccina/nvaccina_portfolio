@@ -42,7 +42,6 @@ export default {
 
 @media (max-width: 600px) {
   .back-to-top {
-    right: 40px;
     i{
       padding: 8px 10px !important;
     }

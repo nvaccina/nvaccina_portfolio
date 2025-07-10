@@ -52,8 +52,8 @@ export default {
             </nav>
           </div>
           <div class="privacy mt-3">
-            <a href="https://www.iubenda.com/privacy-policy/70797940" class="iubenda-noiframe me-3" title="Privacy Policy ">Privacy Policy</a>
-            <a href="https://www.iubenda.com/privacy-policy/70797940/cookie-policy" class="iubenda-noiframe" title="Cookie Policy ">Cookie Policy</a>              
+            <a href="https://www.iubenda.com/privacy-policy/70797940" class="iubenda-noiframe me-3" title="Privacy Policy" target="_blank">Privacy Policy</a>
+            <a href="https://www.iubenda.com/privacy-policy/70797940/cookie-policy" class="iubenda-noiframe" title="Cookie Policy" target="_blank">Cookie Policy</a>              
           </div>
         </div>
       </div>

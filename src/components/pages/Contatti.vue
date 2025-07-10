@@ -139,7 +139,7 @@ export default {
 </script>
 
 <template>
-  <section id="contacts" class="mt-100">
+  <section id="contacts" class="mt-50">
     <div class="container">
         <h1 class="pb-5 title">Contatti</h1>
     </div>
@@ -165,7 +165,7 @@ export default {
         <div class="mb-3">
           <input class="form-check-input" type="checkbox" value="" id="privacy">
           <span class="form-check-label" for="privacy">
-            Si, accetto le condizioni della <strong><a href="https://www.iubenda.com/privacy-policy/70797940" class="iubenda-noiframe" title="Privacy Policy ">Privacy Policy</a></strong>.
+            Si, accetto le condizioni della <strong><a href="https://www.iubenda.com/privacy-policy/70797940" class="iubenda-noiframe" title="Privacy Policy" target="_blank">Privacy Policy</a></strong>.
           </span>
         </div>    
         <button type="submit" class="cv-button">Invia</button>
