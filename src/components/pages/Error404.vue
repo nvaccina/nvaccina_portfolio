@@ -8,7 +8,7 @@ export default {
 <template>
   <section>
     <div class="container error text-center">
-      <h1 class="mb-5 title">Error 404</h1>
+      <h1 class="title mt-100">Error 404</h1>
       <div>
         <router-link class="back-home" :to="{name:'home'}">Torna alla Home</router-link>
       </div>
@@ -22,7 +22,11 @@ export default {
 <style lang="scss" scoped>
 @import '../../scss/general/variables';
 .error{
-  height: calc(100vh - 500px);
+  height: calc(100vh - 394px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   .back-home{
     text-transform: capitalize;
     padding: 5px 10px;
