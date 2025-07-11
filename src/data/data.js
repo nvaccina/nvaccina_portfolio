@@ -52,7 +52,7 @@ const skills = [
   },
   {
     name: ".Net",
-    image_skill: ".NET.png",
+    image_skill: "net.png",
   },
   {
     name: "Angular",
@@ -162,7 +162,11 @@ const allskills = [
   },
   {
     name: ".Net",
-    image_skill: ".NET.png",
+    image_skill: "net.png",
+  },
+  {
+    name: "ASP.NET MVC",
+    image_skill: "mvc.png",
   },
   {
     name: "Angular",
@@ -247,7 +251,8 @@ const portfolio = [
     descrizione:"Una descrizione del sito e delle tecnologie che ho utilizzato. Ma non troppo lunga.",
     visibile: true,
     technologies:[
-      '.NET.png',
+      'net.png',
+      'mvc.png',
       'csharp.png',
       'javascript.png',
       'Sqlserver.png',      
@@ -262,6 +267,7 @@ const portfolio = [
     visibile: true,
     technologies:[
       '.NET.png',
+      'mvc.png',
       'csharp.png',
       'javascript.png',
       'Sqlserver.png',      
@@ -276,6 +282,7 @@ const portfolio = [
     visibile: true,
     technologies:[
       '.NET.png',
+      'mvc.png',
       'csharp.png',
       'javascript.png',
       'Sqlserver.png',
@@ -290,6 +297,7 @@ const portfolio = [
     visibile: true,
     technologies:[
       '.NET.png',
+      'mvc.png',
       'csharp.png',
       'javascript.png',
       'Sqlserver.png',

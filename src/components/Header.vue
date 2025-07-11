@@ -117,7 +117,7 @@ export default {
   <!-- Offcanvas menu -->
   <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
     <div class="offcanvas-header">
-      <h4 class="offcanvas-title" id="mobileMenuLabel">Menu</h4>
+      <h2 class="offcanvas-title" id="mobileMenuLabel">Menu</h2>
     </div>
     <div class="offcanvas-body">
       <ul class="nav flex-column">
@@ -261,6 +261,14 @@ header{
   right: 0;
   width: 300px;
   box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+  .offcanvas-body .nav-item{
+    font-size: 20px;
+    // border-bottom: 1px solid $tertiary-color;  
+    // border-left: 1px solid $tertiary-color; 
+    a{
+      text-transform: capitalize !important;
+    }
+  }
 }
 .offcanvas-end.show {
   transform: translateX(0);

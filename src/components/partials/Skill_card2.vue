@@ -73,6 +73,10 @@ export default {
     width: 100px;
     height: 100px;
     padding: 10px;
+    .name_image{
+      top: 30px;
+      min-width: 90px;
+    }
     img{
       width: 100%;
     }
