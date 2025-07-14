@@ -10,7 +10,7 @@ export default {
   setup(){
     useHead({
       title: 'Niccolò Vaccina | Full Stack Developer specializzato in .NET e C#',
-      link:[{ rel:'canonical', href:'https://nvaccina-portfolio.netlify.app/' }],
+      link:[{ rel:'canonical', href:'https://niccolo-vaccina.netlify.app/' }],
       meta: [
         { name:'title', content:'Niccolò Vaccina - Full Stack Web Developer' },
         { name:'description', content:'Sono Niccolò Vaccina, uno sviluppatore full stack specializzato in .NET, C#, MVC e SQL Server. Scopri il mio portfolio e le mie competenze.' },
@@ -18,15 +18,15 @@ export default {
         { name:'keywords', content:'niccolò vaccina, vaccina, sviluppatore web, full stack developer, sviluppatore, sviluppatore .net, c#, sql server, mvc, cesena, forlì, portfolio sviluppatore, web developer italy' },
         { property:'og:type', content:'website' },
         { property:'og:site_name', content:'Niccolò Vaccina Portfolio' },
-        { property:'og:url', content:'https://nvaccina-portfolio.netlify.app/' },
+        { property:'og:url', content:'https://niccolo-vaccina.netlify.app/' },
         { property:'og:title', content:'Niccolò Vaccina - Full Stack Web Developer' },
         { property:'og:description', content:'Scopri il mio portfolio e le mie competenze come sviluppatore full stack.' },
-        { property:'og:image', content:'https://nvaccina-portfolio.netlify.app/assets/home-preview.jpg' },
+        { property:'og:image', content:'https://niccolo-vaccina.netlify.app/assets/home-preview.jpg' },
         { name:'twitter:card', content:'summary_large_image' },
-        { name:'twitter:url', content:'https://nvaccina-portfolio.netlify.app/' },
+        { name:'twitter:url', content:'https://niccolo-vaccina.netlify.app/' },
         { name:'twitter:title', content:'Niccolò Vaccina - Full Stack Web Developer' },
         { name:'twitter:description', content:'Sviluppatore full stack specializzato in .NET, C#, MVC e SQL Server.' },
-        { name:'twitter:image', content:'https://nvaccina-portfolio.netlify.app/assets/home-preview.jpg' }
+        { name:'twitter:image', content:'https://niccolo-vaccina.netlify.app/assets/home-preview.jpg' }
       ]
     });
     return{};
@@ -64,15 +64,15 @@ export default {
       <div class="row">
         <div class="col-12 col-lg-5 mt-5 mt-lg-0 d-flex ps-4 justify-content-center justify-content-lg-center order-2 order-lg-1">
           <div class="my-img square">            
-            <img src="/img/about-me.webp" alt="About me - Niccolò Vaccina">            
+            <img src="/img/chi-sono.webp" alt="Chi sono - Niccolò Vaccina">            
           </div>
         </div>
         <div class="col-12 col-lg-7 testo-home px-lg-5 order-1 order-lg-2">
-          <h2>About Me</h2>
-          <p><strong>Chi sono?</strong><br> Sono una persona creativa, curiosa e intraprendente, con una grande passione per la programmazione. Dopo anni in un lavoro che non mi rappresentava, ho scelto di seguire ciò che mi entusiasma davvero: creare, imparare e risolvere problemi attraverso il codice. Ogni giorno è un'opportunità per crescere e migliorare, ed è questo che mi motiva a proseguire.<br>
+          <h2>Chi sono?</h2>
+          <p>Sono una persona creativa, curiosa e intraprendente, con una grande passione per la programmazione. Dopo anni in un lavoro che non mi rappresentava, ho scelto di seguire ciò che mi entusiasma davvero: creare, imparare e risolvere problemi attraverso il codice. Ogni giorno è un'opportunità per crescere e migliorare, ed è questo che mi motiva a proseguire.<br>
           <strong>Vuoi saperne di più sul mio percorso?</strong></p>
           <div class="cv d-flex justify-content-center mt-4">
-            <span class="cv-button"><router-link :to="{ name:'about' }">Scopri di più</router-link></span>
+            <span class="cv-button"><router-link :to="{ name:'chi sono' }">Scopri di più</router-link></span>
           </div>
         </div>
       </div>
@@ -103,7 +103,7 @@ export default {
       <div class="row">
         <div class="col-12 col-lg-5 mt-5 mt-lg-0 d-flex ps-4 justify-content-center justify-content-lg-center order-2 order-lg-1">  
           <div class="my-img square">           
-              <img src="/img/skills.webp" alt="Competenze - Niccolò Vaccina">
+              <img src="/img/competenze.webp" alt="Competenze - Niccolò Vaccina">
           </div>
         </div>
         <div class="col-12 col-lg-7 testo-home px-lg-5 order-1 order-lg-2">
@@ -129,7 +129,7 @@ export default {
         </div>
         <div class="col-12 col-lg-5 mt-5 mt-lg-0 d-flex ps-4 justify-content-center justify-content-lg-center">   
           <div class="my-img square">           
-              <img src="/img/contattami.png" alt="Contatti - Niccolò Vaccina">
+              <img src="/img/contatti.png" alt="Contatti - Niccolò Vaccina">
           </div>
         </div>
       </div>

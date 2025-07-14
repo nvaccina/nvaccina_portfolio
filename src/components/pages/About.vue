@@ -18,7 +18,7 @@ export default {
   setup(){
     useHead({
       title: 'Chi sono - Niccolò Vaccina | Full Stack Developer',
-      link:[{ rel:'canonical', href:'https://nvaccina-portfolio.netlify.app/about' }],
+      link:[{ rel:'canonical', href:'https://niccolo-vaccina.netlify.app/chi-sono' }],
       meta: [
         { name: 'title', content: 'Chi sono - Niccolò Vaccina | Full Stack Developer' },
         { name: 'description', content: 'Scopri il mio percorso formativo e professionale come sviluppatore full stack specializzato in .NET, C# e Angular.' },
@@ -26,15 +26,15 @@ export default {
         { name:'keywords', content:'niccolò vaccina, vaccina, esperienza, studi, carriera, sviluppatore web, full stack developer, sviluppatore, sviluppatore .net, c#, angular, sql server, mvc, cesena, forlì, portfolio sviluppatore, web developer italy' },        
         { property:'og:type', content:'article' },
         { property:'og:site_name', content:'Niccolò Vaccina Portfolio' },
-        { property:'og:url', content:'https://nvaccina-portfolio.netlify.app/about' },
-        { property:'og:title', content:'About - Niccolò Vaccina' },
+        { property:'og:url', content:'https://niccolo-vaccina.netlify.app/chi-sono' },
+        { property:'og:title', content:'Chi sono - Niccolò Vaccina' },
         { property:'og:description', content: 'Approfondisci il mio background formativo e professionale nel mondo dello sviluppo software e web.' },
-        { property:'og:image', content:'https://nvaccina-portfolio.netlify.app/assets/about-preview.jpg' },
+        { property:'og:image', content:'https://niccolo-vaccina.netlify.app/assets/chi-sono.jpg' },
         { name:'twitter:card', content:'summary_large_image' },
-        { name:'twitter:url', content:'https://nvaccina-portfolio.netlify.app/about' },
-        { name:'twitter:title', content:'About - Niccolò Vaccina' },
+        { name:'twitter:url', content:'https://niccolo-vaccina.netlify.app/chi-sono' },
+        { name:'twitter:title', content:'Chi sono - Niccolò Vaccina' },
         { name:'twitter:description', content: 'Scopri il mio percorso nel mondo dello sviluppo: formazione, esperienze e competenze tecniche.' },
-        { name:'twitter:image', content:'https://nvaccina-portfolio.netlify.app/assets/about-preview.jpg' }
+        { name:'twitter:image', content:'https://niccolo-vaccina.netlify.app/assets/chi-sono.webp' }
       ]
     });
     return{};
@@ -45,7 +45,7 @@ export default {
 <template>
   <section id="about" class="mt-50">
     <div class="container">
-      <h1 class="pb-5 title">About me</h1>
+      <h1 class="pb-5 title">Chi Sono</h1>
       <div class="row">
         <div class="col-12 mb-5 mt-md-5 mt-md-0 col-md-5 d-flex justify-content-center">
           <div class="my-img">

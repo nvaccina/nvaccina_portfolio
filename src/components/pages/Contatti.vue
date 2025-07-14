@@ -14,7 +14,7 @@ export default {
   setup(){
     useHead({
       title: 'Contattami - Niccolò Vaccina | Full Stack Developer',
-      link:[{ rel:'canonical', href:'https://nvaccina-portfolio.netlify.app/contatti' }],
+      link:[{ rel:'canonical', href:'https://niccolo-vaccina.netlify.app/contatti' }],
       meta: [
         { name: 'title', content: 'Contattami - Niccolò Vaccina | Full Stack Developer' },
         { name: 'description', content: 'Hai un progetto o una proposta di collaborazione? Contattami per lavorare insieme sul tuo prossimo software o sito web.' },
@@ -22,15 +22,15 @@ export default {
         { name: 'keywords', content: 'niccolò vaccina, contatti, email, collaborazione, progetto, sviluppatore web, full stack developer, sviluppatore .net, mvc, sql server, c#, angular, cesena, forlì' },
         { property:'og:type', content:'website' },
         { property:'og:site_name', content:'Niccolò Vaccina Portfolio' },
-        { property:'og:url', content:'https://nvaccina-portfolio.netlify.app/contatti' },
+        { property:'og:url', content:'https://niccolo-vaccina.netlify.app/contatti' },
         { property:'og:title', content: 'Contattami - Niccolò Vaccina | Full Stack Developer' },
         { property:'og:description', content: 'Contattami per collaborazioni, consulenze o sviluppo di applicazioni web e software.' },
-        { property:'og:image', content:'https://nvaccina-portfolio.netlify.app/assets/contact-preview.jpg' },
+        { property:'og:image', content:'https://niccolo-vaccina.netlify.app/assets/contatti.png' },
         { name:'twitter:card', content:'summary_large_image' },
-        { name:'twitter:url', content:'https://nvaccina-portfolio.netlify.app/contatti' },
+        { name:'twitter:url', content:'https://niccolo-vaccina.netlify.app/contatti' },
         { name:'twitter:title', content:'Contattami - Niccolò Vaccina' },
         { name:'twitter:description', content: 'Vuoi lavorare con me? Scrivimi per proposte, richieste o informazioni su nuovi progetti.' },
-        { name:'twitter:image', content:'https://nvaccina-portfolio.netlify.app/assets/contact-preview.jpg' }
+        { name:'twitter:image', content:'https://niccolo-vaccina.netlify.app/assets/contatti.png' }
       ]
     });
 

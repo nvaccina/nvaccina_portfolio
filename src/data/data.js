@@ -4,8 +4,8 @@ const mainMenu = [
     text: "home",
   },
   {
-    href: "#about",
-    text: "about",
+    href: "#chi-sono",
+    text: "chi sono",
   },
   {
     href: "#competenze",
@@ -19,116 +19,6 @@ const mainMenu = [
     href: "#contatti",
     text: "contatti",
   },
-];
-
-const skills = [
-  {
-    name: "HTML",
-    image_skill: "html.png",
-  },
-  {
-    name: "CSS",
-    image_skill: "css.png",
-  },
-  {
-    name: "SASS",
-    image_skill: "sass.png",
-  },
-  {
-    name: "Bootstrap",
-    image_skill: "bootstrap.svg",
-  },
-  {
-    name: "JavaScript",
-    image_skill: "javascript.png",
-  },
-  {
-    name: "PHP",
-    image_skill: "php.png",
-  },
-  {
-    name: "C#",
-    image_skill: "csharp.png",
-  },
-  {
-    name: ".Net",
-    image_skill: "net.png",
-  },
-  {
-    name: "Angular",
-    image_skill: "angular.png",
-  },
-  {
-    name: "Vue.js",
-    image_skill: "vue.png",
-  },
-  {
-    name: "Node.js",
-    image_skill: "node.png",
-  },
-  {
-    name: "Vite.js",
-    image_skill: "vite.svg",
-  },
-  {
-    name: "React",
-    image_skill: "react.png",
-  },
-  {
-    name: "Laravel",
-    image_skill: "laravel.png",
-  },
-  {
-    name: "Wordpress",
-    image_skill: "wordpress.png",
-  }
-];
-
-const skills2 = [
-  {
-    name: "Sql Server",
-    image_skill: "Sqlserver.png",
-  },
-  {
-    name: "MySQL",
-    image_skill: "mysql.svg",
-  },
-  {
-    name: "DBeaver",
-    image_skill: "dbeaver.png",
-  },
-  {
-    name: "PhpMyAdmin",
-    image_skill: "php_my_admin.png",
-  },
-  {
-    name: "PM2",
-    image_skill: "pm2.png",
-  },
-  {
-    name: "GitLab",
-    image_skill: "gitlab.png",
-  },
-  {
-    name: "Git Hub",
-    image_skill: "github.png",
-  },
-  {
-    name: "Visual Studio Code",
-    image_skill: "vscode.jpg",
-  },
-  {
-    name: "Visual Studio",
-    image_skill: "visualstudio.png",
-  },
-  {
-    name: "Windows",
-    image_skill: "windows.png",
-  },
-  {
-    name: "Linux",
-    image_skill: "linux.png",
-  }
 ];
 
 const allskills = [
@@ -171,6 +61,10 @@ const allskills = [
   {
     name: "Angular",
     image_skill: "angular.png",
+  },
+  {
+    name: "TypeScript",
+    image_skill: "typescript.png",
   },
   {
     name: "Vue.js",
@@ -529,4 +423,4 @@ const timelines = [
 ]
 
 
-export {mainMenu, skills, skills2, allskills, portfolio, social, timelines};
+export {mainMenu, allskills, portfolio, social, timelines};

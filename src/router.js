@@ -16,8 +16,8 @@ const router = createRouter({
       component: Home,      
     },
     {
-      path: '/about',
-      name: 'about',
+      path: '/chi-sono',
+      name: 'chi sono',
       component: About
     },
     {
@@ -39,6 +39,13 @@ const router = createRouter({
       path: '/:pathMatch(.*)*',
       component: Error404 
     }
-  ]
+  ],
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { top: 0 };
+    }
+  }
 })
 export { router };

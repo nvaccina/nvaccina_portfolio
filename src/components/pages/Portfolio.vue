@@ -18,23 +18,23 @@ export default {
   setup(){
     useHead({
       title:'Portfolio - Niccolò Vaccina',
-      link:[{ rel:'canonical', href:'https://nvaccina-portfolio.netlify.app/portfolio' }],
+      link:[{ rel:'canonical', href:'https://niccolo-vaccina.netlify.app/portfolio' }],
       meta: [
         { name: 'title', content: 'Portfolio - Niccolò Vaccina | Full Stack Developer' },
-        { name: 'description', content: 'Esplora i progetti a cui ho lavorato come sviluppatore full stack specializzato in .NET, C#, SQL Server, MVC e Angular.' },
+        { name: 'description', content: 'Scopri alcuni dei progetti web e software che ho realizzato come sviluppatore full stack: applicazioni responsive, gestionali personalizzati e piattaforme online.' },
         { name: 'author', content: 'Niccolò Vaccina' },
         { name: 'keywords', content: 'niccolò vaccina, portfolio, progetti, web app, applicazioni, sviluppo software, .net, mvc, c#, sql server, angular, sviluppatore full stack, cesena, forlì' },
         { property:'og:type', content:'website' },
         { property:'og:site_name', content:'Niccolò Vaccina Portfolio' },
-        { property:'og:url', content:'https://nvaccina-portfolio.netlify.app/portfolio' },
+        { property:'og:url', content:'https://niccolo-vaccina.netlify.app/portfolio' },
         { property: 'og:title', content: 'Portfolio - Niccolò Vaccina | Progetti Full Stack' },
-        { property: 'og:description', content: 'Dai un’occhiata ai siti web e software che ho realizzato come sviluppatore full stack.' },
-        { property:'og:image', content:'https://nvaccina-portfolio.netlify.app/assets/portfolio-preview.jpg' },
+        { property: 'og:description', content: 'Scopri alcuni dei progetti web e software che ho realizzato come sviluppatore full stack: applicazioni responsive, gestionali personalizzati e piattaforme online.' },
+        { property:'og:image', content:'https://niccolo-vaccina.netlify.app/assets/portfolio.webp' },
         { name:'twitter:card', content:'summary_large_image' },
-        { name:'twitter:url', content:'https://nvaccina-portfolio.netlify.app/portfolio' },
+        { name:'twitter:url', content:'https://niccolo-vaccina.netlify.app/portfolio' },
         { name: 'twitter:title', content: 'Portfolio - Niccolò Vaccina | Progetti Full Stack' },
-        { name: 'twitter:description', content: 'Dai un’occhiata ai siti web e software che ho realizzato come sviluppatore full stack.' },
-        { name:'twitter:image', content:'https://nvaccina-portfolio.netlify.app/assets/portfolio-preview.jpg' }
+        { name: 'twitter:description', content: 'Scopri alcuni dei progetti web e software che ho realizzato come sviluppatore full stack: applicazioni responsive, gestionali personalizzati e piattaforme online.' },
+        { name:'twitter:image', content:'https://niccolo-vaccina.netlify.app/assets/portfolio.webp' }
       ]
     });
     return{};
@@ -46,7 +46,8 @@ export default {
 <template>
   <section id="portfolio" class="mt-50">
     <div class="container">
-      <h1 class="pb-5 title">Portfolio</h1>
+      <h1 class="pb-3 title">Portfolio</h1>
+      <p class="fs-20 fw-300">In questa pagina trovi alcuni dei progetti che ho realizzato come sviluppatore web full stack, su misura per le esigenze dei clienti: da piattaforme e-commerce a gestionali complessi.</p>
     </div>
     <div class="container-fluid container-lg d-flex flex-wrap portfolio">
 
