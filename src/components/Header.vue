@@ -131,6 +131,9 @@ export default {
           <a href="https://www.iubenda.com/privacy-policy/70797940/cookie-policy" class="nav-link text-uppercase fw-bold iubenda-noiframe" title="Cookie Policy" target="_blank">Cookie Policy</a>
         </li>
       </ul>
+      <div class="logo-offcanvas d-flex justify-content-center">
+        <img src="/img/logo/logo.png" alt="Niccolò Vaccina logo">
+      </div>
     </div>
   </div>
   
@@ -261,12 +264,24 @@ header{
   right: 0;
   width: 300px;
   box-shadow: -2px 0 8px rgba(0,0,0,0.1);
-  .offcanvas-body .nav-item{
-    font-size: 20px;
-    // border-bottom: 1px solid $tertiary-color;  
-    // border-left: 1px solid $tertiary-color; 
-    a{
-      text-transform: capitalize !important;
+  .offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .logo-offcanvas{
+      height: 60px;
+      padding-top: 10px;
+      border-top: 2px solid $primary-color;
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+    .nav-item{
+      font-size: 20px;    
+      a{
+        text-transform: capitalize !important;
+      }
     }
   }
 }

@@ -8,12 +8,12 @@ const mainMenu = [
     text: "chi sono",
   },
   {
-    href: "#competenze",
-    text: "competenze",
-  },
-  {
     href: "#portfolio",
     text: "portfolio",
+  },
+  {
+    href: "#competenze",
+    text: "competenze",
   },
   {
     href: "#contatti",
@@ -53,6 +53,10 @@ const allskills = [
   {
     name: ".Net",
     image_skill: "net.png",
+  },
+  {
+    name: ".Net Core",
+    image_skill: "netcore.png",
   },
   {
     name: "ASP.NET MVC",
@@ -95,6 +99,10 @@ const allskills = [
     image_skill: "Sqlserver.png",
   },
   {
+    name: "Oracle",
+    image_skill: "oracle.png",
+  },
+  {
     name: "MySQL",
     image_skill: "mysql.svg",
   },
@@ -105,6 +113,10 @@ const allskills = [
   {
     name: "PhpMyAdmin",
     image_skill: "php_my_admin.png",
+  },
+  {
+    name: "Keycloak",
+    image_skill: "keycloak.png",
   },
   {
     name: "PM2",
@@ -138,11 +150,26 @@ const allskills = [
 
 const portfolio = [
   {
+    title: "Revisal",
+    image: "revisal.png",
+    altrolink: "https://lp.revisal.it/?utm_source=google&utm_medium=cpc&utm_campaign=12795954438&utm_content=122005920620&utm_term=revisal%20maggioli&gad_source=1&gad_campaignid=12795954438&gbraid=0AAAAACbbvcemAdmtkFS5esyK8fLdGhr0T&gclid=Cj0KCQjw-NfDBhDyARIsAD-ILeBp3ygHAJ05I5bJvdhIHj-E0cb32UOunoeL22c0yU3qWiTN7IrKEcQaAhLvEALw_wcB",
+    link_website: "https://revisal.maggiolicloud.it/",
+    link_github: "",
+    descrizione: "Revisal è una piattaforma digitale sviluppata per semplificare la gestione della revisione legale e revisione contabile.",
+    visibile: true,
+    technologies:[
+      'angular.png',
+      'typescript.png',
+      'Sqlserver.png',      
+    ]
+  },
+  {
     title: "IsyTravel",
     image: "isytravel.png",
+    altrolink: "",
     link_website: "https://www.isytravel.com/",
     link_github: "",
-    descrizione:"Una descrizione del sito e delle tecnologie che ho utilizzato. Ma non troppo lunga.",
+    descrizione: "IsyTravel è una piattaforma (e‑commerce) dedicata al turismo esperienziale, promossa da un tour operator italiano impegnato nel turismo responsabile. Il sito offre la possibilità di acquistare pacchetti selezionati che spaziano dal trekking e cicloturismo, fino a esperienze enogastronomiche, relax e viaggi accessibili. Inoltre, la piattaforma offre un servizio di noleggio di biciclette e altri mezzi, pensato per arricchire e personalizzare ogni avventura.",
     visibile: true,
     technologies:[
       'net.png',
@@ -153,11 +180,27 @@ const portfolio = [
     ]
   },
   {
+    title: "Auxilium",
+    image: "auxilium.png",
+    altrolink: "https://www.maggioli.com/it-it/soluzioni/software/auxilium",
+    link_website: "https://auxilium.auslromagna.it/",
+    link_github: "",
+    descrizione: "Auxilium è un gestionale sviluppato per supportare l’AUSL Romagna nella gestione integrata di pratiche relative a protesi, ausili, dispositivi monouso, ossigenoterapia e servizi correlati. A partire da ottobre 2020, è stato adottato per la gestione dei dispositivi monouso, consentendo alle farmacie convenzionate di accedere in tempo reale al piano terapeutico di ogni paziente.",
+    visibile: true,
+    technologies:[
+      'net.png',
+      'netcore.png',
+      'csharp.png',
+      'oracle.png'
+    ]
+  },
+  {
     title: "BiancoNero Beach",
     image: "bianconero.png",
+    altrolink: "",
     link_website: "https://www.bianconerobeach.it/",
     link_github: "",
-    descrizione:"",
+    descrizione: "Una piattaforma per la gestione online di Bagno Bianconero, lo stabilimento balneare a Tagliata di Cervia ricco di servizi. Il sito consente di scoprire comodamente le offerte, i comfort e le attività disponibili per una vacanza rilassante, e di prenotare il proprio ombrellone comodamente da casa.",
     visibile: true,
     technologies:[
       '.NET.png',
@@ -170,9 +213,10 @@ const portfolio = [
   {
     title: "AvantCRAFT",
     image: "avantcraft.png",
+    altrolink: "",
     link_website: "https://avantcraft.cnaemiliaromagna.it/",
     link_github: "",
-    descrizione:"",
+    descrizione: "Progetto digitale che promuove la formazione di artigiani qualificati attraverso soluzioni inclusive e immersive. Realizzato in collaborazione con CNA Emilia-Romagna e finanziato dal FESR, il sito valorizza il patrimonio artigianale e le tecniche tradizionali tramite contenuti interattivi, storie, bandi e una struttura informativa chiara.",
     visibile: true,
     technologies:[
       '.NET.png',
@@ -185,9 +229,10 @@ const portfolio = [
   {
     title: "TexActive",
     image: "texactive.png",
+    altrolink: "",
     link_website: "https://www.texactive.eu/",
     link_github: "",
-    descrizione:"",
+    descrizione: "Sito informativo per un’azienda specializzata nella progettazione, realizzazione e manutenzione di impianti di climatizzazione, refrigerazione, ricambio aria e riscaldamento a pavimento.",
     visibile: true,
     technologies:[
       '.NET.png',
@@ -200,24 +245,25 @@ const portfolio = [
   {
     title: "InSosta Comune di Pistoia",
     image: "insosta.png",
+    altrolink: "",
     link_website: "https://pistoia.insosta.it/splash",
     link_github: "",
-    descrizione:"",
+    descrizione: "Portale online per la gestione del Piano Sosta del Comune di Pistoia. Offre funzionalità per registrarsi, richiedere o rinnovare permessi, consultare tariffe e mappe delle aree di sosta, con procedura completamente digitale.",
     visibile: true,
     technologies:[
       'node.png',
       'react.png',
       'javascript.png',
-      'pm2.png',
-      'dbeaver.png'
+      'pm2.png'
     ]
   },
   {
     title: "I Razzi Store - Bologna",
     image: "irazzistore.png",
+    altrolink: "",
     link_website: "https://www.razzistore-bologna.it/",
     link_github: "",
-    descrizione:"",
+    descrizione: "Sito vetrina per un’azienda bolognese specializzata nell'attiva di vendita di fuochi d’artificio, petardi, fumogeni, fontane pirotecniche e articoli per feste.",
     visibile: true,
     technologies:[
       'wordpress.png'
@@ -226,9 +272,10 @@ const portfolio = [
   {
     title: "Deliveboo",
     image: "deliveboo.png",
+    altrolink: "",
     link_website: "",
     link_github: "https://github.com/pierdomenicoguarnieri/deliveboo-back-end",
-    descrizione:"",
+    descrizione: "Web app che permette di ordinare cibo a domicilio.",
     visibile: true,
     technologies:[
       'laravel.png',

@@ -1,5 +1,5 @@
 <script>
-import Project_card from '../partials/Project_card.vue';
+import Project_card2 from '../partials/Project_card2.vue';
 import Wabutton from '../partials/Wabutton.vue';
 import { portfolio } from '../../data/data';
 import { useHead } from '@vueuse/head';
@@ -7,7 +7,7 @@ import { useHead } from '@vueuse/head';
 export default {
   name: 'Portfolio',
   components:{
-    Project_card,
+    Project_card2,
     Wabutton
   },
   data(){
@@ -49,14 +49,16 @@ export default {
       <h1 class="pb-3 title">Portfolio</h1>
       <p class="fs-20 fw-300">In questa pagina trovi alcuni dei progetti che ho realizzato come sviluppatore web full stack, su misura per le esigenze dei clienti: da piattaforme e-commerce a gestionali complessi.</p>
     </div>
-    <div class="container-fluid container-lg d-flex flex-wrap portfolio">
+    <div class="container-fluid container-lg d-flex flex-wrap portfolio mt-1 mt-md-2">
 
-      <Project_card
+      <Project_card2
         v-for="(project, index) in portfolio"
         :key="index"
         :project="project"
         :title="project.title"
+        :descrizione="project.descrizione"
         :image= "project.image"
+        :altrolink= "project.altrolink"
         :link_website="project.link_website"
         :link_github="project.link_github"
         :technologies="project.technologies"
