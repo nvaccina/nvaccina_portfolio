@@ -56,6 +56,7 @@ export default {
     color: black;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    text-align: center;
   }
   img{
     object-fit: contain;
