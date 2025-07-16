@@ -47,7 +47,7 @@ export default {
   <section id="portfolio" class="mt-50">
     <div class="container">
       <h1 class="pb-3 title">Portfolio</h1>
-      <p class="fs-20 fw-300">In questa pagina trovi alcuni dei progetti che ho realizzato come sviluppatore web full stack, su misura per le esigenze dei clienti: da piattaforme e-commerce a gestionali complessi.</p>
+      <p class="fs-20 fw-300">In questa pagina trovi alcuni dei progetti a cui ho contribuito come sviluppatore web full stack, su misura per le esigenze dei clienti: da piattaforme e-commerce a gestionali complessi.</p>
     </div>
     <div class="container-fluid container-lg d-flex flex-wrap portfolio mt-1 mt-md-2">
 
