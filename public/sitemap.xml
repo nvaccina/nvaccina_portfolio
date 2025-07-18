@@ -6,28 +6,28 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 
     <url>
-        <loc>https://niccolo-vaccina.netlify.app/</loc>
+        <loc>https://niccolovaccina.it/</loc>
         <lastmod>2025-02-18T17:36:23.433Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://niccolo-vaccina.netlify.app/chi-sono</loc>
+        <loc>https://niccolovaccina.it/chi-sono</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://niccolo-vaccina.netlify.app/competenze</loc>
+        <loc>https://niccolovaccina.it/competenze</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://niccolo-vaccina.netlify.app/portfolio</loc>
+        <loc>https://niccolovaccina.it/portfolio</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://niccolo-vaccina.netlify.app/contatti</loc>
+        <loc>https://niccolovaccina.it/contatti</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>

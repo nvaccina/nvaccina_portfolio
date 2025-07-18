@@ -10,7 +10,7 @@ export default {
   setup(){
     useHead({
       title: 'Niccolò Vaccina | Full Stack Developer specializzato in .NET e C#',
-      link:[{ rel:'canonical', href:'https://niccolo-vaccina.netlify.app/' }],
+      link:[{ rel:'canonical', href:'https://niccolovaccina.it/' }],
       meta: [
         { name:'title', content:'Niccolò Vaccina - Full Stack Web Developer' },
         { name:'description', content:'Sono Niccolò Vaccina, uno sviluppatore full stack specializzato in .NET, C#, MVC e SQL Server. Scopri il mio portfolio e le mie competenze.' },
@@ -18,15 +18,15 @@ export default {
         { name:'keywords', content:'niccolò vaccina, vaccina, sviluppatore web, full stack developer, sviluppatore, sviluppatore .net, c#, sql server, mvc, cesena, forlì, portfolio sviluppatore, web developer italy' },
         { property:'og:type', content:'website' },
         { property:'og:site_name', content:'Niccolò Vaccina Portfolio' },
-        { property:'og:url', content:'https://niccolo-vaccina.netlify.app/' },
+        { property:'og:url', content:'https://niccolovaccina.it/' },
         { property:'og:title', content:'Niccolò Vaccina - Full Stack Web Developer' },
         { property:'og:description', content:'Scopri il mio portfolio e le mie competenze come sviluppatore full stack.' },
-        { property:'og:image', content:'https://niccolo-vaccina.netlify.app/assets/home-preview.jpg' },
+        { property:'og:image', content:'https://niccolovaccina.it/assets/home-preview.jpg' },
         { name:'twitter:card', content:'summary_large_image' },
-        { name:'twitter:url', content:'https://niccolo-vaccina.netlify.app/' },
+        { name:'twitter:url', content:'https://niccolovaccina.it/' },
         { name:'twitter:title', content:'Niccolò Vaccina - Full Stack Web Developer' },
         { name:'twitter:description', content:'Sviluppatore full stack specializzato in .NET, C#, MVC e SQL Server.' },
-        { name:'twitter:image', content:'https://niccolo-vaccina.netlify.app/assets/home-preview.jpg' }
+        { name:'twitter:image', content:'https://niccolovaccina.it/assets/home-preview.jpg' }
       ]
     });
     return{};
@@ -62,7 +62,7 @@ export default {
   <section>
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-5 mt-5 mt-lg-0 d-flex ps-4 justify-content-center justify-content-lg-center order-2 order-lg-1">
+        <div class="col-12 col-lg-5 mt-5 mt-lg-0 d-flex ps-4 justify-content-center justify-content-lg-end order-2 order-lg-1">
           <div class="my-img square">            
             <img src="/img/chi-sono.webp" alt="Chi sono - Niccolò Vaccina">            
           </div>
@@ -101,7 +101,7 @@ export default {
   <section>
     <div class="container mb-5">
       <div class="row">
-        <div class="col-12 col-lg-5 mt-5 mt-lg-0 d-flex ps-4 justify-content-center justify-content-lg-center order-2 order-lg-1">  
+        <div class="col-12 col-lg-5 mt-5 mt-lg-0 d-flex ps-4 justify-content-center justify-content-lg-end order-2 order-lg-1">  
           <div class="my-img square">           
               <img src="/img/competenze.webp" alt="Competenze - Niccolò Vaccina">
           </div>
@@ -122,12 +122,14 @@ export default {
       <div class="row">
         <div class="col-12 col-lg-7 testo-home px-lg-5">
           <h2>Contatti</h2>
-          <p>Sei alla ricerca di un collaboratore appassionato e intraprendente? Oppure hai un'idea che desideri sviluppare e hai bisogno di supporto? Sono sempre aperto a nuove opportunità e mi piace confrontarmi con persone che condividono la mia stessa voglia di innovare e creare. Non esitare a contattarmi per qualsiasi domanda o proposta!</p>
+          <p>Sei alla ricerca di un collaboratore appassionato e intraprendente?<br>
+            Oppure hai un'idea che desideri sviluppare e hai bisogno di supporto?<br>
+            Sono sempre aperto a nuove opportunità e mi piace confrontarmi con persone che condividono la mia stessa voglia di innovare e creare. Non esitare a contattarmi per qualsiasi domanda o proposta!</p>
           <div class="cv d-flex justify-content-center mt-4">
             <span class="cv-button"><router-link :to="{ name:'contatti' }">Scopri di più</router-link></span>
           </div>
         </div>
-        <div class="col-12 col-lg-5 mt-5 mt-lg-0 d-flex ps-4 justify-content-center justify-content-lg-center">   
+        <div class="col-12 col-lg-5 mt-5 mt-lg-0 d-flex ps-4 justify-content-center justify-content-lg-start">   
           <div class="my-img square">           
               <img src="/img/contatti.png" alt="Contatti - Niccolò Vaccina">
           </div>

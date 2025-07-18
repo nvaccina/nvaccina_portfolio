@@ -24,20 +24,20 @@ export default {
       meta: [
         { name:'title', content:'Competenze Tecniche - Niccolò Vaccina' },
         { name:'description', content:'Scopri le mie competenze tecniche: .NET, C#, SQL Server, MVC, Angular, TypeScript, JavaScript, HTML, CSS e tante altre.' },
-        { rel:'canonical', content:'https://niccolo-vaccina.netlify.app/competenze' },
+        { rel:'canonical', content:'https://niccolovaccina.it/competenze' },
         { name:'author', content:'Niccolò Vaccina' },
         { name:'keywords', content:'full stack developer, competenze, .net, c#, sql server, javascript, html, css, web developerment, programmatore, sviluppatore web, niccolò vaccina, cesena, forlì' },
         { property:'og:type', content:'article' },
         { property:'og:site_name', content:'Niccolò Vaccina Portfolio' },
-        { property:'og:url', content:'https://niccolo-vaccina.netlify.app/competenze' },
+        { property:'og:url', content:'https://niccolovaccina.it/competenze' },
         { property:'og:title', content:'Competenze Tecniche - Niccolò Vaccina' },
         { property:'og:description', content:'Scopri le mie competenze tecniche: .NET, C#, SQL Server, MVC, Angular, TypeScript, JavaScript, HTML, CSS e tante altre.' },
-        { property:'og:image', content:'https://niccolo-vaccina.netlify.app/assets/competenze.webp' },
+        { property:'og:image', content:'https://niccolovaccina.it/assets/competenze.webp' },
         { name:'twitter:card', content:'summary_large_image' },
-        { name:'twitter:url', content:'https://niccolo-vaccina.netlify.app/competenze' },
+        { name:'twitter:url', content:'https://niccolovaccina.it/competenze' },
         { name:'twitter:title', content:'Competenze Tecniche - Niccolò Vaccina' },
         { name:'twitter:description', content:'Scopri le mie competenze tecniche: .NET, C#, SQL Server, MVC, Angular, TypeScript, JavaScript, HTML, CSS e tante altre.' },
-        { name:'twitter:image', content:'https://niccolo-vaccina.netlify.app/assets/competenze.webp' }
+        { name:'twitter:image', content:'https://niccolovaccina.it/assets/competenze.webp' }
       ]
     });
     return {
