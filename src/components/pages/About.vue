@@ -50,7 +50,7 @@ export default {
         <div class="col-12 mb-5 mt-md-5 mt-md-0 col-md-5 d-flex justify-content-center">
           <div class="my-img">
             <a href="https://www.linkedin.com/in/niccol%C3%B2-vaccina-566351198/" target="_blank">
-              <img src="/img/profilo/foto_about.png" alt="Niccolò Vaccina">
+              <img src="/img/profilo/foto_about.webp" alt="Niccolò Vaccina">
             </a>
           </div>
         </div>

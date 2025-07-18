@@ -41,7 +41,7 @@ export default {
       <div class="row">
         <div class="col-12 col-lg-7 testo-home px-lg-5">
           <h1>Ciao, sono Niccolò</h1>
-          <h3>Full Stack Web Developer</h3>
+          <h2>Full Stack Web Developer</h2>
           <p>
             Mi considero sempre una persona creativa, con una continua voglia di imparare e crescere. Dopo aver trascorso anni in un lavoro che non sentivo mio, ho deciso di dare una svolta alla mia vita e seguire la mia passione per la programmazione.             
           </p>
@@ -53,7 +53,7 @@ export default {
           <div class="my-img circle">
             <a target="_blank" href="https://www.linkedin.com/in/niccol%C3%B2-vaccina-566351198/">
               <img
-                src="/img/profilo/foto_busto.png"
+                src="/img/profilo/foto_busto.webp"
                 alt="Niccolò Vaccina"
                 width="250"
                 height="250"

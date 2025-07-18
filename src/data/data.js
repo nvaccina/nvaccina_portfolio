@@ -52,7 +52,7 @@ const allskills = [
   },
   {
     name: ".Net",
-    image_skill: "net.png",
+    image_skill: "net.webp",
   },
   {
     name: ".Net Core",
@@ -64,7 +64,7 @@ const allskills = [
   },
   {
     name: "Angular",
-    image_skill: "angular.png",
+    image_skill: "angular.webp",
   },
   {
     name: "TypeScript",
@@ -84,7 +84,7 @@ const allskills = [
   },
   {
     name: "React",
-    image_skill: "react.png",
+    image_skill: "react.webp",
   },
   {
     name: "Laravel",
@@ -120,11 +120,11 @@ const allskills = [
   },
   {
     name: "PM2",
-    image_skill: "pm2.png",
+    image_skill: "pm2.webp",
   },
   {
     name: "GitLab",
-    image_skill: "gitlab.png",
+    image_skill: "gitlab.webp",
   },
   {
     name: "Git Hub",
@@ -136,7 +136,7 @@ const allskills = [
   },
   {
     name: "Visual Studio",
-    image_skill: "visualstudio.png",
+    image_skill: "visualstudio.webp",
   },
   {
     name: "Windows",
@@ -144,35 +144,35 @@ const allskills = [
   },
   {
     name: "Linux",
-    image_skill: "linux.png",
+    image_skill: "linux.webp",
   }
 ];
 
 const portfolio = [
   {
     title: "Revisal",
-    image: "revisal.png",
+    image: "revisal.webp",
     altrolink: "https://lp.revisal.it/?utm_source=google&utm_medium=cpc&utm_campaign=12795954438&utm_content=122005920620&utm_term=revisal%20maggioli&gad_source=1&gad_campaignid=12795954438&gbraid=0AAAAACbbvcemAdmtkFS5esyK8fLdGhr0T&gclid=Cj0KCQjw-NfDBhDyARIsAD-ILeBp3ygHAJ05I5bJvdhIHj-E0cb32UOunoeL22c0yU3qWiTN7IrKEcQaAhLvEALw_wcB",
     link_website: "https://revisal.maggiolicloud.it/",
     link_github: "",
     descrizione: "Revisal è una piattaforma digitale sviluppata per semplificare la gestione della revisione legale e revisione contabile.",
     visibile: true,
     technologies:[
-      'angular.png',
+      'angular.webp',
       'typescript.png',
       'Sqlserver.png',      
     ]
   },
   {
     title: "IsyTravel",
-    image: "isytravel.png",
+    image: "isytravel.webp",
     altrolink: "",
     link_website: "https://www.isytravel.com/",
     link_github: "",
     descrizione: "IsyTravel è una piattaforma (e‑commerce) dedicata al turismo esperienziale, promossa da un tour operator italiano impegnato nel turismo responsabile. Il sito offre la possibilità di acquistare pacchetti selezionati che spaziano dal trekking e cicloturismo, fino a esperienze enogastronomiche, relax e viaggi accessibili. Inoltre, la piattaforma offre un servizio di noleggio di biciclette e altri mezzi, pensato per arricchire e personalizzare ogni avventura.",
     visibile: true,
     technologies:[
-      'net.png',
+      'net.webp',
       'mvc.png',
       'csharp.png',
       'javascript.png',
@@ -181,14 +181,14 @@ const portfolio = [
   },
   {
     title: "Auxilium",
-    image: "auxilium.png",
+    image: "auxilium.webp",
     altrolink: "https://www.maggioli.com/it-it/soluzioni/software/auxilium",
     link_website: "https://auxilium.auslromagna.it/",
     link_github: "",
     descrizione: "Auxilium è un gestionale sviluppato per supportare l’AUSL Romagna nella gestione integrata di pratiche relative a protesi, ausili, dispositivi monouso, ossigenoterapia e servizi correlati. A partire da ottobre 2020, è stato adottato per la gestione dei dispositivi monouso, consentendo alle farmacie convenzionate di accedere in tempo reale al piano terapeutico di ogni paziente.",
     visibile: true,
     technologies:[
-      'net.png',
+      'net.webp',
       'netcore.png',
       'csharp.png',
       'oracle.png'
@@ -196,14 +196,14 @@ const portfolio = [
   },
   {
     title: "BiancoNero Beach",
-    image: "bianconero.png",
+    image: "bianconero.webp",
     altrolink: "",
     link_website: "https://www.bianconerobeach.it/",
     link_github: "",
     descrizione: "Una piattaforma per la gestione online di Bagno Bianconero, lo stabilimento balneare a Tagliata di Cervia ricco di servizi. Il sito consente di scoprire comodamente le offerte, i comfort e le attività disponibili per una vacanza rilassante, e di prenotare il proprio ombrellone comodamente da casa.",
     visibile: true,
     technologies:[
-      '.NET.png',
+      '.net.webp',
       'mvc.png',
       'csharp.png',
       'javascript.png',
@@ -212,14 +212,14 @@ const portfolio = [
   },
   {
     title: "AvantCRAFT",
-    image: "avantcraft.png",
+    image: "avantcraft.webp",
     altrolink: "",
     link_website: "https://avantcraft.cnaemiliaromagna.it/",
     link_github: "",
     descrizione: "Progetto digitale che promuove la formazione di artigiani qualificati attraverso soluzioni inclusive e immersive. Realizzato in collaborazione con CNA Emilia-Romagna e finanziato dal FESR, il sito valorizza il patrimonio artigianale e le tecniche tradizionali tramite contenuti interattivi, storie, bandi e una struttura informativa chiara.",
     visibile: true,
     technologies:[
-      '.NET.png',
+      '.net.webp',
       'mvc.png',
       'csharp.png',
       'javascript.png',
@@ -228,14 +228,14 @@ const portfolio = [
   },
   {
     title: "TexActive",
-    image: "texactive.png",
+    image: "texactive.webp",
     altrolink: "",
     link_website: "https://www.texactive.eu/",
     link_github: "",
     descrizione: "Sito informativo per un’azienda specializzata nella progettazione, realizzazione e manutenzione di impianti di climatizzazione, refrigerazione, ricambio aria e riscaldamento a pavimento.",
     visibile: true,
     technologies:[
-      '.NET.png',
+      '.net.webp',
       'mvc.png',
       'csharp.png',
       'javascript.png',
@@ -244,7 +244,7 @@ const portfolio = [
   },
   {
     title: "InSosta Comune di Pistoia",
-    image: "insosta.png",
+    image: "insosta.webp",
     altrolink: "",
     link_website: "https://pistoia.insosta.it/splash",
     link_github: "",
@@ -252,14 +252,14 @@ const portfolio = [
     visibile: true,
     technologies:[
       'node.png',
-      'react.png',
+      'react.webp',
       'javascript.png',
-      'pm2.png'
+      'pm2.webp'
     ]
   },
   {
     title: "I Razzi Store - Bologna",
-    image: "irazzistore.png",
+    image: "irazzistore.webp",
     altrolink: "",
     link_website: "https://www.razzistore-bologna.it/",
     link_github: "",
@@ -271,7 +271,7 @@ const portfolio = [
   },
   {
     title: "Deliveboo",
-    image: "deliveboo.png",
+    image: "deliveboo.webp",
     altrolink: "",
     link_website: "",
     link_github: "https://github.com/pierdomenicoguarnieri/deliveboo-back-end",
@@ -289,7 +289,7 @@ const portfolio = [
   }
   // {
   //   title: "Boolfolio",
-  //   image: "boolfolio.png",
+  //   image: "boolfolio.webp",
   //   link_website: "",
   //   link_github: "https://github.com/nvaccina/laravel-api",
   //   descrizione:"",
@@ -306,7 +306,7 @@ const portfolio = [
   // },
   // {
   //   title: "Driving School",
-  //   image: "driving_school.png",
+  //   image: "driving_school.webp",
   //   link_website: "https://nvaccina-driving-school.netlify.app",
   //   link_github: "https://github.com/nvaccina/proj-html-vuejs ",
   //   descrizione:"",

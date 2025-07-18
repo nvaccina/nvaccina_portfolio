@@ -7,7 +7,7 @@ export default {
 
 <template>
   <div class="back-to-top">
-    <a href="#" class="h-100 w-100">
+    <a href="#" class="h-100 w-100" aria-label="Vai all'inizio">
       <i class="fa-solid fa-chevron-up"></i>
     </a>
   </div>
