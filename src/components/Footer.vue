@@ -16,7 +16,7 @@ export default {
       <div class="row d-flex align-items-center h-100">
         <div class="col-12 col-md-4 nv-col">
           <div class="info">
-            <h4>Niccolò Vaccina</h4>
+            <span style="font-size: 1.5rem;">Niccolò Vaccina</span>
             <ul class="px-0 mb-0">
               <li>
                 <a href="mailto:niccolovac@gmail.com">
@@ -44,7 +44,7 @@ export default {
             <nav class="h-100 w-100">
               <ul class="d-flex align-items-center justify-content-center w-100 h-100 mb-0 ps-0">
                 <li v-for="(icon, index) in social" :key="index">
-                  <a :href="icon.href">
+                  <a :href="icon.href" :aria-label="icon.name">
                     <i :class="icon.icon"></i>
                   </a>
                 </li>

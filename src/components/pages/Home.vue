@@ -52,7 +52,13 @@ export default {
         <div class="col-12 col-lg-5 mt-5 mt-lg-0 d-flex ps-4 justify-content-center justify-content-lg-start">
           <div class="my-img circle">
             <a target="_blank" href="https://www.linkedin.com/in/niccol%C3%B2-vaccina-566351198/">
-              <img src="/img/profilo/foto_busto.png" alt="Niccolò Vaccina">
+              <img
+                src="/img/profilo/foto_busto.png"
+                alt="Niccolò Vaccina"
+                width="250"
+                height="250"
+                fetchpriority="high"
+              />
             </a>
           </div>
         </div>
