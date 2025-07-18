@@ -137,7 +137,7 @@ export default {
         </div>
         <div class="col-12 col-lg-5 mt-5 mt-lg-0 d-flex ps-4 justify-content-center justify-content-lg-start">   
           <div class="my-img square">           
-              <img src="/img/contatti.png" alt="Contatti - Niccolò Vaccina">
+              <img src="/img/contatti.webp" alt="Contatti - Niccolò Vaccina">
           </div>
         </div>
       </div>

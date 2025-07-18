@@ -25,12 +25,12 @@ export default {
         { property:'og:url', content:'https://niccolovaccina.it/contatti' },
         { property:'og:title', content: 'Contattami - Niccolò Vaccina | Full Stack Developer' },
         { property:'og:description', content: 'Contattami per collaborazioni, consulenze o sviluppo di applicazioni web e software.' },
-        { property:'og:image', content:'https://niccolovaccina.it/assets/contatti.png' },
+        { property:'og:image', content:'https://niccolovaccina.it/assets/contatti.webp' },
         { name:'twitter:card', content:'summary_large_image' },
         { name:'twitter:url', content:'https://niccolovaccina.it/contatti' },
         { name:'twitter:title', content:'Contattami - Niccolò Vaccina' },
         { name:'twitter:description', content: 'Vuoi lavorare con me? Scrivimi per proposte, richieste o informazioni su nuovi progetti.' },
-        { name:'twitter:image', content:'https://niccolovaccina.it/assets/contatti.png' }
+        { name:'twitter:image', content:'https://niccolovaccina.it/assets/contatti.webp' }
       ]
     });
 

@@ -36,7 +36,7 @@ export default {
         </div>
         <div class="col-12 col-md-4 nv-col">
           <div class="logo-footer">
-            <router-link :to="{ name:'home' }"><img src="/img/logo/logo.png" alt="logo"></router-link>
+            <router-link :to="{ name:'home' }"><img src="/img/logo/logo.webp" alt="logo"></router-link>
           </div>    
         </div>
         <div class="col-12 col-md-4 col-social">

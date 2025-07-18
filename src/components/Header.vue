@@ -77,7 +77,7 @@ export default {
   <header>
     <div class="container h-100 d-flex align-items-center justify-content-center">
       <div class="logo">
-        <router-link :to="{ name:'home' }"><img src="/img/logo/logo.png" alt="logo"></router-link>
+        <router-link :to="{ name:'home' }"><img src="/img/logo/logo.webp" alt="logo"></router-link>
       </div>
       
       <div class="header-menu">
@@ -132,7 +132,7 @@ export default {
         </li>
       </ul>
       <div class="logo-offcanvas d-flex justify-content-center">
-        <img src="/img/logo/logo.png" alt="Niccolò Vaccina logo">
+        <img src="/img/logo/logo.webp" alt="Niccolò Vaccina logo">
       </div>
     </div>
   </div>
