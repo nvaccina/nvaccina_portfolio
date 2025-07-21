@@ -78,7 +78,7 @@ export default {
 
     <div class="container mt-5">    
       <div class="cv d-flex justify-content-center">
-        <a href="/niccolò-vaccina-cv-it.pdf" download="niccolò-vaccina-cv" class="cv-button">Scarica CV</a>
+        <a href="/niccolo-vaccina-cv-it.pdf" download="niccolò-vaccina-cv" class="cv-button">Scarica CV</a>
       </div>
     </div>
   </section>

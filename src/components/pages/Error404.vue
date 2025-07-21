@@ -6,7 +6,7 @@ export default {
       title: 'Pagina non trovata | Niccolò Vaccina',
       link: [{ rel: 'canonical', href: 'https://niccolovaccina.it/404' }],
       meta: [
-        { name: 'robots', content: 'noindex' }, // <--- previene l'indicizzazione
+        { name: 'robots', content: 'noindex' }, 
         { name: 'description', content: 'La pagina che stai cercando non esiste. Torna alla homepage.' }
       ]
     });

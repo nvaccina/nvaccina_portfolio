@@ -151,7 +151,6 @@ export default {
 @import '../../scss/general/variables';
 .section-home{
   .testo-home{
-    // position: relative;
     animation-name: testohome;
     animation-duration: 2s;
   }
@@ -159,9 +158,7 @@ export default {
 .my-img{
   height: 250px;
   width: 250px;
-  // border-radius: 50%;
   overflow: hidden;
-  // position: relative;
   background-color: $primary-color;
   box-shadow:  5px 5px 5px 5px rgba(0, 0, 0, 0.3);
   transition: all 0.3s;

@@ -165,26 +165,34 @@ header{
       border: 0 !important;
       background-color: transparent !important;
       img{
-        height: 100%;
-        // &:hover{
-        //   filter: brightness(10%) invert(150%);
-        // }
-    }
+          height: 100%;
+      }
     }
   }
-  .header-menu{
-    a{
+  .header-menu {
+    a {
+      position: relative;
       color: white !important;
       text-decoration: none;
       text-transform: uppercase;
       font-weight: bold;
       font-size: 20px;
       margin: 0 10px;
-      transition: all 0.2s;
       padding: 5px 10px;
-      transition: linear all 0.2s;
-      &.active, &:hover{        
-        border-bottom: 3px solid $primary-color !important;
+      transition: all 0.2s linear;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        width: 0;
+        background-color: $primary-color;
+        transition: width 0.3s ease-in-out;
+      }
+      &.active::after,
+      &:hover::after {
+        width: 100%;
       }
     }
   }

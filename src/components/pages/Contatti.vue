@@ -163,7 +163,7 @@ export default {
           <textarea class="form-control" id="message" rows="4" name="message"></textarea>
         </div>   
         <div class="mb-3">
-          <input class="form-check-input" type="checkbox" value="" id="privacy">
+          <input class="form-check-input me-2" type="checkbox" value="" id="privacy">
           <span class="form-check-label" for="privacy">
             Si, accetto le condizioni della <strong><a href="https://www.iubenda.com/privacy-policy/70797940" class="iubenda-noiframe" title="Privacy Policy" target="_blank">Privacy Policy</a></strong>.
           </span>
@@ -194,9 +194,8 @@ export default {
               <a href="tel:00390123456789">+39 3891168261</a>
             </div>
             <div>
-              <a href="https://goo.gl/maps/hWkhqvqYgG1v8eL9A" target="_blank" rel="noopener">
-                <i class="fa-solid fa-location-dot pe-1"></i> Cesena (FC) - Italia
-              </a>
+              <i class="fa-solid fa-location-dot pe-2"></i> 
+              <a href="https://goo.gl/maps/hWkhqvqYgG1v8eL9A" target="_blank" rel="noopener">Cesena (FC) - Italia</a>
             </div>
           </div>
         </div>
@@ -212,7 +211,6 @@ export default {
   color: black;
   min-height: calc(100vh - 294px);
   .newct{
-    // width: 400px;
     display: flex;
     align-items: center;
     flex-direction: column;
