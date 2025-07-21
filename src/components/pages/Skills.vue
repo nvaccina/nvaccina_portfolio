@@ -21,10 +21,10 @@ export default {
   setup() {
     useHead({
       title:'Competenze Tecniche - Niccolò Vaccina',
+      link:[{ rel:'canonical', href:'https://niccolovaccina.it/competenze' }],
       meta: [
         { name:'title', content:'Competenze Tecniche - Niccolò Vaccina' },
         { name:'description', content:'Scopri le mie competenze tecniche: .NET, C#, SQL Server, MVC, Angular, TypeScript, JavaScript, HTML, CSS e tante altre.' },
-        { rel:'canonical', content:'https://niccolovaccina.it/competenze' },
         { name:'author', content:'Niccolò Vaccina' },
         { name:'keywords', content:'full stack developer, competenze, .net, c#, sql server, javascript, html, css, web developerment, programmatore, sviluppatore web, niccolò vaccina, cesena, forlì' },
         { property:'og:type', content:'article' },
