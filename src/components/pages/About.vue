@@ -45,7 +45,7 @@ export default {
 <template>
   <section id="about" class="mt-50">
     <div class="container">
-      <h1 class="pb-5 title">Chi Sono</h1>
+      <h1 class="pb-5 title">{{ $t('about.title') }}</h1>
       <div class="row">
         <div class="col-12 mb-5 mt-md-5 mt-md-0 col-md-5 d-flex justify-content-center">
           <div class="my-img">
@@ -55,21 +55,21 @@ export default {
           </div>
         </div>
         <div class="col-12 col-md-7 px-3 px-md-5">
-          <p class="pb-3">
-            Dopo aver trascorso più di quattro anni svolgendo il lavoro di consulente immobiliare, duranti i quali ho imparato ad avere un'ottima capacità relazionale con i clienti, ho deciso di mollare la monotonia e la stabilità economica per seguire la mia passione per la programmazione e per il codice.
-          </p>
+          <p class="pb-3">{{$t('about.paragraph_1')}}</p>
           <p>
-            Questo desiderio mi ha portato a frequentare un corso di programmazione immersivo sia lato Front-End che lato Back-End, della durata di 6 mesi, organizzato da <a class="link" href="https://boolean.careers/">Boolen SRL</a>. Il loro obbiettivo è quello di formare Full Stack Web Developers attraverso lezioni teoriche ed esercitazioni pratiche giornaliere, durante le quali, grazie alle nuove tecnologie e framework conosciuti sono riuscito insieme al mio team a realizzare una web app che permette di ordinare cibo a domicilio, utilizzando tecnologie come Vue.js, Laravel e MySQL e integrata con il sistema di pagamento Braintree.
+            {{ $t('about.paragraph_2') }}
+            <a class="link" href="https://boolean.careers/">Boolen SRL</a>
+            {{ $t('about.paragraph_3') }}
           </p>
         </div>
         <p>
-          Dopo aver completato il corso di formazione, ho iniziato la mia prima esperienza lavorativa come Web Developer presso <a class="link" href="https://inputitalia.com/">Input S.r.l.</a> In questa realtà, ho ricoperto il ruolo di unico sviluppatore, occupandomi interamente dello sviluppo di tre software dedicati al controllo e al monitoraggio della sosta in parcheggi pubblici e privati. Tra le principali attività, ho curato l'integrazione della piattaforma di pagamento XPay di Nexi, la gestione dei database tramite DBeaver e la configurazione dei collegamenti al server OVHcloud.
+          {{ $t('about.paragraph_4') }}
+          <a class="link" href="https://inputitalia.com/">Input S.r.l.</a> {{ $t('about.paragraph_5') }}
         </p>
         <p>
-          Dopo qualche mese, ho avuto l'opportunità di entrare in una realtà più strutturata: <a class="link" href="https://www.bsdsoftware.it/" target="_blank">BSD Software Srl.</a> che fa parte del <a class="link" href="https://www.maggioli.com/it-it" target="_blank">Gruppo Maggioli</a>.<br>
-          Qui mi occupo dello sviluppo di applicazioni web responsive, lavorando sia sul Front-End che sul Back-End, con tecnologie come .NET Framework, ASP.NET Core MVC e Angular.
-          
-          Mi occupo della progettazione, dello sviluppo e della manutenzione di siti web, piattaforme e-commerce e software gestionali, realizzati su misura in base alle esigenze dei clienti, sia in ambito B2B che B2C. Inoltre, gestisco database su SQL Server, Oracle, PostgreSQL e Microsoft Azure, integrando anche, soluzioni esterne come Iubenda (privacy e consent management), Brevo (email marketing e live chat), servizi Google e sistemi di pagamento come PayPal.
+          {{ $t('about.paragraph_6') }}
+          <a class="link" href="https://www.bsdsoftware.it/" target="_blank">BSD Software Srl.</a> {{ $t('about.join_paragraph') }} <a class="link" href="https://www.maggioli.com/it-it" target="_blank">{{ $t('about.link_1') }}</a>.<br>
+          {{ $t('about.paragraph_7') }}        
         </p>
       </div>
     </div>

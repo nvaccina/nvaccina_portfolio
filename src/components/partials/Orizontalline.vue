@@ -87,7 +87,7 @@ a {
     border-radius: 4px;
   }
   &::-webkit-scrollbar-thumb {
-    background: #a7c1dd;
+    background: #456990;
     border-radius: 4px;
   }
 }
@@ -95,8 +95,11 @@ a {
 .timeline ol {
   font-size: 0;
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Torna al center */
   align-items: center;
+  // width: max-content;
+  // flex-shrink: 0;
+  // min-width: 100%;
   padding: 0 20px;
   margin: 0;
   transition: all 1s;
@@ -290,4 +293,22 @@ a {
   display: flex;
   margin-left: 4px;
 }
+
+// @media (max-width: 1400px) {
+
+// }
+// @media (max-width: 930px) {
+
+// }
+
+// @media (max-width: 600px) {
+
+// }
+// @media (max-width: 445px) {
+
+// }
+// @media (max-width: 392px) {
+
+// }
+
 </style>
