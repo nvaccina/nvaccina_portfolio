@@ -4,7 +4,12 @@ export default {
   name: 'Header',
   data(){
     return{
-      mainMenu,
+      mainMenu
+    }
+  },
+  watch: {
+    '$i18n.locale'(newLang) {
+      localStorage.setItem('user-language', newLang);
     }
   },
   methods:{
@@ -75,7 +80,7 @@ export default {
 
 <template>
   <header>
-    <div class="container h-100 d-flex align-items-center justify-content-center">
+    <div class="container h-100 d-flex align-items-center justify-content-between">
       <div class="logo">
         <router-link :to="{ name:'home' }"><img src="/img/logo/logo.webp" alt="logo"></router-link>
       </div>
@@ -83,24 +88,29 @@ export default {
       <div class="header-menu">
         <ul class="nav nav-underline">
           <li v-for="(link, index) in mainMenu" :key="index" class="nav-item">
-            <router-link :to="{ name:link.text }">{{link.text}}</router-link>
+            <router-link :to="{ name:link.name }">{{ $t(link.text) }}</router-link>
           </li>
         </ul>
       </div>
-      <select v-model="$i18n.locale">
-        <option value="it">🇮🇹</option>
-        <option value="en">EN</option>
-      </select>
 
-      <!-- Pulsante hamburger per offcanvas -->
-      <div class="menu d-none">
-        <button class="btn p-0 border-0" type="button" @click="toggleMenu()">
-          <div class="menu-inner" id="menu-inner">
-            <span class="bar bar-1" id="bar1"></span>
-            <span class="bar bar-2" id="bar2"></span>
-            <span class="bar bar-3" id="bar3"></span>
-          </div>
-        </button>
+      <div class="lang-menu d-flex align-items-center">        
+        <div class="lang-container">
+          <i class="fa-solid fa-globe me-1"></i> 
+          <select v-model="$i18n.locale" class="form-select custom-select">
+            <option value="it">{{ $t('lang.it.name') }}</option>
+            <option value="en">{{ $t('lang.en.name') }}</option>
+          </select>
+        </div>
+        <!-- Pulsante hamburger per offcanvas -->
+        <div class="menu d-none">
+          <button class="btn p-0 border-0" type="button" @click="toggleMenu()">
+            <div class="menu-inner" id="menu-inner">
+              <span class="bar bar-1" id="bar1"></span>
+              <span class="bar bar-2" id="bar2"></span>
+              <span class="bar bar-3" id="bar3"></span>
+            </div>
+          </button>
+        </div>
       </div>
     </div>
   </header>
@@ -113,7 +123,7 @@ export default {
     <div class="offcanvas-body">
       <ul class="nav flex-column">
         <li v-for="(link, index) in mainMenu" :key="index" class="nav-item mb-2">
-          <router-link class="nav-link text-uppercase fw-bold" :to="{ name:link.text }" @click="toggleMenu()">{{ link.text }}</router-link>
+          <router-link class="nav-link text-uppercase fw-bold" :to="{ name:link.name }" @click="toggleMenu()">{{ $t(link.text) }}</router-link>
         </li>
         <li class="nav-item mb-2">
           <a href="https://www.iubenda.com/privacy-policy/70797940" class=" nav-link text-uppercase fw-bold iubenda-noiframe me-3" title="Privacy Policy" target="_blank">Privacy Policy</a>
@@ -148,9 +158,6 @@ header{
   height: 80px;
   box-shadow:  5px 5px 5px 5px rgba(0, 0, 0, 0.1);
   .logo{
-    position: absolute;
-    top: 10px;
-    left: 200px;
     height: 60px;
     a{
       border: 0 !important;
@@ -187,7 +194,11 @@ header{
       }
     }
   }
-
+  .lang-menu{
+    // position: absolute;
+    top: 0;
+    right: 20px;
+  }
   .menu {    
     width: 50px;
     height: 36px;
@@ -247,12 +258,31 @@ header{
       padding: 2px 5px;
     }
   }
-
+  .lang-container{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    margin-right: 10px;
+    i {
+      color: $secondary-color;
+    }
+    .custom-select{
+      border: 0px;
+      background-color: transparent;
+      color: $secondary-color;
+      --bs-form-select-bg-img: none !important;
+      padding: 3px 5px;
+      option{
+        background: rgba(0, 0, 0, 0.3);
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
 }
 .offcanvas-end {
   top: 80px;
   height: calc(100% - 80px);
-  transition: transform 0.3s ease-in-out; /* Transizione smooth */
+  transition: transform 0.3s ease-in-out;
   transform: translateX(100%);
   transition: transform 0.3s ease;
   transform: translateX(100%);
@@ -298,28 +328,22 @@ header{
   opacity: 1;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 998px) {
     header {
       
-      .logo {
-        left: 20px;
+      .container {
+        max-width: 820px;
       }
     }
 }
 
 @media (max-width: 900px) {
   header {
-    .logo{
-      top: 0px;
-    }
     .container{
-      justify-content: space-between  !important;
       padding: 0;
-      width: 100%;
+      width: 100vw;
       margin: 0 !important;
       .logo {
-        position: relative;
-        left: 0;
         margin-left: 30px;
       }
       .header-menu{
@@ -327,7 +351,7 @@ header{
       }
       .menu{
         display: block !important;
-        margin-right: 30px;
+        margin-right: 20px;
       }
     }
   }
@@ -346,7 +370,7 @@ header{
   background-color: rgba(0, 0, 0, 0.5) !important;
   z-index: 1040 !important;
   cursor: pointer !important;
-  opacity: 0; /* Stato iniziale: trasparente */
+  opacity: 0;
   transition: opacity 0.3s ease-in-out; 
 }
 </style>

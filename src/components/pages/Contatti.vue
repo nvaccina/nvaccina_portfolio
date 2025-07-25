@@ -5,6 +5,7 @@ import { ref } from 'vue';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import { onMounted } from 'vue';
+import { useI18n } from 'vue-i18n';
 
 export default {
   name: 'Contatti',
@@ -12,6 +13,7 @@ export default {
     Wabutton
   },
   setup(){
+    const { t } = useI18n();
     useHead({
       title: 'Contattami - Niccolò Vaccina | Full Stack Developer',
       link:[{ rel:'canonical', href:'https://niccolovaccina.it/contatti' }],
@@ -57,8 +59,8 @@ export default {
       if (!name || !email || !message) {
         Swal.fire({
           icon: 'warning',
-          title: 'Campi obbligatori mancanti',
-          text: 'Per favore, compila tutti i campi obbligatori prima di inviare il messaggio.',
+          title: t('contatti.form.alerts.missingFields.title'),
+          text: t('contatti.form.alerts.missingFields.text'),
           confirmButtonColor: '#f27474'
         });
         return;
@@ -68,8 +70,8 @@ export default {
       if (!emailRegex.test(email)) {
         Swal.fire({
           icon: 'error',
-          title: 'Email non valida',
-          text: 'Inserisci un indirizzo email valido.',
+          title: t('contatti.form.alerts.invalidEmail.title'),
+          text: t('contatti.form.alerts.invalidEmail.text'),
           confirmButtonColor: '#f27474'
         });
         return;
@@ -78,8 +80,8 @@ export default {
       if (!privacyChecked) {
         Swal.fire({
           icon: 'warning',
-          title: 'Consenso richiesto',
-          text: 'Devi accettare le condizioni della Privacy Policy prima di inviare il messaggio.',
+          title: t('contatti.form.alerts.privacy.title'),
+          text: t('contatti.form.alerts.privacy.text'),
           confirmButtonColor: '#f27474'
         });
         return;
@@ -98,7 +100,7 @@ export default {
           input.value = token;
 
           Swal.fire({
-            title: 'Invio in corso...',
+            title:  t('contatti.form.alerts.sending.title'),
             allowOutsideClick: false,
             didOpen: () => Swal.showLoading()
           });
@@ -112,8 +114,8 @@ export default {
           .then(() => {
             Swal.fire({
               icon: 'success',
-              title: 'Messaggio inviato!',
-              text: 'Ti contatterò il prima possibile.',
+              title: t('contatti.form.alerts.success.title'),
+              text: t('contatti.form.alerts.success.text'),
               confirmButtonColor: '#3085d6'
             });
             contactForm.value.reset();            
@@ -121,8 +123,8 @@ export default {
           .catch((error) => {
               Swal.fire({
                 icon: 'error',
-                title: 'Errore',
-                text: 'Qualcosa è andato storto durante l\'invio. Riprova più tardi.',
+                title: t('contatti.form.alerts.error.title'),
+                text: t('contatti.form.alerts.error.text'),
                 confirmButtonColor: '#d33'
               });
               console.error('EmailJS Error:', error);
@@ -141,34 +143,34 @@ export default {
 <template>
   <section id="contacts" class="mt-50">
     <div class="container">
-        <h1 class="pb-5 title">Contatti</h1>
+        <h1 class="pb-5">{{ $t('contatti.title') }}</h1>
     </div>
     <div class="container">
-      <h2>Hai un progetto in mente? Scrivimi per collaborare o per qualsiasi domanda</h2>
+      <h2>{{ $t('contatti.form.title') }}</h2>
       <form @submit.prevent="sendEmail" ref="contactForm" class="contact-form">
         <div class="mb-3">
-          <label for="name" class="form-label">Nome (*)</label>
+          <label for="name" class="form-label">{{ $t('contatti.form.nome') }}</label>
           <input type="text" class="form-control" id="name" name="name" />
         </div>
         <div class="mb-3">
-          <label for="email" class="form-label">Email (*)</label>
+          <label for="email" class="form-label">{{ $t('contatti.form.email') }}</label>
           <input type="email" class="form-control" id="email" name="email" />
         </div>
         <div class="mb-3">
-          <label for="cellulare" class="form-label">Cellulare</label>
+          <label for="cellulare" class="form-label">{{ $t('contatti.form.cell') }}</label>
           <input type="text" class="form-control" id="cellulare" name="cellulare" />
         </div>
         <div class="mb-3">
-          <label for="message" class="form-label">Messaggio (*)</label>
+          <label for="message" class="form-label">{{ $t('contatti.form.msg') }}</label>
           <textarea class="form-control" id="message" rows="4" name="message"></textarea>
         </div>   
         <div class="mb-3">
           <input class="form-check-input me-2" type="checkbox" value="" id="privacy">
           <span class="form-check-label" for="privacy">
-            Si, accetto le condizioni della <strong><a href="https://www.iubenda.com/privacy-policy/70797940" class="iubenda-noiframe" title="Privacy Policy" target="_blank">Privacy Policy</a></strong>.
+            {{ $t('contatti.form.privacy') }} <strong><a href="https://www.iubenda.com/privacy-policy/70797940" class="iubenda-noiframe" title="Privacy Policy" target="_blank">Privacy Policy</a></strong>.
           </span>
         </div>    
-        <button type="submit" class="cv-button">Invia</button>
+        <button type="submit" class="cv-button">{{ $t('contatti.form.btn') }}</button>
       </form>
 
       <div class="row">
@@ -195,7 +197,7 @@ export default {
             </div>
             <div>
               <i class="fa-solid fa-location-dot pe-2"></i> 
-              <a href="https://goo.gl/maps/hWkhqvqYgG1v8eL9A" target="_blank" rel="noopener">Cesena (FC) - Italia</a>
+              <a href="https://goo.gl/maps/hWkhqvqYgG1v8eL9A" target="_blank" rel="noopener">Cesena (FC) - {{ $t('contatti.luogo') }}</a>
             </div>
           </div>
         </div>
@@ -210,6 +212,9 @@ export default {
 #contacts{
   color: black;
   min-height: calc(100vh - 294px);
+  position: relative;
+  animation-duration: 2s;
+  animation-name: contatti;
   .newct{
     display: flex;
     align-items: center;
@@ -267,5 +272,9 @@ export default {
   .linea{
     width: 100% !important;
   }
+}
+@keyframes contatti {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
 }
 </style>

@@ -7,9 +7,11 @@ import { createI18n } from 'vue-i18n'
 import it from './locales/it'
 import en from './locales/en'
 
+const savedLang = localStorage.getItem('user-language') || 'it';
+
 const i18n = createI18n({
   legacy: false,
-  locale: 'it',
+  locale: savedLang,
   fallbackLocale: 'en',
   messages: {
     it,

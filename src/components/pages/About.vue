@@ -45,7 +45,7 @@ export default {
 <template>
   <section id="about" class="mt-50">
     <div class="container">
-      <h1 class="pb-5 title">{{ $t('about.title') }}</h1>
+      <h1 class="pb-5">{{ $t('about.title') }}</h1>
       <div class="row">
         <div class="col-12 mb-5 mt-md-5 mt-md-0 col-md-5 d-flex justify-content-center">
           <div class="my-img">
@@ -88,12 +88,13 @@ export default {
 <style lang="scss" scoped>
 @import '../../scss/general/variables';
 
-  .title, .my-img, p, .cv{
+  .my-img, p, .cv{
+    position: relative;
+  }
+  #about{
     position: relative;
     animation-duration: 2s;
-  }
-  .title{
-    animation-name: title;
+    animation-name: about;
   }
   .my-img{
     height: 250px;
@@ -101,7 +102,6 @@ export default {
     background-color: $tertiary-color;
     box-shadow:  5px 5px 5px 5px rgba(0, 0, 0, 0.3);
     overflow: hidden;
-    animation-name: myimg;
     transition: all 0.3s;
     img{
       width: 100%;
@@ -126,22 +126,8 @@ export default {
       }
     }
   }
-  .cv{
-    animation-name: cv;
-  }
-  @keyframes title {
-    0%   {opacity: 0;}
-    100% {opacity: 1;}
-  }
-  @keyframes myimg {
-    0%   {left:-500px; top:0px;}
-    100% {left:0px; top:0px;}
-  }
-  @keyframes testoabout {
-    0%   {left:500px; top:0px;}
-    100% {left:0px; top:0px;}
-  }
-  @keyframes cv {
+
+  @keyframes about {
     0%   {opacity: 0;}
     100% {opacity: 1;}
   }
