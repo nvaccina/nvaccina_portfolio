@@ -38,7 +38,16 @@ export default {
       ]
     });
     return{};
+  },
+  computed: {
+    cvLink() {
+      return `/niccolo-vaccina-cv-${this.$i18n.locale}.pdf`;
+    },
+    cvFilename() {
+      return `niccolo-vaccina-cv-${this.$i18n.locale}`;
+    }
   }
+
 }
 </script>
 
@@ -78,7 +87,7 @@ export default {
 
     <div class="container mt-5">    
       <div class="cv d-flex justify-content-center">
-        <a href="/niccolo-vaccina-cv-it.pdf" download="niccolò-vaccina-cv" class="cv-button">Scarica CV</a>
+        <a :href="cvLink" :download="cvFilename" class="cv-button">{{ $t('about.download_cv') }}</a>
       </div>
     </div>
   </section>

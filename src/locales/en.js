@@ -196,7 +196,7 @@ export default {
       ]
     },
     {
-      title: "InSosta Comune di Pistoia",
+      title: "InSosta Municipality of Pistoia",
       image: "insosta.webp",
       altrolink: "",
       link_website: "https://pistoia.insosta.it/splash",
