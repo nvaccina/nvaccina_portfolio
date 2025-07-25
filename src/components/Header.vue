@@ -83,24 +83,11 @@ export default {
       <div class="header-menu">
         <ul class="nav nav-underline">
           <li v-for="(link, index) in mainMenu" :key="index" class="nav-item">
-            <router-link :to="{ name:link.text }">{{link.text}}</router-link>
+            <router-link :to="{ name:link.text }" active-class="active">{{link.text}}</router-link>
           </li>
         </ul>
       </div>
 
-      <!-- <li class="nav-item dropdown menu d-none">
-          <a id="menu-inner" class="nav-link dropdown menu-inner" @click="toggleMenu()" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <span class="bar bar-1" id="bar1"></span>
-            <span class="bar bar-2" id="bar2"></span>
-            <span class="bar bar-3" id="bar3"></span>
-          </a>
-        <ul class="dropdown-menu px-3">
-          <li v-for="(link, index) in mainMenu" :key="index" class="nav-item pb-2">
-            <router-link class="link-responsive" @click="toggleMenu()" :to="{ name:link.text }">{{link.text}}</router-link>
-          </li>
-        </ul>
-      </li> -->
-      
       <!-- Pulsante hamburger per offcanvas -->
       <div class="menu d-none">
         <button class="btn p-0 border-0" type="button" @click="toggleMenu()">
