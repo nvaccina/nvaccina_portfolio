@@ -1,3 +1,8 @@
+# Redirect da HTTP a HTTPS
+http://niccolovaccina.it/* https://niccolovaccina.it/:splat 301!
+http://www.niccolovaccina.it/* https://niccolovaccina.it/:splat 301!
+
+# Redirect da netlify.app al dominio personalizzato
 https://niccolo-vaccina.netlify.app/* https://niccolovaccina.it/:splat 301!
 
 /*    /index.html   200
