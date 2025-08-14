@@ -83,7 +83,7 @@ export default {
       <div class="header-menu">
         <ul class="nav nav-underline">
           <li v-for="(link, index) in mainMenu" :key="index" class="nav-item">
-            <router-link :to="{ name:link.text }" active-class="active">{{link.text}}</router-link>
+            <router-link :to="{ name:link.name }" active-class="active">{{link.text}}</router-link>
           </li>
         </ul>
       </div>
@@ -109,7 +109,7 @@ export default {
     <div class="offcanvas-body">
       <ul class="nav flex-column">
         <li v-for="(link, index) in mainMenu" :key="index" class="nav-item mb-2">
-          <router-link class="nav-link text-uppercase fw-bold" :to="{ name:link.text }" @click="toggleMenu()">{{ link.text }}</router-link>
+          <router-link class="nav-link text-uppercase fw-bold" :to="{ name:link.name }" @click="toggleMenu()">{{ link.text }}</router-link>
         </li>
         <li class="nav-item mb-2">
           <a href="https://www.iubenda.com/privacy-policy/70797940" class=" nav-link text-uppercase fw-bold iubenda-noiframe me-3" title="Privacy Policy" target="_blank">Privacy Policy</a>

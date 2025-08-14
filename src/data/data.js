@@ -1,22 +1,27 @@
 const mainMenu = [
   {
     href: "#",
+    name: "home",
     text: "home",
   },
   {
     href: "#chi-sono",
+    name: "chi-sono",
     text: "chi sono",
   },
   {
     href: "#portfolio",
+    name: "portfolio",
     text: "portfolio",
   },
   {
     href: "#competenze",
+    name: "competenze",
     text: "competenze",
   },
   {
     href: "#contatti",
+    name: "contatti",
     text: "contatti",
   },
 ];

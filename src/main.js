@@ -16,7 +16,7 @@ const routes = [
   },
   {
     path: '/chi-sono',
-    name: 'chi sono',
+    name: 'chi-sono',
     component: About
   },
   {

@@ -78,7 +78,7 @@ export default {
           <p>Sono una persona creativa, curiosa e intraprendente, con una grande passione per la programmazione. Dopo anni in un lavoro che non mi rappresentava, ho scelto di seguire ciò che mi entusiasma davvero: creare, imparare e risolvere problemi attraverso il codice. Ogni giorno è un'opportunità per crescere e migliorare, ed è questo che mi motiva a proseguire.<br>
           <strong>Vuoi saperne di più sul mio percorso?</strong></p>
           <div class="cv d-flex justify-content-center mt-4">
-            <span class="cv-button"><router-link :to="{ name:'chi sono' }">Scopri di più</router-link></span>
+            <span class="cv-button"><router-link :to="{ name:'chi-sono' }">Scopri di più</router-link></span>
           </div>
         </div>
       </div>
