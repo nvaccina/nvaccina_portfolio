@@ -86,47 +86,50 @@ export default {
       }
 
       window.grecaptcha.ready(() => {
-        window.grecaptcha.execute('6LcTXXwrAAAAAHsmCaKoFsfFK4j41C-ia6Oyvo3K', { action: 'submit' }).then((token) => {
-          
-          let input = form.querySelector('input[name="g-recaptcha-response"]');
-          if (!input) {
-            input = document.createElement('input');
-            input.type = 'hidden';
-            input.name = 'g-recaptcha-response';
-            form.appendChild(input);
-          }
-          input.value = token;
+        window.grecaptcha.execute('6LcTXXwrAAAAAHsmCaKoFsfFK4j41C-ia6Oyvo3K', { action: 'submit' }).then(async (token) => {
+          try {
+            const verifyResponse = await fetch("/api/verify-recaptcha", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ token })
+            });
 
-          Swal.fire({
-            title: 'Invio in corso...',
-            allowOutsideClick: false,
-            didOpen: () => Swal.showLoading()
-          });
+            const verifyData = await verifyResponse.json();
 
-          emailjs.sendForm(
-            'service_or524sm',
-            'template_89mswyw',
-            contactForm.value,
-            'Ex3cF8uaRrMLvv26n'
-          )
-          .then(() => {
+            if (!verifyData.success) {
+              Swal.fire({
+                icon: "error",
+                title: "Verifica reCAPTCHA fallita",
+                text: `Motivo: ${verifyData.reason || "Sospetto traffico automatico"}`,
+                confirmButtonColor: "#d33"
+              });
+              return;
+            }
+
+            await emailjs.sendForm(
+              'service_or524sm',
+              'template_89mswyw',
+              contactForm.value,
+              'Ex3cF8uaRrMLvv26n'
+            );
+
             Swal.fire({
               icon: 'success',
               title: 'Messaggio inviato!',
-              text: 'Ti contatterò il prima possibile.',
+              text: 'Ti contatterò al più presto.',
               confirmButtonColor: '#3085d6'
             });
-            contactForm.value.reset();            
-          })
-          .catch((error) => {
-              Swal.fire({
-                icon: 'error',
-                title: 'Errore',
-                text: 'Qualcosa è andato storto durante l\'invio. Riprova più tardi.',
-                confirmButtonColor: '#d33'
-              });
-              console.error('EmailJS Error:', error);
+            contactForm.value.reset();
+
+          } catch (error) {
+            console.error("Errore:", error);
+            Swal.fire({
+              icon: "error",
+              title: "Errore",
+              text: "Qualcosa è andato storto durante la verifica. " + error.message,
+              confirmButtonColor: "#d33"
             });
+          }
         });
       });
     };
@@ -168,6 +171,7 @@ export default {
             Si, accetto le condizioni della <strong><a href="https://www.iubenda.com/privacy-policy/70797940" class="iubenda-noiframe" title="Privacy Policy" target="_blank">Privacy Policy</a></strong>.
           </span>
         </div>    
+        <input type="hidden" name="g-recaptcha-response">
         <button type="submit" class="cv-button">Invia</button>
       </form>
 
