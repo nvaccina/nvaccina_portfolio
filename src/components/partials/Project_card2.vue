@@ -59,6 +59,7 @@ export default {
               v-if="linkWebsite"
               class="site-button me-2 btn"
               :href="linkWebsite"
+              target="_blank"
               >
               {{ $t('portfolio.btnSite') }}
             </a>

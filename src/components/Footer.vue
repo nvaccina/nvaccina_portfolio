@@ -19,7 +19,7 @@ export default {
             <span style="font-size: 1.5rem;">Niccolò Vaccina</span>
             <ul class="px-0 mb-0">
               <li>
-                <a href="mailto:niccolovac@gmail.com">
+                <a href="mailto:niccolovac@gmail.com" target="_blank">
                   <i class="fa-solid fa-envelope"></i> niccolovac@gmail.com
                 </a>
               </li>
@@ -44,7 +44,7 @@ export default {
             <nav class="h-100 w-100">
               <ul class="d-flex align-items-center justify-content-center w-100 h-100 mb-0 ps-0">
                 <li v-for="(icon, index) in social" :key="index">
-                  <a :href="icon.href" :aria-label="icon.name">
+                  <a :href="icon.href" :aria-label="icon.name" target="_blank">
                     <i :class="icon.icon"></i>
                   </a>
                 </li>

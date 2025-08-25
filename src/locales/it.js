@@ -214,7 +214,7 @@ export default {
       altrolink: "",
       link_website: "https://www.razzistore-bologna.it/",
       link_github: "",
-      descrizione: "Sito vetrina per un’azienda bolognese specializzata nell'attiva di vendita di fuochi d’artificio, petardi, fumogeni, fontane pirotecniche e articoli per feste.",
+      descrizione: "Sito vetrina per un’azienda bolognese specializzata nell'attività di vendita di fuochi d’artificio, petardi, fumogeni, fontane pirotecniche e articoli per feste.",
       visibile: true,
       technologies:[
         'wordpress.png'

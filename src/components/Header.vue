@@ -94,12 +94,22 @@ export default {
       </div>
 
       <div class="lang-menu d-flex align-items-center">        
-        <div class="lang-container">
-          <i class="fa-solid fa-globe me-1"></i> 
-          <select v-model="$i18n.locale" class="form-select custom-select">
-            <option value="it">{{ $t('lang.it.name') }}</option>
-            <option value="en">{{ $t('lang.en.name') }}</option>
-          </select>
+        <div class="dropdown lang-container">
+          <button class="btn dropdown-btn" type="button" id="langDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-globe me-1"></i> {{ $t('lang.' + $i18n.locale + '.name') }}
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="langDropdown">
+            <li>
+              <button class="dropdown-item" @click="$i18n.locale = 'it'">
+                {{ $t('lang.it.name') }}
+              </button>
+            </li>
+            <li>
+              <button class="dropdown-item" @click="$i18n.locale = 'en'">
+                {{ $t('lang.en.name') }}
+              </button>
+            </li>
+          </ul>
         </div>
         <!-- Pulsante hamburger per offcanvas -->
         <div class="menu d-none">
@@ -195,7 +205,6 @@ header{
     }
   }
   .lang-menu{
-    // position: absolute;
     top: 0;
     right: 20px;
   }
@@ -263,8 +272,20 @@ header{
     align-items: center;
     height: 80px;
     margin-right: 10px;
+    .dropdown-btn {
+      color: $quaternary-color;
+      background-color: $secondary-color;
+    }
+
+    .dropdown-item{
+      transition: all .1s;
+      &:hover {
+        color: $secondary-color;
+        background-color: $primary-color;
+      }
+    }
     i {
-      color: $secondary-color;
+      color: $quaternary-color;
     }
     .custom-select{
       border: 0px;
