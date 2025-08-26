@@ -78,7 +78,7 @@ export default {
               <strong>{{ $t('home.about_cta') }}</strong>
             </p>
             <div class="cv d-flex justify-content-center mt-4">
-              <span class="cv-button"><router-link :to="{ name:'chisono' }">{{ $t('home.cta_discover_more') }}</router-link></span>
+              <span class="cv-button"><router-link :to="{ name:'chi-sono' }">{{ $t('home.cta_discover_more') }}</router-link></span>
             </div>
           </div>
         </div>

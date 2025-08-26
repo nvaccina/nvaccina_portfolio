@@ -1,8 +1,11 @@
 import express from "express";
 import fetch from "node-fetch";
 import dotenv from "dotenv";
+import path from "path";
+import { fileURLToPath } from "url";
 
 dotenv.config();
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
 app.use(express.json());
 
@@ -36,14 +39,14 @@ app.post("/api/verify-recaptcha", async (req, res) => {
     if (!data.tokenProperties?.valid) {
       return res.status(400).json({
         success: false,
-        reason: data.tokenProperties?.invalidReason || "Token non valido"
+        reason: data.tokenProperties?.invalidReason || "Invalid token"
       });
     }
 
     if (data.tokenProperties?.action !== "submit") {
       return res.status(400).json({
         success: false,
-        reason: "Azione non corrispondente",
+        reason: "Action mismatch",
         expected: "submit",
         received: data.tokenProperties?.action
       });
@@ -53,7 +56,7 @@ app.post("/api/verify-recaptcha", async (req, res) => {
     if (data.riskAnalysis?.score < 0.5) {
       return res.status(403).json({
         success: false,
-        reason: "Score troppo basso",
+        reason: "Score too low",
         score: data.riskAnalysis?.score
       });
     }
@@ -66,4 +69,11 @@ app.post("/api/verify-recaptcha", async (req, res) => {
   }
 });
 
-app.listen(3000, () => console.log("✅ Server avviato su http://localhost:3000"));
+app.use(express.static(path.join(__dirname, "dist")));
+
+// --- Catch-all: ritorna index.html per il frontend Vue ---
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "dist", "index.html"));
+});
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Server avviato su http://localhost:${PORT}`));

@@ -6,7 +6,7 @@ const mainMenu = [
   },
   {
     href: "#chi-sono",
-    name: "chisono",
+    name: "chi-sono",
     text: "menu.chisono",
   },
   {

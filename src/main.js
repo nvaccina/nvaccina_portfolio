@@ -56,8 +56,6 @@ const i18n = createI18n({
   }
 })
 
-createApp(App).use(i18n).use(router).use(createHead()).mount('#app');
-
 export const createApp = ViteSSG(
   App,
   { 
@@ -72,6 +70,7 @@ export const createApp = ViteSSG(
   },
   ({ app, router, routes, isClient, initialState }) => {
     const head = createHead()
+    app.use(i18n)
     app.use(head)
   }
 )

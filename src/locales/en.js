@@ -278,6 +278,11 @@ export default {
         error: {
           title: "Error",
           text: "Something went wrong while sending. Please try again later."
+        },
+        recaptcha: {
+          title: "reCAPTCHA verification failed",
+          text: "Reason",
+          text2: "Suspected automatic traffic",
         }
       }
     },

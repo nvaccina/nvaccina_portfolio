@@ -101,8 +101,8 @@ export default {
             if (!verifyData.success) {
               Swal.fire({
                 icon: "error",
-                title: "Verifica reCAPTCHA fallita",
-                text: `Motivo: ${verifyData.reason || "Sospetto traffico automatico"}`,
+                title: t('contatti.form.alerts.recaptcha.title') ,
+                text: t('contatti.form.alerts.recaptcha.text') + ` ${verifyData.reason || t('contatti.form.alerts.recaptcha.text2')}`,
                 confirmButtonColor: "#d33"
               });
               return;
@@ -116,8 +116,8 @@ export default {
             );
             Swal.fire({
               icon: 'success',
-              title: 'Messaggio inviato!',
-              text: 'Ti contatterò al più presto.',
+              title:  t('contatti.form.alerts.success.title'),
+              text: t('contatti.form.alerts.success.text'),
               confirmButtonColor: '#3085d6'
             });
             contactForm.value.reset();
@@ -126,8 +126,8 @@ export default {
             console.error("Errore:", error);
             Swal.fire({
               icon: "error",
-              title: "Errore",
-              text: "Qualcosa è andato storto durante la verifica. " + error.message,
+              title: t('contatti.form.alerts.error.title'),
+              text: t('contatti.form.alerts.error.text') + " " + error.message,
               confirmButtonColor: "#d33"
             });
           }

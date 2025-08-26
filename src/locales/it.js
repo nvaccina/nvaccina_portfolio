@@ -271,11 +271,16 @@ export default {
         },
         success: {
           title: "Messaggio inviato!",
-          text: "Ti contatterò il prima possibile."
+          text: "Ti contatterò al più presto."
         },
         error: {
           title: "Errore",
           text: "Qualcosa è andato storto durante l'invio. Riprova più tardi."
+        },
+        recaptcha: {
+          title: "Verifica reCAPTCHA fallita",
+          text: "Motivo",
+          text2: "Sospetto traffico automatico",
         }
       }
     },
