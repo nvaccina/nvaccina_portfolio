@@ -44,7 +44,10 @@ const routes = [
   }
 ]
 
-const savedLang = localStorage.getItem('user-language') || 'it';
+let savedLang = 'it';
+if (typeof window !== 'undefined') {
+  savedLang = localStorage.getItem('user-language') || 'it';
+}
 
 const i18n = createI18n({
   legacy: false,

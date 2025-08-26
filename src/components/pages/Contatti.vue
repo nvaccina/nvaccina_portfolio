@@ -254,7 +254,7 @@ export default {
       background-color: $primary-color;
       border: none;
       &:hover {
-        background-color: darken($primary-color, 10%);
+        background-color: color.adjust($primary-color, $lightness: -10%);
       }
     }
   }
