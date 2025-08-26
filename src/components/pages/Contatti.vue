@@ -90,7 +90,7 @@ export default {
       window.grecaptcha.ready(() => {
         window.grecaptcha.execute('6LcTXXwrAAAAAHsmCaKoFsfFK4j41C-ia6Oyvo3K', { action: 'submit' }).then(async (token) => {
           try {
-            const verifyResponse = await fetch("/netlify/functions/verify-recaptcha", {
+            const verifyResponse = await fetch("/.netlify/functions/verify-recaptcha", {
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({ token })
