@@ -2,27 +2,27 @@ const mainMenu = [
   {
     href: "#",
     name: "home",
-    text: "home",
+    text: "menu.home",
   },
   {
     href: "#chi-sono",
-    name: "chi-sono",
-    text: "chi sono",
+    name: "chisono",
+    text: "menu.chisono",
   },
   {
     href: "#portfolio",
     name: "portfolio",
-    text: "portfolio",
+    text: "menu.portfolio",
   },
   {
     href: "#competenze",
     name: "competenze",
-    text: "competenze",
+    text: "menu.competenze",
   },
   {
     href: "#contatti",
     name: "contatti",
-    text: "contatti",
+    text: "menu.contatti",
   },
 ];
 
@@ -155,141 +155,141 @@ const allskills = [
 
 const portfolio = [
   {
-    title: "Revisal",
-    image: "revisal.webp",
-    altrolink: "https://lp.revisal.it/?utm_source=google&utm_medium=cpc&utm_campaign=12795954438&utm_content=122005920620&utm_term=revisal%20maggioli&gad_source=1&gad_campaignid=12795954438&gbraid=0AAAAACbbvcemAdmtkFS5esyK8fLdGhr0T&gclid=Cj0KCQjw-NfDBhDyARIsAD-ILeBp3ygHAJ05I5bJvdhIHj-E0cb32UOunoeL22c0yU3qWiTN7IrKEcQaAhLvEALw_wcB",
-    link_website: "https://revisal.maggiolicloud.it/",
-    link_github: "",
-    descrizione: "Revisal è una piattaforma digitale sviluppata per semplificare la gestione della revisione legale e revisione contabile.",
-    visibile: true,
+    title: "projects.0.title",
+    image: "projects.0.image",
+    altrolink: "projects.0.altrolink",
+    link_website: "projects.0.link_website",
+    link_github: "projects.0.link_github",
+    descrizione: "projects.0.descrizione",
+    visibile: "projects.0.visibile",
     technologies:[
-      'angular.webp',
-      'typescript.png',
-      'Sqlserver.png',      
+      'projects.0.technologies.0',
+      'projects.0.technologies.1',
+      'projects.0.technologies.2',      
     ]
   },
   {
-    title: "IsyTravel",
-    image: "isytravel.webp",
-    altrolink: "",
-    link_website: "https://www.isytravel.com/",
-    link_github: "",
-    descrizione: "IsyTravel è una piattaforma (e‑commerce) dedicata al turismo esperienziale, promossa da un tour operator italiano impegnato nel turismo responsabile. Il sito offre la possibilità di acquistare pacchetti selezionati che spaziano dal trekking e cicloturismo, fino a esperienze enogastronomiche, relax e viaggi accessibili. Inoltre, la piattaforma offre un servizio di noleggio di biciclette e altri mezzi, pensato per arricchire e personalizzare ogni avventura.",
-    visibile: true,
+    title: "projects.1.title",
+    image: "projects.1.image",
+    altrolink: "projects.1.altrolink",
+    link_website: "projects.1.link_website",
+    link_github: "projects.1.link_github",
+    descrizione: "projects.1.descrizione",
+    visibile: "projects.1.visibile",
     technologies:[
-      'net.webp',
-      'mvc.png',
-      'csharp.png',
-      'javascript.png',
-      'Sqlserver.png',      
+      'projects.1.technologies.0',
+      'projects.1.technologies.1',
+      'projects.1.technologies.2',
+      'projects.1.technologies.3',
+      'projects.1.technologies.4',      
     ]
   },
   {
-    title: "Auxilium",
-    image: "auxilium.webp",
-    altrolink: "https://www.maggioli.com/it-it/soluzioni/software/auxilium",
-    link_website: "https://auxilium.auslromagna.it/",
-    link_github: "",
-    descrizione: "Auxilium è un gestionale sviluppato per supportare l’AUSL Romagna nella gestione integrata di pratiche relative a protesi, ausili, dispositivi monouso, ossigenoterapia e servizi correlati. A partire da ottobre 2020, è stato adottato per la gestione dei dispositivi monouso, consentendo alle farmacie convenzionate di accedere in tempo reale al piano terapeutico di ogni paziente.",
-    visibile: true,
+    title: "projects.2.title",
+    image: "projects.2.image",
+    altrolink: "projects.2.altrolink",
+    link_website: "projects.2.link_website",
+    link_github: "projects.2.link_github",
+    descrizione: "projects.2.descrizione",
+    visibile: "projects.2.visibile",
     technologies:[
-      'net.webp',
-      'netcore.png',
-      'csharp.png',
-      'oracle.png'
+      'projects.2.technologies.0',
+      'projects.2.technologies.1',
+      'projects.2.technologies.2',
+      'projects.2.technologies.3'
     ]
   },
   {
-    title: "BiancoNero Beach",
-    image: "bianconero.webp",
-    altrolink: "",
-    link_website: "https://www.bianconerobeach.it/",
-    link_github: "",
-    descrizione: "Una piattaforma per la gestione online di Bagno Bianconero, lo stabilimento balneare a Tagliata di Cervia ricco di servizi. Il sito consente di scoprire comodamente le offerte, i comfort e le attività disponibili per una vacanza rilassante, e di prenotare il proprio ombrellone comodamente da casa.",
-    visibile: true,
+    title: "projects.3.title",
+    image: "projects.3.image",
+    altrolink: "projects.3.altrolink",
+    link_website: "projects.3.link_website",
+    link_github: "projects.3.link_github",
+    descrizione: "projects.3.descrizione",
+    visibile: "projects.3.visibile",
     technologies:[
-      '.net.webp',
-      'mvc.png',
-      'csharp.png',
-      'javascript.png',
-      'Sqlserver.png',      
+      'projects.3.technologies.0',
+      'projects.3.technologies.1',
+      'projects.3.technologies.2',
+      'projects.3.technologies.3',
+      'projects.3.technologies.4',      
     ]
   },
   {
-    title: "AvantCRAFT",
-    image: "avantcraft.webp",
-    altrolink: "",
-    link_website: "https://avantcraft.cnaemiliaromagna.it/",
-    link_github: "",
-    descrizione: "Progetto digitale che promuove la formazione di artigiani qualificati attraverso soluzioni inclusive e immersive. Realizzato in collaborazione con CNA Emilia-Romagna e finanziato dal FESR, il sito valorizza il patrimonio artigianale e le tecniche tradizionali tramite contenuti interattivi, storie, bandi e una struttura informativa chiara.",
-    visibile: true,
+    title: "projects.4.title",
+    image: "projects.4.image",
+    altrolink: "projects.4.altrolink",
+    link_website: "projects.4.link_website",
+    link_github: "projects.4.link_github",
+    descrizione: "projects.4.descrizione",
+    visibile: "projects.4.visibile",
     technologies:[
-      '.net.webp',
-      'mvc.png',
-      'csharp.png',
-      'javascript.png',
-      'Sqlserver.png',
+      'projects.4.technologies.0',
+      'projects.4.technologies.1',
+      'projects.4.technologies.2',
+      'projects.4.technologies.3',
+      'projects.4.technologies.4',
     ]
   },
   {
-    title: "TexActive",
-    image: "texactive.webp",
-    altrolink: "",
-    link_website: "https://www.texactive.eu/",
-    link_github: "",
-    descrizione: "Sito informativo per un’azienda specializzata nella progettazione, realizzazione e manutenzione di impianti di climatizzazione, refrigerazione, ricambio aria e riscaldamento a pavimento.",
-    visibile: true,
+    title: "projects.5.title",
+    image: "projects.5.image",
+    altrolink: "projects.5.altrolink",
+    link_website: "projects.5.link_website",
+    link_github: "projects.5.link_github",
+    descrizione: "projects.5.descrizione",
+    visibile: "projects.5.visibile",
     technologies:[
-      '.net.webp',
-      'mvc.png',
-      'csharp.png',
-      'javascript.png',
-      'Sqlserver.png',
+      'projects.5.technologies.0',
+      'projects.5.technologies.1',
+      'projects.5.technologies.2',
+      'projects.5.technologies.3',
+      'projects.5.technologies.4',
     ]
   },
   {
-    title: "InSosta Comune di Pistoia",
-    image: "insosta.webp",
-    altrolink: "",
-    link_website: "https://pistoia.insosta.it/splash",
-    link_github: "",
-    descrizione: "Portale online per la gestione del Piano Sosta del Comune di Pistoia. Offre funzionalità per registrarsi, richiedere o rinnovare permessi, consultare tariffe e mappe delle aree di sosta, con procedura completamente digitale.",
-    visibile: true,
+    title: "projects.6.title",
+    image: "projects.6.image",
+    altrolink: "projects.6.altrolink",
+    link_website: "projects.6.link_website",
+    link_github: "projects.6.link_github",
+    descrizione: "projects.6.descrizione",
+    visibile: "projects.6.visibile",
     technologies:[
-      'node.png',
-      'react.webp',
-      'javascript.png',
-      'pm2.webp'
+      'projects.6.technologies.0',
+      'projects.6.technologies.1',
+      'projects.6.technologies.2',
+      'projects.6.technologies.3'
     ]
   },
   {
-    title: "I Razzi Store - Bologna",
-    image: "irazzistore.webp",
-    altrolink: "",
-    link_website: "https://www.razzistore-bologna.it/",
-    link_github: "",
-    descrizione: "Sito vetrina per un’azienda bolognese specializzata nell'attiva di vendita di fuochi d’artificio, petardi, fumogeni, fontane pirotecniche e articoli per feste.",
-    visibile: true,
+    title: "projects.7.title",
+    image: "projects.7.image",
+    altrolink: "projects.7.altrolink",
+    link_website: "projects.7.link_website",
+    link_github: "projects.7.link_github",
+    descrizione: "projects.7.descrizione",
+    visibile: "projects.7.visibile",
     technologies:[
-      'wordpress.png'
+      'projects.7.technologies.0'
     ]
   },
   {
-    title: "Deliveboo",
-    image: "deliveboo.webp",
-    altrolink: "",
-    link_website: "",
-    link_github: "https://github.com/pierdomenicoguarnieri/deliveboo-back-end",
-    descrizione: "Web app che permette di ordinare cibo a domicilio.",
-    visibile: true,
+    title: "projects.8.title",
+    image: "projects.8.image",
+    altrolink: "projects.8.altrolink",
+    link_website: "projects.8.link_website",
+    link_github: "projects.8.link_github",
+    descrizione: "projects.8.descrizione",
+    visibile: "projects.8.visibile",
     technologies:[
-      'laravel.png',
-      'vue.png',
-      'javascript.png',
-      'php.png',
-      'php_my_admin.png',
-      'mysql.svg',
-      'sass.png'
+      'projects.8.technologies.0',
+      'projects.8.technologies.1',
+      'projects.8.technologies.2',
+      'projects.8.technologies.3',
+      'projects.8.technologies.4',
+      'projects.8.technologies.5',
+      'projects.8.technologies.6'
     ]
   }
   /*{
@@ -432,45 +432,46 @@ const social = [
 
 const timelines = [
   {
-    title: "Nato a Forlì (FC)",
-    body: "",
-    image: "",
-    date: "1999"
+    title: "timelines.0.title",
+    azienda: "timelines.0.azienda",
+    body: "timelines.0.body",
+    image: "timelines.0.image",
+    date: "timelines.0.date"
   },
   {
-    title: "Diploma di Geometra",
-    azienda: "Istituto Tecnico Geometri “Garibaldi/Da Vinci”",
-    body: "Diplomato in Costruzioni Ambiente e Territorio Tecnologie del Legno nelle Costruzioni",
-    image: "",
-    date: "Set. 2013 - Giu. 2018"
+    title: "timelines.1.title",
+    azienda: "timelines.1.azienda",
+    body: "timelines.1.body",
+    image: "timelines.1.image",
+    date: "timelines.1.date"
   },
   {
-    title: "Consulente Immobiliare e Procacciatore d’Affari",
-    azienda: "Casa Facile Agenzia Immobiliare",
-    body: "Relazioni con il pubblico e amministrazione. Gestione incarichi di vendita e affitto in autonomia.",
-    image: "",
-    date: "Ott. 2018 - Feb. 2023"
+    title: "timelines.2.title",
+    azienda: "timelines.2.azienda",
+    body: "timelines.2.body",
+    image: "timelines.2.image",
+    date: "timelines.2.date"
   },
   {
-    title: "Corso di formazione per Jr. Full Stack Web Developer",
-    azienda: "Boolean Careers",
-    body: "Corso di programmazione immersivo della durata di 6 mesi (oltre 700 ore complessive), il cui obbiettivo è quello di formare Full Stack Web Developers attraverso lezioni teoriche ed esercitazioni pratiche giornaliere, sia individuali che in team.",
-    image: "",
-    date: "Feb. 2023 - Ago. 2023"
+    title: "timelines.3.title",
+    azienda: "timelines.3.azienda",
+    body: "timelines.3.body",
+    image: "timelines.3.image",
+    date: "timelines.3.date"
   },
   {
-    title: "Full Stack Web Developer",
-    azienda: "Input S.r.l.",
-    body: "Sviluppo software per il controllo e il rilevamento della sosta nei parcheggi pubblici e privati con integrazione della piattaforma di pagamento XPay di Nexi. Gestione database tramite DBeaver e collegamenti al server OVHcloud.",
-    image: "",
-    date: "Ago. 2023 - Ott. 2023"
+    title: "timelines.4.title",
+    azienda: "timelines.4.azienda",
+    body: "timelines.4.body",
+    image: "timelines.4.image",
+    date: "timelines.4.date"
   },
   {
-    title: "Full Stack Web Developer",
-    azienda: "BSD Software Srl",
-    body: "Sviluppo di applicazioni web responsive, sia Back-End che Front-End, basate su .NET Framework, ASP.NET Core MVC e Angular. Progettazione, sviluppo e manutenzione di siti web, piattaforme e-commerce e software gestionali, adattati alle specifiche esigenze del cliente, con esperienza sia in contesti B2B che B2C.",
-    image: "",
-    date: "Da Ott. 2023"
+    title: "timelines.5.title",
+    azienda: "timelines.5.azienda",
+    body: "timelines.5.body",
+    image: "timelines.5.image",
+    date: "timelines.5.date"
   }
 ]
 

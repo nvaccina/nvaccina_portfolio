@@ -46,22 +46,15 @@ export default {
 <template>
   <section id="portfolio" class="mt-50">
     <div class="container">
-      <h1 class="pb-3 title">Portfolio</h1>
-      <p class="fs-20 fw-300">In questa pagina trovi alcuni dei progetti a cui ho contribuito come sviluppatore web full stack. Ognuno di questi è stato realizzato su misura per le esigenze dei clienti, spaziando da piattaforme e-commerce e siti vetrina fino a gestionali complessi.</p>
+      <h1 class="pb-3">{{ $t('portfolio.title') }}</h1>
+      <p class="fs-20 fw-300">{{ $t('portfolio.subtitle') }}</p>
     </div>
-    <div class="container-fluid container-lg d-flex flex-wrap portfolio mt-1 mt-md-2">
+    <div class="container-fluid container-lg d-flex flex-wrap mt-1 mt-md-2">
 
       <Project_card2
         v-for="(project, index) in portfolio"
         :key="index"
         :project="project"
-        :title="project.title"
-        :descrizione="project.descrizione"
-        :image= "project.image"
-        :altrolink= "project.altrolink"
-        :link_website="project.link_website"
-        :link_github="project.link_github"
-        :technologies="project.technologies"
       />
 
     </div>
@@ -73,7 +66,7 @@ export default {
 <style lang="scss" scoped>
 @import '../../scss/general/variables';
 
-.portfolio{
+#portfolio{
   position: relative;
   animation-duration: 2s;
   animation-name: portfolio;

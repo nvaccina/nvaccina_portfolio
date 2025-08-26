@@ -56,9 +56,9 @@ export default {
   <section id="skills" class="mt-50">
     <div>
       <div class="container">
-        <h1 class="pb-3 title animation">Le mie competenze</h1>
+        <h1 class="pb-3 title animation">{{ $t('competenze.title') }}</h1>
         <p class="fs-20 fw-300 animation">
-          Nel mio percorso da Full Stack Web Developer ho avuto l'opportunità di lavorare con un'ampia varietà di linguaggi, framework, librerie e strumenti. Qui sotto trovi alcune delle tecnologie che ho studiato e messo in pratica nello sviluppo di applicazioni web e software, sia lato Front-End che Back-End.
+          {{ $t('competenze.subtitle') }}
         </p>
       </div>
       <div class="mt-5 mb-2 d-flex flex-wrap justify-content-center">

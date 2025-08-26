@@ -7,6 +7,10 @@ import Skills from './components/pages/Skills.vue'
 import Portfolio from './components/pages/Portfolio.vue'
 import Contatti from './components/pages/Contatti.vue'
 import Error404 from './components/pages/Error404.vue'
+import { createI18n } from 'vue-i18n'
+
+import it from './locales/it'
+import en from './locales/en'
 
 const routes = [
   {
@@ -39,6 +43,20 @@ const routes = [
     component: Error404
   }
 ]
+
+const savedLang = localStorage.getItem('user-language') || 'it';
+
+const i18n = createI18n({
+  legacy: false,
+  locale: savedLang,
+  fallbackLocale: 'en',
+  messages: {
+    it,
+    en
+  }
+})
+
+createApp(App).use(i18n).use(router).use(createHead()).mount('#app');
 
 export const createApp = ViteSSG(
   App,

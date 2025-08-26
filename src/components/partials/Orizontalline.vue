@@ -1,5 +1,6 @@
 <script>
 import {timelines} from '../../data/data.js';
+import { useI18n } from 'vue-i18n';
 export default {
   name: 'Project_card',
   props:{
@@ -8,6 +9,10 @@ export default {
     body: String,
     date: String,
     image: String,
+  },
+  setup() {
+    const { t } = useI18n();
+    return { t, timelines };
   },
   data() {
     return {
@@ -25,10 +30,10 @@ export default {
           <ol>
             <li v-for="(timeline, index) in timelines" :key="index" class="nav-item">
               <div class="">                
-                <h4>{{ timeline.title }}</h4>
-                <strong>{{ timeline.azienda }}</strong>
-                <p class="date">{{timeline.date}}</p>
-                <p class="mb-0">{{timeline.body}}</p>
+                <h4>{{ t(timeline.title) }}</h4>
+                <strong>{{ t(timeline.azienda) }}</strong>
+                <p class="date">{{ t(timeline.date) }}</p>
+                <p class="mb-0">{{ t(timeline.body) }}</p>
               </div>
             </li>
             <li>
@@ -87,7 +92,7 @@ a {
     border-radius: 4px;
   }
   &::-webkit-scrollbar-thumb {
-    background: #a7c1dd;
+    background: #456990;
     border-radius: 4px;
   }
 }
@@ -290,4 +295,22 @@ a {
   display: flex;
   margin-left: 4px;
 }
+
+// @media (max-width: 1400px) {
+
+// }
+// @media (max-width: 930px) {
+
+// }
+
+// @media (max-width: 600px) {
+
+// }
+// @media (max-width: 445px) {
+
+// }
+// @media (max-width: 392px) {
+
+// }
+
 </style>

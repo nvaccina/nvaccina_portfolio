@@ -35,125 +35,123 @@ export default {
 
 </script>
 
-<template>
-  <section class="section-home mt-50">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-7 testo-home px-lg-5">
-          <h1>Ciao, sono Niccolò</h1>
-          <h2>Full Stack Web Developer</h2>
-          <p>
-            Mi considero sempre una persona creativa, con una continua voglia di imparare e crescere. Dopo aver trascorso anni in un lavoro che non sentivo mio, ho deciso di dare una svolta alla mia vita e seguire la mia passione per la programmazione.             
-          </p>
-          <p>
-            Mi piace mettermi alla prova, esplorare nuovi argomenti e rimanere aggiornato sulle ultime novità legate ai miei interessi, perché sono convinto che l'apprendimento continuo sia fondamentale per migliorarsi ogni giorno.
-          </p>
-        </div>
-        <div class="col-12 col-lg-5 mt-5 mt-lg-0 d-flex ps-4 justify-content-center justify-content-lg-start">
-          <div class="my-img circle">
-            <a target="_blank" href="https://www.linkedin.com/in/niccol%C3%B2-vaccina-566351198/">
-              <img
-                src="/img/profilo/foto_busto.webp"
-                alt="Niccolò Vaccina"
-                width="250"
-                height="250"
-                fetchpriority="high"
-              />
-            </a>
+<template> 
+  <div id="home">
+    <section class="section-home mt-50">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-7 testo-home px-lg-5">
+            <h1>{{ $t('home.greeting') }}</h1>
+            <h2>{{ $t('home.role') }}</h2>
+            <p>{{ $t('home.paragraph_1') }}</p>
+            <p>{{ $t('home.paragraph_2') }}</p>
           </div>
-        </div>
-      </div>     
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-5 mt-5 mt-lg-0 d-flex ps-4 justify-content-center justify-content-lg-end order-2 order-lg-1">
-          <div class="my-img square">            
-            <img src="/img/chi-sono.webp" alt="Chi sono - Niccolò Vaccina">            
-          </div>
-        </div>
-        <div class="col-12 col-lg-7 testo-home px-lg-5 order-1 order-lg-2">
-          <h2>Chi sono?</h2>
-          <p>Sono una persona creativa, curiosa e intraprendente, con una grande passione per la programmazione. Dopo anni in un lavoro che non mi rappresentava, ho scelto di seguire ciò che mi entusiasma davvero: creare, imparare e risolvere problemi attraverso il codice. Ogni giorno è un'opportunità per crescere e migliorare, ed è questo che mi motiva a proseguire.<br>
-          <strong>Vuoi saperne di più sul mio percorso?</strong></p>
-          <div class="cv d-flex justify-content-center mt-4">
-            <span class="cv-button"><router-link :to="{ name:'chi-sono' }">Scopri di più</router-link></span>
+          <div class="col-12 col-lg-5 mt-5 mt-lg-0 d-flex ps-4 justify-content-center justify-content-lg-start">
+            <div class="my-img circle">
+              <a target="_blank" href="https://www.linkedin.com/in/niccol%C3%B2-vaccina-566351198/">
+                <img
+                  src="/img/profilo/foto_busto.webp"
+                  alt="Niccolò Vaccina"
+                  width="250"
+                  height="250"
+                  fetchpriority="high"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-5 mt-5 mt-lg-0 d-flex ps-4 justify-content-center justify-content-lg-end order-2 order-lg-1">
+            <div class="my-img square">            
+              <img src="/img/chi-sono.webp" alt="Chi sono - Niccolò Vaccina">            
+            </div>
+          </div>
+          <div class="col-12 col-lg-7 testo-home px-lg-5 order-1 order-lg-2">
+            <h2>{{ $t('home.about_title') }}</h2>
+            <p>
+              {{ $t('home.about_text') }}<br>
+              <strong>{{ $t('home.about_cta') }}</strong>
+            </p>
+            <div class="cv d-flex justify-content-center mt-4">
+              <span class="cv-button"><router-link :to="{ name:'chisono' }">{{ $t('home.cta_discover_more') }}</router-link></span>
+            </div>
+          </div>
+        </div>
 
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-7 testo-home px-lg-5">
-          <h2>Portfolio</h2>
-          <p>Adoro trasformare idee in realtà attraverso il codice. Nel mio portfolio troverai progetti che mostrano la mia creatività, il mio impegno e la mia voglia di sperimentare. Dallo sviluppo web alle applicazioni interattive, ogni progetto è il frutto della mia continua ricerca di nuove sfide e soluzioni innovative. Se desideri vedere cosa ho realizzato e scoprire come affronto ogni sfida, dai un’occhiata ai miei lavori!</p>
-          <div class="cv d-flex justify-content-center mt-4">
-            <span class="cv-button"><router-link :to="{ name:'portfolio' }">Scopri di più</router-link></span>
-          </div>
-        </div>
-        <div class="col-12 col-lg-5 mt-5 mt-lg-0 d-flex ps-4 justify-content-center justify-content-lg-start">
-          <div class="my-img square">            
-              <img src="/img/portfolio.webp" alt="Portfolio - Niccolò Vaccina">
-          </div>
-        </div>
       </div>
-    </div>
-  </section>
-  <section>
-    <div class="container mb-5">
-      <div class="row">
-        <div class="col-12 col-lg-5 mt-5 mt-lg-0 d-flex ps-4 justify-content-center justify-content-lg-end order-2 order-lg-1">  
-          <div class="my-img square">           
-              <img src="/img/competenze.webp" alt="Competenze - Niccolò Vaccina">
-          </div>
-        </div>
-        <div class="col-12 col-lg-7 testo-home px-lg-5 order-1 order-lg-2">
-          <h2>Competenze</h2>
-          <p>Durante il mio percorso professionale, ho avuto l'opportunità di approfondire diverse tecnologie e strumenti che mi consentono di realizzare progetti web moderni, performanti e scalabili. Dallo sviluppo front-end interattivo con framework come Angular, Vue.js e React, fino al back-end con .Net, Node.js e Laravel. Inoltre spazio su differenti sistemi di gestione database tra cui Sql Server, MySQL e PostreSQL.
-          Scopri tutte le tecnologie che utilizzo e come possono dare valore ai tuoi progetti!</p>
-          <div class="cv d-flex justify-content-center mt-4">            
-            <span class="cv-button"><router-link :to="{ name:'competenze' }">Scopri di più</router-link></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="container mb-5">
-      <div class="row">
-        <div class="col-12 col-lg-7 testo-home px-lg-5">
-          <h2>Contatti</h2>
-          <p>Sei alla ricerca di un collaboratore appassionato e intraprendente?<br>
-            Oppure hai un'idea che desideri sviluppare e hai bisogno di supporto?<br>
-            Sono sempre aperto a nuove opportunità e mi piace confrontarmi con persone che condividono la mia stessa voglia di innovare e creare. Non esitare a contattarmi per qualsiasi domanda o proposta!</p>
-          <div class="cv d-flex justify-content-center mt-4">
-            <span class="cv-button"><router-link :to="{ name:'contatti' }">Scopri di più</router-link></span>
-          </div>
-        </div>
-        <div class="col-12 col-lg-5 mt-5 mt-lg-0 d-flex ps-4 justify-content-center justify-content-lg-start">   
-          <div class="my-img square">           
-              <img src="/img/contatti.webp" alt="Contatti - Niccolò Vaccina">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <Wabutton/>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-7 testo-home px-lg-5">
+            <h2>{{ $t('home.portfolio_title') }}</h2>
+            <p>{{ $t('home.portfolio_text') }}</p>
+            <div class="cv d-flex justify-content-center mt-4">
+              <span class="cv-button"><router-link :to="{ name:'portfolio' }">{{ $t('home.cta_discover_more') }}</router-link></span>
+            </div>
+          </div>
+          <div class="col-12 col-lg-5 mt-5 mt-lg-0 d-flex ps-4 justify-content-center justify-content-lg-start">
+            <div class="my-img square">            
+                <img src="/img/portfolio.webp" alt="Portfolio - Niccolò Vaccina">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mb-5">
+        <div class="row">
+          <div class="col-12 col-lg-5 mt-5 mt-lg-0 d-flex ps-4 justify-content-center justify-content-lg-end order-2 order-lg-1">  
+            <div class="my-img square">           
+                <img src="/img/competenze.webp" alt="Competenze - Niccolò Vaccina">
+            </div>
+          </div>
+          <div class="col-12 col-lg-7 testo-home px-lg-5 order-1 order-lg-2">
+            <h2>{{ $t('home.skills_title') }}</h2>
+            <p>{{ $t('home.skills_text') }}</p>
+            <div class="cv d-flex justify-content-center mt-4">            
+              <span class="cv-button"><router-link :to="{ name:'competenze' }">{{ $t('home.cta_discover_more') }}</router-link></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mb-5">
+        <div class="row">
+          <div class="col-12 col-lg-7 testo-home px-lg-5">
+            <h2>{{ $t('home.contact_title') }}</h2>
+            <p>{{ $t('home.contact_text') }}</p>
+            <div class="cv d-flex justify-content-center mt-4">
+              <span class="cv-button"><router-link :to="{ name:'contatti' }">{{ $t('home.cta_discover_more') }}</router-link></span>
+            </div>
+          </div>
+          <div class="col-12 col-lg-5 mt-5 mt-lg-0 d-flex ps-4 justify-content-center justify-content-lg-start">   
+            <div class="my-img square">           
+                <img src="/img/contatti.webp" alt="Contatti - Niccolò Vaccina">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <Wabutton/>
+  </div>
 </template>
 
 <style lang="scss" scoped>
 @import '../../scss/general/variables';
-.section-home{
-  .testo-home{
-    animation-name: testohome;
+#home{
+    animation-name: home;
     animation-duration: 2s;
-  }
 }
 .my-img{
   height: 250px;
@@ -189,16 +187,12 @@ export default {
   }
 }
 p{
-      font-size: 18px;
-      font-weight: 300;
-    }
-
-@keyframes testohome {
-  0%   {left:-500px; top:0px;}
-  100% {left:0px; top:0px;}
+  font-size: 18px;
+  font-weight: 300;
 }
-@keyframes myimg {
-  0%   {left:500px; top:0px;}
-  100% {left:0px; top:0px;}
+
+@keyframes home {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
 }
 </style>
