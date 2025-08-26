@@ -39,7 +39,7 @@ export default {
     top: -50px;
     padding: 5px 5px;
     border-radius: 10px;
-    border: 2px solid $primary-color;    
+    border: 2px solid variables.$primary-color;    
     color: black;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;

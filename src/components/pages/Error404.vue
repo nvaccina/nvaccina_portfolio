@@ -40,10 +40,10 @@ export default {
   .back-home{
     text-transform: capitalize;
     padding: 5px 10px;
-    background-color: $primary-color;
-    color: $secondary-color;
+    background-color: variables.$primary-color;
+    color: variables.$secondary-color;
     border-radius: 10px;
-    border: 2px solid $primary-color;
+    border: 2px solid variables.$primary-color;
     font-weight: 500;
     font-size: 18px;
     transition: all 0.4s;
@@ -52,9 +52,9 @@ export default {
     animation-name: backhome;
     cursor: pointer;
     &:hover{
-      color: $primary-color;
-      background-color:  $secondary-color;
-      border: 2px solid $primary-color;
+      color: variables.$primary-color;
+      background-color:  variables.$secondary-color;
+      border: 2px solid variables.$primary-color;
     }
   }
 }

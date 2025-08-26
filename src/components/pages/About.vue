@@ -95,7 +95,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@import '../../scss/general/variables';
+@use '../../scss/general/variables';
 
   .my-img, p, .cv{
     position: relative;
@@ -108,7 +108,7 @@ export default {
   .my-img{
     height: 250px;
     width: 250px;
-    background-color: $tertiary-color;
+    background-color: variables.$tertiary-color;
     box-shadow:  5px 5px 5px 5px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     transition: all 0.3s;
@@ -127,10 +127,10 @@ export default {
     animation-name: testoabout;
     font-weight: 300;
     .link{
-      color: $tertiary-color;
+      color: variables.$tertiary-color;
       font-weight: bold;
       &:hover{
-        color: $primary-color;
+        color: variables.$primary-color;
         text-decoration: underline !important;
       }
     }

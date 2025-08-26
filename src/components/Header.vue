@@ -150,11 +150,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../scss/general/variables' as *;
+@use '../scss/general/variables';
 .tools{
   height: 30px;
-  color: $secondary-color;
-  background-color: $primary-color;
+  color: variables.$secondary-color;
+  background-color: variables.$primary-color;
   text-align: center;
 }
 header{
@@ -163,7 +163,7 @@ header{
   left: 0;
   z-index: 1000 !important;
   width: 100%;
-  background-color: $tertiary-color;
+  background-color: variables.$tertiary-color;
   height: 80px;
   box-shadow:  5px 5px 5px 5px rgba(0, 0, 0, 0.1);
   .logo{
@@ -194,7 +194,7 @@ header{
         left: 0;
         height: 3px;
         width: 0;
-        background-color: $primary-color;
+        background-color: variables.$primary-color;
         transition: width 0.3s ease-in-out;
       }
       &.active::after,
@@ -223,7 +223,7 @@ header{
   }
   .menu-inner .bar {
     width: 30px;
-    background: $secondary-color;
+    background: variables.$secondary-color;
     height: 2px;
     display: inline-block;
     border-radius: 50px;
@@ -260,7 +260,7 @@ header{
     box-shadow:  5px 5px 5px 5px rgba(0, 0, 0, 0.1);
     background-color: rgb(253, 248, 248);
     .link-responsive{
-      color: $quaternary-color;
+      color: variables.$quaternary-color;
       text-transform: uppercase;
       font-size: 18px;
       padding: 2px 5px;
@@ -273,30 +273,30 @@ header{
     .dropdown-btn {
       display: flex;
       align-items: center;
-      color: $secondary-color;
+      color: variables.$secondary-color;
       border: 1px solid transparent;
       &:focus, &:hover, &:active{
-        border: 1px solid white;
+        border: 1px solid variables.$secondary-color;
       }
       i {
-        color: $secondary-color;
+        color: variables.$secondary-color;
       }
     }
 
     .dropdown-item{
       transition: all .1s;
       &:hover {
-        color: $secondary-color;
-        background-color: $primary-color;
+        color: variables.$secondary-color;
+        background-color: variables.$primary-color;
       }
     }
     i {
-      color: $secondary-color;
+      color: variables.$secondary-color;
     }
     .custom-select{
       border: 0px;
       background-color: transparent;
-      color: $secondary-color;
+      color: variables.$secondary-color;
       --bs-form-select-bg-img: none !important;
       padding: 3px 5px;
       option{
@@ -314,7 +314,7 @@ header{
   transition: transform 0.3s ease;
   transform: translateX(100%);
   visibility: hidden;
-  background-color: white;
+  background-color: variables.$secondary-color;
   z-index: 1050;
   position: fixed;
   right: 0;
@@ -327,7 +327,7 @@ header{
     .logo-offcanvas{
       height: 60px;
       padding-top: 10px;
-      border-top: 2px solid $primary-color;
+      border-top: 2px solid variables.$primary-color;
       img {
         height: 100%;
         width: auto;
@@ -387,7 +387,7 @@ header{
           margin-top: 5px;
           border: 2px solid transparent;
           &:focus, &:hover, &:active{
-            border: 2px solid white;
+            border: 2px solid variables.$secondary-color;
           }
           i {
             font-size: 20px;

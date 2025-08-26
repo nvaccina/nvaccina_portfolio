@@ -27,15 +27,15 @@ export default {
   cursor: pointer;
   transition: all 0.3s;
   a{
-    color: $secondary-color;
+    color: variables.$secondary-color;
     i{
       padding: 10px 20px;
     }
   }
   &:hover{
-    background-color: $primary-color;
+    background-color: variables.$primary-color;
     a{
-      color: $secondary-color;
+      color: variables.$secondary-color;
     }
   }
 }

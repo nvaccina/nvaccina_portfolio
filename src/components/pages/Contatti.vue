@@ -222,7 +222,7 @@ export default {
     display: flex;
     align-items: center;
     flex-direction: column;
-    border-left: 4px solid $tertiary-color;
+    border-left: 4px solid variables.$tertiary-color;
     .contatti div{      
       padding: 5px 0 !important;      
     }
@@ -230,7 +230,7 @@ export default {
   a{
     color: black;
     &:hover{
-      color: $primary-color;
+      color: variables.$primary-color;
     }
   }
   .map-container{
@@ -252,10 +252,10 @@ export default {
       border-radius: 10px;
     }
     .btn {
-      background-color: $primary-color;
+      background-color: variables.$primary-color;
       border: none;
       &:hover {
-        background-color: color.adjust($primary-color, $lightness: -10%);
+        background-color: color.adjust(variables.$primary-color, $lightness: -10%);
       }
     }
   }

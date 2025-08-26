@@ -157,7 +157,7 @@ export default {
   height: 250px;
   width: 250px;
   overflow: hidden;
-  background-color: $primary-color;
+  background-color: variables.$primary-color;
   box-shadow:  5px 5px 5px 5px rgba(0, 0, 0, 0.3);
   transition: all 0.3s;
   animation-name: myimg;

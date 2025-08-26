@@ -51,7 +51,7 @@ export default {
     top: 50px;
     padding: 5px 5px;
     border-radius: 10px;
-    border: 2px solid $primary-color;    
+    border: 2px solid variables.$primary-color;    
     background-color: rgba(255, 255, 255, 0.5);
     color: black;
     opacity: 0;

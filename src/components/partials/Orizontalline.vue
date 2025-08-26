@@ -251,7 +251,7 @@ a {
     background: #f45b69;
     border-radius: 50%;
     z-index: 2;
-    border: 2px solid white;
+    border: 2px solid variables.$secondary-color;
     transform: none;
   }
   

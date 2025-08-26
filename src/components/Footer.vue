@@ -62,14 +62,14 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../scss/general/variables' as *;
+@use '../scss/general/variables';
 @import '../scss/general/utils';
 
 footer{
   width: 100%;
   padding: 20px 0;
-  background-color: $tertiary-color;
-  color: $secondary-color;
+  background-color: variables.$tertiary-color;
+  color: variables.$secondary-color;
   margin-top: 150px;
   .nv-col{
     display: flex;
@@ -83,7 +83,7 @@ footer{
           font-weight: 200;
           transition: all 0.3s;
           &:hover{
-            color: $primary-color;
+            color: variables.$primary-color;
           }
           i{
             margin-right: 5px;
@@ -115,7 +115,7 @@ footer{
         margin: 0 10px;
         transition: all 0.3s;
         &:hover{
-          color: $primary-color;
+          color: variables.$primary-color;
         }
       }
     }
@@ -127,7 +127,7 @@ footer{
         transition: all 0.3s;
         font-weight: 200;
         &:hover{
-          color: $primary-color;
+          color: variables.$primary-color;
         }
       }
     }
@@ -138,8 +138,8 @@ footer{
   .nv-col:nth-child(2){
     margin: 20px 0;
     padding: 20px 0 !important;
-    border-top: 1px solid $secondary-color;
-    border-bottom: 1px solid $secondary-color;
+    border-top: 1px solid variables.$secondary-color;
+    border-bottom: 1px solid variables.$secondary-color;
   }
   .nv-col{
     padding-left: 0 !important;

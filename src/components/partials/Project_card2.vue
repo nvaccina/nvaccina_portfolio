@@ -85,7 +85,7 @@ export default {
 .nv-card {
   margin: 20px 30px;
   width: calc(100% / 2 - 60px);
-  border: 1px solid $quaternary-color;
+  border: 1px solid variables.$quaternary-color;
   min-height: 240px;
   position: relative;
   border-radius: 15px;
@@ -126,7 +126,7 @@ export default {
       }
     }
     .altrolink a{
-      color: $primary-color !important;
+      color: variables.$primary-color !important;
     }
   }
 }
