@@ -167,7 +167,7 @@ export default {
         <div class="mb-3">
           <input class="form-check-input me-2" type="checkbox" value="" id="privacy">
           <span class="form-check-label" for="privacy">
-            {{ $t('contatti.form.privacy') }} <strong><a href="https://www.iubenda.com/privacy-policy/70797940" class="iubenda-noiframe" title="Privacy Policy" target="_blank">Privacy Policy</a></strong>.
+            {{ $t('contatti.form.privacy') }} <strong><a href="https://www.iubenda.com/privacy-policy/70797940" class="iubenda-noiframe" title="Privacy Policy" target="_blank">privacy policy</a></strong>.
           </span>
         </div>    
         <button type="submit" class="cv-button">{{ $t('contatti.form.btn') }}</button>

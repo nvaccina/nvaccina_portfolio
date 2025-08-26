@@ -96,7 +96,7 @@ export default {
       <div class="lang-menu d-flex align-items-center">        
         <div class="dropdown lang-container">
           <button class="btn dropdown-btn" type="button" id="langDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fa-solid fa-globe me-1"></i> {{ $t('lang.' + $i18n.locale + '.name') }}
+            <i class="fa-solid fa-globe me-md-2"></i><span class="d-none d-md-block">{{ $t('lang.' + $i18n.locale + '.name') }}</span>
           </button>
           <ul class="dropdown-menu" aria-labelledby="langDropdown">
             <li>
@@ -271,10 +271,17 @@ header{
     display: flex;
     align-items: center;
     height: 80px;
-    margin-right: 10px;
     .dropdown-btn {
-      color: $quaternary-color;
-      background-color: $secondary-color;
+      display: flex;
+      align-items: center;
+      color: $secondary-color;
+      border: 1px solid transparent;
+      &:focus, &:hover, &:active{
+        border: 1px solid white;
+      }
+      i {
+        color: $secondary-color;
+      }
     }
 
     .dropdown-item{
@@ -285,7 +292,7 @@ header{
       }
     }
     i {
-      color: $quaternary-color;
+      color: $secondary-color;
     }
     .custom-select{
       border: 0px;
@@ -374,9 +381,22 @@ header{
         display: block !important;
         margin-right: 20px;
       }
+      .lang-container{
+        margin-right: 10px;
+        .dropdown-btn {
+          font-size: 18px;
+          margin-top: 5px;
+          border: 2px solid transparent;
+          &:focus, &:hover, &:active{
+            border: 2px solid white;
+          }
+          i {
+            font-size: 20px;
+          }
+        }
+      }
     }
-  }
-  
+  }  
 }
 
 </style>

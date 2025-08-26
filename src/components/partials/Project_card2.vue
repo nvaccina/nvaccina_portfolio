@@ -35,25 +35,29 @@ export default {
 
 <template>
   <div class="nv-card">
-    <div class="copertina">
-      <img :src="urlimage" :alt="title">
+    <div>
+      <div class="copertina">
+        <img :src="urlimage" :alt="title">
+      </div>
+      <div class="info">
+        <h3>{{title}}</h3>
+        <div class="d-flex align-items-center technologies-container mb-3">
+          <p class="technologies-title mb-0">{{ $t('portfolio.tecnologieTitle') }}</p>
+          <div 
+            class="technology"
+            v-for="(element, index) in technologies" 
+            :key="index" 
+          >
+            <img :src="'/img/skills/' + element" alt="">
+          </div>
+        </div>
+        <p class="fw-300 descrizione">{{ descrizione }}</p>
+        <span v-if="altrolink" class="altrolink">
+          <a target="_blank" :href="altrolink">{{ $t('portfolio.btnAltro') }}</a>
+        </span>
+      </div>
     </div>
     <div class="info">
-      <h3>{{title}}</h3>
-      <div class="d-flex align-items-center technologies-container mb-3">
-        <p class="technologies-title mb-0">{{ $t('portfolio.tecnologieTitle') }}</p>
-        <div 
-          class="technology"
-          v-for="(element, index) in technologies" 
-          :key="index" 
-        >
-          <img :src="'/img/skills/' + element" alt="">
-        </div>
-      </div>
-      <p class="fw-300 descrizione">{{ descrizione }}</p>
-      <span v-if="altrolink" class="altrolink">
-        <a target="_blank" :href="altrolink">{{ $t('portfolio.btnAltro') }}</a>
-      </span>
       <div class="sito d-flex align-items-center justify-content-end">
             <a 
               v-if="linkWebsite"
@@ -90,6 +94,9 @@ export default {
   transition: box-shadow 0.3s ease;
   box-shadow:  5px 5px 5px 5px rgba(0, 0, 0, 0.3);
   transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   &:hover .copertina img {
     box-shadow: 0 0 10px #CCC9A1;
     transform: scale(1.05);

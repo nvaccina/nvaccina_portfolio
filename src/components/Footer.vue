@@ -28,7 +28,7 @@ export default {
               </li>
               <li>
                 <a href="https://goo.gl/maps/hWkhqvqYgG1v8eL9A" target="_blank" rel="noopener">
-                  <i class="fa-solid fa-location-dot pe-1"></i> Cesena (FC) - Italia
+                  <i class="fa-solid fa-location-dot pe-1"></i> Cesena (FC) - {{ $t('contatti.luogo') }}
                 </a>
               </li>            
             </ul>  
