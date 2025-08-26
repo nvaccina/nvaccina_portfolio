@@ -210,7 +210,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@import '../../scss/general/variables';
+@use '../../scss/general/variables';
+@use "sass:color";
 #contacts{
   color: black;
   min-height: calc(100vh - 294px);

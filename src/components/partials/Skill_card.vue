@@ -27,7 +27,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@import '../../scss/general/variables';
+@use '../../scss/general/variables';
 .img_container{
   width: 150px;
   height: 150px;

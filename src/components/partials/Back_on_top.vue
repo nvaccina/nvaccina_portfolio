@@ -15,7 +15,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@import '../../scss/general/variables';
+@use '../../scss/general/variables';
 .back-to-top{
   position: fixed;
   bottom: 0;

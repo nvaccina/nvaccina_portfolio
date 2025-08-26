@@ -148,7 +148,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@import '../../scss/general/variables';
+@use '../../scss/general/variables';
 #home{
     animation-name: home;
     animation-duration: 2s;

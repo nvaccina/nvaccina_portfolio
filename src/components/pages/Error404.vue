@@ -30,7 +30,7 @@ export default {
 
 
 <style lang="scss" scoped>
-@import '../../scss/general/variables';
+@use '../../scss/general/variables';
 .error{
   height: calc(100vh - 394px);
   display: flex;

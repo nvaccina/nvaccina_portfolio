@@ -57,7 +57,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@import '../../scss/general/variables';
+@use '../../scss/general/variables';
 .nv-card{
   margin: 20px 30px;
   width: calc(100% / 2 - 60px);

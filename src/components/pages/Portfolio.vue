@@ -64,7 +64,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@import '../../scss/general/variables';
+@use '../../scss/general/variables';
 
 #portfolio{
   position: relative;
