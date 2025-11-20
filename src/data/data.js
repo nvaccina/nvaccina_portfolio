@@ -128,6 +128,10 @@ const allskills = [
     image_skill: "pm2.webp",
   },
   {
+    name: "Docker",
+    image_skill: "docker.png",
+  },
+  {
     name: "GitLab",
     image_skill: "gitlab.webp",
   },

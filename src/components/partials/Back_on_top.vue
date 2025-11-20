@@ -19,7 +19,7 @@ export default {
 .back-to-top{
   position: fixed;
   bottom: 0;
-  right: 80px;
+  right: 120px;
   
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -29,7 +29,7 @@ export default {
   a{
     color: variables.$secondary-color;
     i{
-      padding: 10px 20px;
+      padding: 8px 10px;
     }
   }
   &:hover{
@@ -42,9 +42,7 @@ export default {
 
 @media (max-width: 600px) {
   .back-to-top {
-    i{
-      padding: 8px 10px !important;
-    }
+    right: 80px;
   }
 }
 

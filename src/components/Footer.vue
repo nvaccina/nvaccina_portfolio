@@ -63,7 +63,7 @@ export default {
 
 <style lang="scss" scoped>
 @use '../scss/general/variables';
-@import '../scss/general/utils';
+@use '../scss/general/utils';
 
 footer{
   width: 100%;

@@ -92,19 +92,20 @@ export default {
           </li>
         </ul>
       </div>
-      <div class="lang-menu d-flex align-items-center">        
+      <div class="lang-menu d-flex align-items-center">
         <div class="dropdown lang-container">
           <button class="btn dropdown-btn" type="button" id="langDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-solid fa-globe me-md-2"></i><span class="d-none d-md-block">{{ $t('lang.' + $i18n.locale + '.name') }}</span>
           </button>
           <ul class="dropdown-menu" aria-labelledby="langDropdown">
             <li>
-              <button class="dropdown-item" @click="$i18n.locale = 'it'">
+              <button class="dropdown-item" :class="{ activeLang: $i18n.locale === 'it' }" @click="$i18n.locale = 'it'">
                 {{ $t('lang.it.name') }}
               </button>
             </li>
+            <li style="border: 1px solid white;"></li>
             <li>
-              <button class="dropdown-item" @click="$i18n.locale = 'en'">
+              <button class="dropdown-item" :class="{ activeLang: $i18n.locale === 'en' }" @click="$i18n.locale = 'en'">
                 {{ $t('lang.en.name') }}
               </button>
             </li>
@@ -132,7 +133,9 @@ export default {
     <div class="offcanvas-body">
       <ul class="nav flex-column">
         <li v-for="(link, index) in mainMenu" :key="index" class="nav-item mb-2">
-          <router-link class="nav-link text-uppercase fw-bold" :to="{ name:link.name }" @click="toggleMenu()">{{ $t(link.text) }}</router-link>
+          <router-link class="nav-link text-uppercase fw-bold mobile-link" exact-active-class="active" :to="{ name:link.name }" @click="toggleMenu()">
+            {{ $t(link.text) }}
+          </router-link>
         </li>
         <li class="nav-item mb-2">
           <a href="https://www.iubenda.com/privacy-policy/70797940" class=" nav-link text-uppercase fw-bold iubenda-noiframe me-3" title="Privacy Policy" target="_blank">Privacy Policy</a>
@@ -201,6 +204,13 @@ header{
       &:hover::after {
         width: 100%;
       }
+      &:hover::after {
+        width: 100%;
+      }
+
+      &.router-link-exact-active::after {
+        width: 100%;
+      }
     }
   }
   .lang-menu{
@@ -259,6 +269,13 @@ header{
     margin-top: 5px !important;
     box-shadow:  5px 5px 5px 5px rgba(0, 0, 0, 0.1);
     background-color: rgb(253, 248, 248);
+    padding: 0 !important;
+    border-radius: 0.375rem;
+    overflow: hidden;
+    .dropdown-item{
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
     .link-responsive{
       color: variables.$quaternary-color;
       text-transform: uppercase;
@@ -274,7 +291,7 @@ header{
       display: flex;
       align-items: center;
       color: variables.$secondary-color;
-      border: 1px solid transparent;
+      border: 1px solid transparent;  
       &:focus, &:hover, &:active{
         border: 1px solid variables.$secondary-color;
       }
@@ -339,6 +356,28 @@ header{
         text-transform: capitalize !important;
       }
     }
+    .nav-link.mobile-link {
+      position: relative;
+      padding-left: 15px;
+      text-decoration: none;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 3px;
+        background-color: variables.$primary-color;
+        transform: scaleY(0); 
+        transition: transform 0.3s ease-in-out;
+      }
+
+      &:hover::before,
+      &.active::before {
+        transform: scaleY(1); // linea visibile
+      }
+    }
   }
 }
 .offcanvas-end.show {
@@ -353,6 +392,11 @@ header{
 
 .custom-backdrop.show {
   opacity: 1;
+}
+
+.activeLang {
+  background-color: variables.$primary-color !important;
+  color: variables.$secondary-color !important;
 }
 
 @media (max-width: 998px) {

@@ -1,7 +1,7 @@
 @use './general/variables' as *;
 
-@import "./general/typography";
-@import "./general/general";
-@import "./general/utils";
+@use "./general/typography";
+@use "./general/general";
+@use "./general/utils";
 
-@import '@fontsource-variable/oswald';
+@use '@fontsource-variable/oswald';

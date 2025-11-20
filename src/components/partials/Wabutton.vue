@@ -19,17 +19,28 @@ export default {
 
 .wa{
   position: fixed;
-  top: 200px;
-  right: 5px;
-  width: 40px;
-  height: 40px;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
   overflow: hidden;
   z-index: 1000;
   transition: all 0.2s;
+  // padding: 5px;
+  // border-radius: 50%;
   -webkit-animation: 3s ease 0s normal forwards 1 whatsapp;
   animation: 3s ease 0s normal forwards 1 whatsapp;
   &:hover{
     transform: scale(1.05);
+  }
+}
+
+@media (max-width: 768px) {
+  .wa{
+    bottom: 10px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
   }
 }
 
