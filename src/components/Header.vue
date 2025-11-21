@@ -111,6 +111,9 @@ export default {
             </li>
           </ul>
         </div>
+        <div class="ms-3 login-icon">
+          <router-link :to="{ name:'login' }"><i class="fa-regular fa-user"></i></router-link>
+        </div>
         <!-- Pulsante hamburger per offcanvas -->
         <div class="menu d-none">
           <button class="btn p-0 border-0" type="button" @click="toggleMenu()">
@@ -322,6 +325,19 @@ header{
       }
     }
   }
+  .login-icon{
+    border: 1px solid transparent;
+    padding: 9px;
+    border-radius: 5px;
+    a{
+      display: flex;
+    }
+    &:hover{
+      cursor: pointer;
+      border: 1px solid variables.$secondary-color;
+    }
+  }
+
 }
 .offcanvas-end {
   top: 80px;

@@ -6,6 +6,7 @@ import About from './components/pages/About.vue'
 import Skills from './components/pages/Skills.vue'
 import Portfolio from './components/pages/Portfolio.vue'
 import Contatti from './components/pages/Contatti.vue'
+import Login from './components/pages/Login.vue'
 import Error404 from './components/pages/Error404.vue'
 import { createI18n } from 'vue-i18n'
 
@@ -37,6 +38,11 @@ const routes = [
     path: '/contatti',
     name: 'contatti',
     component: Contatti
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: Login
   },
   { 
     path: '/:pathMatch(.*)*',
