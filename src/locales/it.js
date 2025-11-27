@@ -17,7 +17,7 @@ export default {
     contatti: "contatti",
   },
   home: {
-    greeting: "Ciao, sono Niccolò",
+    greeting: "Ciao, sono Niccolò Vaccina",
     role: "Full Stack Web Developer",
     paragraph_1: "Mi considero sempre una persona creativa, con una continua voglia di imparare e crescere. Dopo aver trascorso anni in un lavoro che non sentivo mio, ho deciso di dare una svolta alla mia vita e seguire la mia passione per la programmazione.",
     paragraph_2: "Mi piace mettermi alla prova, esplorare nuovi argomenti e rimanere aggiornato sulle ultime novità legate ai miei interessi, perché sono convinto che l'apprendimento continuo sia fondamentale per migliorarsi ogni giorno.",

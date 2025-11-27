@@ -13,9 +13,9 @@ export default {
       link:[{ rel:'canonical', href:'https://niccolovaccina.it/' }],
       meta: [
         { name:'title', content:'Niccolò Vaccina - Full Stack Web Developer' },
-        { name:'description', content:'Sono Niccolò Vaccina, uno sviluppatore full stack specializzato in .NET, C#, MVC e SQL Server. Scopri il mio portfolio e le mie competenze.' },
+        { name:'description', content:'Sono Niccolò Vaccina, uno sviluppatore full stack specializzato in .NET, C#, MVC, Angular e SQL Server. Scopri il mio portfolio e le mie competenze.' },
         { name:'author', content:'Niccolò Vaccina' },
-        { name:'keywords', content:'niccolò vaccina, vaccina, sviluppatore web, full stack developer, sviluppatore, sviluppatore .net, c#, sql server, mvc, cesena, forlì, portfolio sviluppatore, web developer italy' },
+        { name:'keywords', content:'niccolò vaccina, vaccina, sviluppatore web, full stack developer, sviluppatore, sviluppatore .net, c#, sql server, mvc, agular, cesena, forlì, portfolio sviluppatore, web developer italy' },
         { property:'og:type', content:'website' },
         { property:'og:site_name', content:'Niccolò Vaccina Portfolio' },
         { property:'og:url', content:'https://niccolovaccina.it/' },
@@ -25,7 +25,7 @@ export default {
         { name:'twitter:card', content:'summary_large_image' },
         { name:'twitter:url', content:'https://niccolovaccina.it/' },
         { name:'twitter:title', content:'Niccolò Vaccina - Full Stack Web Developer' },
-        { name:'twitter:description', content:'Sviluppatore full stack specializzato in .NET, C#, MVC e SQL Server.' },
+        { name:'twitter:description', content:'Sviluppatore full stack specializzato in .NET, C#, MVC, Angular e SQL Server.' },
         { name:'twitter:image', content:'https://niccolovaccina.it/assets/home-preview.jpg' }
       ]
     });
@@ -41,8 +41,9 @@ export default {
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-7 testo-home px-lg-5">
-            <h1>{{ $t('home.greeting') }}</h1>
-            <h2>{{ $t('home.role') }}</h2>
+            <h1>{{ $t('home.greeting') }}
+              <span class="small-text">{{ $t('home.role') }}</span>
+            </h1>
             <p>{{ $t('home.paragraph_1') }}</p>
             <p>{{ $t('home.paragraph_2') }}</p>
           </div>
@@ -189,6 +190,11 @@ export default {
 p{
   font-size: 18px;
   font-weight: 300;
+}
+h1 .small-text {
+  font-size: 0.7em;
+  // font-weight: 400;
+  display: block;
 }
 
 @keyframes home {

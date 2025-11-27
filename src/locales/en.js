@@ -17,7 +17,7 @@ export default {
     contatti: "contacts",
   },
   home: {
-    greeting: "Hi, I’m Niccolò",
+    greeting: "Hi, I’m Niccolò Vaccina",
     role: "Full Stack Web Developer",
     paragraph_1: "I consider myself a creative person, always eager to learn and grow. After years in a job that didn’t feel right, I decided to follow my passion for programming.",
     paragraph_2: "I like challenging myself, exploring new topics, and keeping up-to-date with the latest news related to my interests, because I believe continuous learning is key to improving every day.",

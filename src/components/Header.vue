@@ -137,12 +137,6 @@ export default {
             {{ $t(link.text) }}
           </router-link>
         </li>
-        <li class="nav-item mb-2">
-          <a href="https://www.iubenda.com/privacy-policy/70797940" class=" nav-link text-uppercase fw-bold iubenda-noiframe me-3" title="Privacy Policy" target="_blank">Privacy Policy</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a href="https://www.iubenda.com/privacy-policy/70797940/cookie-policy" class="nav-link text-uppercase fw-bold iubenda-noiframe" title="Cookie Policy" target="_blank">Cookie Policy</a>
-        </li>
       </ul>
       <div class="logo-offcanvas d-flex justify-content-center">
         <img src="/img/logo/logo.webp" alt="Niccolò Vaccina logo">
