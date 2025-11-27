@@ -20,7 +20,7 @@ export default {
   },
   setup() {
     useHead({
-      title:'Competenze Tecniche - Niccolò Vaccina',
+      title:'Competenze Tecniche - Niccolò Vaccina | Full Stack Developer',
       link:[{ rel:'canonical', href:'https://niccolovaccina.it/competenze' }],
       meta: [
         { name:'title', content:'Competenze Tecniche - Niccolò Vaccina' },

@@ -17,7 +17,7 @@ export default {
   },
   setup(){
     useHead({
-      title:'Portfolio - Niccolò Vaccina',
+      title:'Portfolio - Niccolò Vaccina | Full Stack Developer',
       link:[{ rel:'canonical', href:'https://niccolovaccina.it/portfolio' }],
       meta: [
         { name: 'title', content: 'Portfolio - Niccolò Vaccina | Full Stack Developer' },
